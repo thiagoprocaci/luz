@@ -1,7 +1,12 @@
 package br.com.tbp.model;
 
 
-public class Edge  {
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+public class Edge extends CoreEntity  {
     private User user1;
     private User user2;
     private Integer weight;
@@ -12,7 +17,12 @@ public class Edge  {
         }
         this.user1 = user1;
         this.user2 = user2;
-        weight = 1;
+        this.weight = 1;
+
+        // logica para a construcao do id
+        List<String> list = Arrays.asList(user1.getId(), user2.getId());
+        Collections.sort(list);
+        setId(list.get(0) + "-" + list.get(1));
     }
 
     public User getUser1() {
@@ -39,28 +49,4 @@ public class Edge  {
         weight++;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (!(o instanceof Edge)) {
-            return false;
-        }
-        Edge edge = (Edge) o;
-        if(user1.equals(edge.user1) && user2.equals(user2)) {
-            return true;
-        }
-        if(user1.equals(edge.user2) && user2.equals(user1)) {
-            return true;
-        }
-        return false;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = user1 != null ? user1.hashCode() : 0;
-        result = 31 * result + (user2 != null ? user2.hashCode() : 0);
-        return result;
-    }
 }

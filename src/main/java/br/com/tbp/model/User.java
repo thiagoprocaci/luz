@@ -5,8 +5,11 @@ public class User extends CoreEntity {
     private String name;  
     
     public User(String id, String name) {        
-        setId(id);
-        this.name = name;
+        if(id == null) {
+            throw new IllegalArgumentException("The user id can not be null");
+        }
+        setId(id.trim());
+        this.name = name.trim();
     }
     public String getName() {
         return name;

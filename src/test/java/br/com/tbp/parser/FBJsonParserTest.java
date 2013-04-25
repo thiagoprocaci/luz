@@ -9,7 +9,7 @@ import br.com.tpb.parser.FBJsonParser;
 import org.junit.Before;
 import org.junit.Test;
 
-public class FBJasonParserTest {
+public class FBJsonParserTest {
     private String jsonString;
     private FBJsonParser fbJsonParser;
 
