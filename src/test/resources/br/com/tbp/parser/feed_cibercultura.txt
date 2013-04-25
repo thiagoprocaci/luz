@@ -1,0 +1,682 @@
+{
+   "data": [
+      {
+         "id": "384634338233143_462508987112344",
+         "from": {
+            "name": "Roberto Lima",
+            "id": "100001811053281"
+         },
+         "to": {
+            "data": [
+               {
+                  "name": "Cibercultura UNIRIO 2012.1",
+                  "version": 1,
+                  "id": "384634338233143"
+               }
+            ]
+         },
+         "message": "Mandei a monografia via e-mail, pois tamb\u00e9m n\u00e3o consegui carregar a monografia. Tentei via chome, IE e Firefox...\n\nJ\u00e1 existe uma issue sem resposta para esse bug: https://www.facebook.com/help/community/question/?id=2245037\nAcompanhem...",
+         "picture": "http://external.ak.fbcdn.net/safe_image.php?d=AQADnSS3K6hLB9sy&w=154&h=154&url=https\u00253A\u00252F\u00252Ffbcdn-profile-a.akamaihd.net\u00252Fhprofile-ak-ash2\u00252F157811_100001204865462_234419238_q.jpg",
+         "link": "https://www.facebook.com/help/community/question/?id=2245037",
+         "name": "N\u00e3o consigo carregar um arquivo para o grupo, aparece uma mensagem \"Erro ao salvar arquivo\" e o arqu",
+         "caption": "www.facebook.com",
+         "description": " Facebook is a social utility that connects people with friends and others who work, study and live around them. People use Facebook to keep up with friends, upload an unlimited number of photos, post links and videos, and learn more about the people they meet.",
+         "icon": "http://static.ak.fbcdn.net/rsrc.php/v2/yD/r/aS8ecmYRys0.gif",
+         "actions": [
+            {
+               "name": "Comment",
+               "link": "http://www.facebook.com/384634338233143/posts/462508987112344"
+            },
+            {
+               "name": "Like",
+               "link": "http://www.facebook.com/384634338233143/posts/462508987112344"
+            }
+         ],
+         "privacy": {
+            "value": ""
+         },
+         "type": "link",
+         "created_time": "2012-06-30T12:59:46+0000",
+         "updated_time": "2012-07-01T00:53:07+0000",
+         "likes": {
+            "data": [
+               {
+                  "name": "Cristiane Iglesias",
+                  "id": "100000000103086"
+               }
+            ],
+            "count": 1
+         },
+         "comments": {
+            "data": [
+               {
+                  "id": "384634338233143_462508987112344_462763460420230",
+                  "from": {
+                     "name": "Pimentel Mariano",
+                     "id": "100002164977849"
+                  },
+                  "message": "Roberto Lima, me manda o DOC, vou gerar o arquivo novamente... desconfio que possa ser isso.",
+                  "message_tags": [
+                     {
+                        "id": "100001811053281",
+                        "name": "Roberto Lima",
+                        "type": "user",
+                        "offset": 0,
+                        "length": 12
+                     }
+                  ],
+                  "created_time": "2012-06-30T22:24:17+0000"
+               },
+               {
+                  "id": "384634338233143_462508987112344_462790393750870",
+                  "from": {
+                     "name": "Roberto Lima",
+                     "id": "100001811053281"
+                  },
+                  "message": "Mandei...",
+                  "created_time": "2012-06-30T23:43:01+0000"
+               },
+               {
+                  "id": "384634338233143_462508987112344_462809637082279",
+                  "from": {
+                     "name": "Pimentel Mariano",
+                     "id": "100002164977849"
+                  },
+                  "message": "ainda n\u00e3o foi... vamos continuar tentando mais tarde.",
+                  "created_time": "2012-07-01T00:53:07+0000"
+               }
+            ],
+            "count": 3
+         }
+      },
+      {
+         "id": "384634338233143_462764413753468",
+         "from": {
+            "name": "Cristiane Tavares",
+            "id": "100000401238331"
+         },
+         "to": {
+            "data": [
+               {
+                  "name": "Cibercultura UNIRIO 2012.1",
+                  "version": 1,
+                  "id": "384634338233143"
+               }
+            ]
+         },
+         "message": "ol\u00e1 prof...j\u00e1 vi o formul\u00e1rio de avalia\u00e7\u00e3o das monografias...aparecem 3 listadas para serem avaliadas a do Thiago,da CrisI e do Mozart. J\u00e1 tem a rela\u00e7ao de quem avalia qual?",
+         "actions": [
+            {
+               "name": "Comment",
+               "link": "http://www.facebook.com/384634338233143/posts/462764413753468"
+            },
+            {
+               "name": "Like",
+               "link": "http://www.facebook.com/384634338233143/posts/462764413753468"
+            }
+         ],
+         "privacy": {
+            "value": ""
+         },
+         "type": "status",
+         "created_time": "2012-06-30T22:26:45+0000",
+         "updated_time": "2012-06-30T22:35:51+0000",
+         "comments": {
+            "data": [
+               {
+                  "id": "384634338233143_462764413753468_462767423753167",
+                  "from": {
+                     "name": "Pimentel Mariano",
+                     "id": "100002164977849"
+                  },
+                  "message": "Estamos aguardando a monografia da Kizzy Macedo Benjamin",
+                  "message_tags": [
+                     {
+                        "id": "100003649575550",
+                        "name": "Kizzy Macedo Benjamin",
+                        "type": "user",
+                        "offset": 35,
+                        "length": 21
+                     }
+                  ],
+                  "created_time": "2012-06-30T22:35:51+0000"
+               }
+            ],
+            "count": 1
+         }
+      },
+      {
+         "id": "384634338233143_462293227133920",
+         "from": {
+            "name": "Cristiane Tavares",
+            "id": "100000401238331"
+         },
+         "to": {
+            "data": [
+               {
+                  "name": "Cibercultura UNIRIO 2012.1",
+                  "version": 1,
+                  "id": "384634338233143"
+               }
+            ]
+         },
+         "message": "Ol\u00e1 estou recebendo uma msg de erro ao tentar fazer o upload da monografia..estou enviando por emial para o prof.",
+         "actions": [
+            {
+               "name": "Comment",
+               "link": "http://www.facebook.com/384634338233143/posts/462293227133920"
+            },
+            {
+               "name": "Like",
+               "link": "http://www.facebook.com/384634338233143/posts/462293227133920"
+            }
+         ],
+         "privacy": {
+            "value": ""
+         },
+         "type": "status",
+         "created_time": "2012-06-30T03:11:00+0000",
+         "updated_time": "2012-06-30T03:11:00+0000",
+         "comments": {
+            "count": 0
+         }
+      },
+      {
+         "id": "384634338233143_461645247198718",
+         "from": {
+            "name": "Cristiane Iglesias",
+            "id": "100000000103086"
+         },
+         "to": {
+            "data": [
+               {
+                  "name": "Cibercultura UNIRIO 2012.1",
+                  "version": 1,
+                  "id": "384634338233143"
+               }
+            ]
+         },
+         "message": "Tentei colocar aqui a monografia, mas d\u00e1 erro e n\u00e3o carrega o arquivo em pdf. O que fazer neste caso? bjs",
+         "actions": [
+            {
+               "name": "Comment",
+               "link": "http://www.facebook.com/384634338233143/posts/461645247198718"
+            },
+            {
+               "name": "Like",
+               "link": "http://www.facebook.com/384634338233143/posts/461645247198718"
+            }
+         ],
+         "privacy": {
+            "value": ""
+         },
+         "type": "status",
+         "created_time": "2012-06-29T02:43:52+0000",
+         "updated_time": "2012-06-29T07:56:11+0000",
+         "likes": {
+            "data": [
+               {
+                  "name": "Pimentel Mariano",
+                  "id": "100002164977849"
+               }
+            ],
+            "count": 1
+         },
+         "comments": {
+            "data": [
+               {
+                  "id": "384634338233143_461645247198718_461661140530462",
+                  "from": {
+                     "name": "Thiago Baesso Procaci",
+                     "id": "100000348062784"
+                  },
+                  "message": "use o firefox.",
+                  "created_time": "2012-06-29T03:21:21+0000"
+               },
+               {
+                  "id": "384634338233143_461645247198718_461667907196452",
+                  "from": {
+                     "name": "Cristiane Iglesias",
+                     "id": "100000000103086"
+                  },
+                  "message": "Eu uso... N\u00e3o sei pq t\u00e1 dando erro... Bj",
+                  "created_time": "2012-06-29T03:38:43+0000"
+               },
+               {
+                  "id": "384634338233143_461645247198718_461668620529714",
+                  "from": {
+                     "name": "Thiago Baesso Procaci",
+                     "id": "100000348062784"
+                  },
+                  "message": "putz!! Tenta atualizar a vers\u00e3o. Depois acende uma vela e reza! -)",
+                  "created_time": "2012-06-29T03:40:26+0000"
+               },
+               {
+                  "id": "384634338233143_461645247198718_461668863863023",
+                  "from": {
+                     "name": "Thiago Baesso Procaci",
+                     "id": "100000348062784"
+                  },
+                  "message": "a kizzy teve o mesmo problema",
+                  "created_time": "2012-06-29T03:41:00+0000"
+               },
+               {
+                  "id": "384634338233143_461645247198718_461670293862880",
+                  "from": {
+                     "name": "Cristiane Iglesias",
+                     "id": "100000000103086"
+                  },
+                  "message": "Kkkkk ok bj",
+                  "created_time": "2012-06-29T03:44:34+0000"
+               },
+               {
+                  "id": "384634338233143_461645247198718_461775350519041",
+                  "from": {
+                     "name": "Pimentel Mariano",
+                     "id": "100002164977849"
+                  },
+                  "message": "esse problema ocorre \u00e0s vezes. Outras vezes o facebook aceita normalmente. Continue tentando.",
+                  "created_time": "2012-06-29T07:56:11+0000"
+               }
+            ],
+            "count": 6
+         }
+      },
+      {
+         "id": "384634338233143_461441660552410",
+         "from": {
+            "name": "Claudia Cappelli",
+            "id": "100000015795070"
+         },
+         "to": {
+            "data": [
+               {
+                  "name": "Cibercultura UNIRIO 2012.1",
+                  "version": 1,
+                  "id": "384634338233143"
+               }
+            ]
+         },
+         "message": "Ser\u00e1?",
+         "picture": "http://external.ak.fbcdn.net/safe_image.php?d=AQDCIR4fHTN6AaM1&w=154&h=154&url=http\u00253A\u00252F\u00252Fwww.booksandideas.net\u00252Flocal\u00252Fcache-vignettes\u00252FL200xH131\u00252Farton1876-f7c72.jpg",
+         "link": "http://www.booksandideas.net/Could-Random-Selection-and.html#.T-yVnM-au3s.facebook",
+         "name": "Could Random Selection and Deliberative Democracy Revitalize Politics in the 21st Century?  - Books.",
+         "caption": "www.booksandideas.net",
+         "description": "The practice of using representative samples in decision making in contemporary political regimes creates an opening for re-establishing (...)",
+         "icon": "http://static.ak.fbcdn.net/rsrc.php/v2/yD/r/aS8ecmYRys0.gif",
+         "actions": [
+            {
+               "name": "Comment",
+               "link": "http://www.facebook.com/384634338233143/posts/461441660552410"
+            },
+            {
+               "name": "Like",
+               "link": "http://www.facebook.com/384634338233143/posts/461441660552410"
+            }
+         ],
+         "privacy": {
+            "value": ""
+         },
+         "type": "link",
+         "created_time": "2012-06-28T17:34:41+0000",
+         "updated_time": "2012-06-28T17:34:41+0000",
+         "comments": {
+            "count": 0
+         }
+      },
+      {
+         "id": "384634338233143_461441013885808",
+         "from": {
+            "name": "Claudia Cappelli",
+            "id": "100000015795070"
+         },
+         "to": {
+            "data": [
+               {
+                  "name": "Cibercultura UNIRIO 2012.1",
+                  "version": 1,
+                  "id": "384634338233143"
+               }
+            ]
+         },
+         "picture": "http://external.ak.fbcdn.net/safe_image.php?d=AQCPEi2luDWltTiJ&w=154&h=154&url=http\u00253A\u00252F\u00252Fblogs.cfr.org\u00252Fcoleman\u00252Ffiles\u00252F2012\u00252F06\u00252FICT4Gov-technology-governance-boris-weber-world-bank1.jpg",
+         "link": "http://blogs.cfr.org/coleman/2012/06/19/ict4gov-improving-governance-through-technology/#cid=soc-facebook-at-blogs-ict4gov_improving_governance_t-061912",
+         "name": "Democracy in Development \u00bb ICT4Gov: Improving Governance Through Technology",
+         "caption": "blogs.cfr.org",
+         "description": "Coleman maps the intersections between political reform, economic growth, and U.S. policy in the developing world.",
+         "icon": "http://static.ak.fbcdn.net/rsrc.php/v2/yD/r/aS8ecmYRys0.gif",
+         "actions": [
+            {
+               "name": "Comment",
+               "link": "http://www.facebook.com/384634338233143/posts/461441013885808"
+            },
+            {
+               "name": "Like",
+               "link": "http://www.facebook.com/384634338233143/posts/461441013885808"
+            }
+         ],
+         "privacy": {
+            "value": ""
+         },
+         "type": "link",
+         "created_time": "2012-06-28T17:32:40+0000",
+         "updated_time": "2012-06-28T17:32:40+0000",
+         "likes": {
+            "data": [
+               {
+                  "name": "Pimentel Mariano",
+                  "id": "100002164977849"
+               }
+            ],
+            "count": 1
+         },
+         "comments": {
+            "count": 0
+         }
+      },
+      {
+         "id": "384634338233143_460180230678553",
+         "from": {
+            "name": "Pimentel Mariano",
+            "id": "100002164977849"
+         },
+         "to": {
+            "data": [
+               {
+                  "name": "Cibercultura UNIRIO 2012.1",
+                  "version": 1,
+                  "id": "384634338233143"
+               }
+            ]
+         },
+         "message": "Para quem est\u00e1 pensando em levar essa hist\u00f3ria de monografia em cibercultura para frente, ter\u00e1 mais um m\u00eas para refinar um artigo para submeter no Simp\u00f3sio ABCiber (at\u00e9 30/07!):\nhttp://aplicweb.feevale.br/site/hotsite/default.asp?intIdHotSite=152&intIdSecao=5572",
+         "picture": "http://external.ak.fbcdn.net/safe_image.php?d=AQDrVxFmB-8IDYT5&w=154&h=154&url=http\u00253A\u00252F\u00252Fwww.feevale.br\u00252Fsite\u00252Fhotsite\u00252Ftpl\u00252F152\u00252Fcomum\u00252Fimg\u00252Flogo_abciber.jpg",
+         "link": "http://aplicweb.feevale.br/site/hotsite/default.asp?intIdHotSite=152&intIdSecao=5572",
+         "name": "VI Simp\u00f3sio Nacional da Associa\u00e7\u00e3o de Pesquisadores em Cibercultura (ABCiber)",
+         "caption": "aplicweb.feevale.br",
+         "description": "O VI Simp\u00f3sio Nacional da ABCiber tem como tema principal o Entretenimento Digital e ser\u00e1 realizado de 6 a 8 de novembro de 2012 na Universidade Feevale, Novo Hamburgo, Rio Grande do Sul.",
+         "icon": "http://static.ak.fbcdn.net/rsrc.php/v2/yD/r/aS8ecmYRys0.gif",
+         "actions": [
+            {
+               "name": "Comment",
+               "link": "http://www.facebook.com/384634338233143/posts/460180230678553"
+            },
+            {
+               "name": "Like",
+               "link": "http://www.facebook.com/384634338233143/posts/460180230678553"
+            }
+         ],
+         "privacy": {
+            "value": ""
+         },
+         "type": "link",
+         "created_time": "2012-06-26T16:25:29+0000",
+         "updated_time": "2012-06-26T19:42:15+0000",
+         "likes": {
+            "data": [
+               {
+                  "name": "Cristiane Iglesias",
+                  "id": "100000000103086"
+               },
+               {
+                  "name": "Miriam Gontijo de Moraes",
+                  "id": "1058273681"
+               },
+               {
+                  "name": "Claudia Cappelli",
+                  "id": "100000015795070"
+               }
+            ],
+            "count": 3
+         },
+         "comments": {
+            "data": [
+               {
+                  "id": "384634338233143_460180230678553_460265807336662",
+                  "from": {
+                     "name": "Cristiane Iglesias",
+                     "id": "100000000103086"
+                  },
+                  "message": "Mas antes disso, a monografia tem que ser apreciada pelos professores. Mas gostei da id\u00e9ia, se for poss\u00edvel, quero tentar... Rs bjsss",
+                  "created_time": "2012-06-26T19:42:15+0000",
+                  "likes": 1
+               }
+            ],
+            "count": 1
+         }
+      },
+      {
+         "id": "384634338233143_454394097923833",
+         "from": {
+            "name": "Claudia Cappelli",
+            "id": "100000015795070"
+         },
+         "to": {
+            "data": [
+               {
+                  "name": "Cibercultura UNIRIO 2012.1",
+                  "version": 1,
+                  "id": "384634338233143"
+               }
+            ]
+         },
+         "message": "Pessoal,\n\nDia 22 n\u00e3o teremos aula presencial por causa da Rio +20.\n\nA entrega das monografias ser\u00e1 no dia 29 junto com a apresenta\u00e7\u00e3o das mesmas. Temos que ser bem objetivos nas apresenta\u00e7\u00f5es para dar tempo de todos apresentarem. \u00c9 importante que todos estejam presentes e cheguem no hor\u00e1rio para que assistam de todos os colegas dado que ter\u00e3o que fazer avalia\u00e7\u00e3o-colaborativa destes trabalhos na semana seguinte.  \n\nDo dia 30 ao dia 5 voc\u00eas far\u00e3o a avalia\u00e7\u00e3o-colaborativa online (crit\u00e9rios a serem combinados no dia 29).\n\nDia 6 as notas finais ser\u00e3o divulgadas.\n\nBjs,",
+         "actions": [
+            {
+               "name": "Comment",
+               "link": "http://www.facebook.com/384634338233143/posts/454394097923833"
+            },
+            {
+               "name": "Like",
+               "link": "http://www.facebook.com/384634338233143/posts/454394097923833"
+            }
+         ],
+         "privacy": {
+            "value": ""
+         },
+         "type": "status",
+         "created_time": "2012-06-16T21:25:55+0000",
+         "updated_time": "2012-06-22T23:42:36+0000",
+         "likes": {
+            "data": [
+               {
+                  "name": "Cristiane Iglesias",
+                  "id": "100000000103086"
+               },
+               {
+                  "name": "Pimentel Mariano",
+                  "id": "100002164977849"
+               },
+               {
+                  "name": "Miriam Gontijo de Moraes",
+                  "id": "1058273681"
+               }
+            ],
+            "count": 3
+         },
+         "comments": {
+            "data": [
+               {
+                  "id": "384634338233143_454394097923833_454404294589480",
+                  "from": {
+                     "name": "Cristiane Iglesias",
+                     "id": "100000000103086"
+                  },
+                  "message": "Esta entrega no dia 29 ser\u00e1 feita por aqui ou no moodle? bjs",
+                  "created_time": "2012-06-16T21:50:01+0000",
+                  "likes": 1
+               },
+               {
+                  "id": "384634338233143_454394097923833_454405624589347",
+                  "from": {
+                     "name": "Pimentel Mariano",
+                     "id": "100002164977849"
+                  },
+                  "message": "Por aqui mesmo",
+                  "created_time": "2012-06-16T21:53:13+0000",
+                  "likes": 1
+               },
+               {
+                  "id": "384634338233143_454394097923833_454406771255899",
+                  "from": {
+                     "name": "Cristiane Iglesias",
+                     "id": "100000000103086"
+                  },
+                  "message": "Ok... obrigada e bom fim de semana \u00e0 todos... bjss",
+                  "created_time": "2012-06-16T21:55:55+0000"
+               },
+               {
+                  "id": "384634338233143_454394097923833_458050690891507",
+                  "from": {
+                     "name": "Cristiane Iglesias",
+                     "id": "100000000103086"
+                  },
+                  "message": "Esqueci de perguntar. A avalia\u00e7\u00e3o que n\u00f3s faremos ser\u00e1 de 2 trabalhos para cada aluno, certo? bjs",
+                  "created_time": "2012-06-22T22:57:37+0000",
+                  "likes": 1
+               },
+               {
+                  "id": "384634338233143_454394097923833_458081087555134",
+                  "from": {
+                     "name": "Pimentel Mariano",
+                     "id": "100002164977849"
+                  },
+                  "message": "sim",
+                  "created_time": "2012-06-22T23:42:36+0000",
+                  "likes": 1
+               }
+            ],
+            "count": 5
+         }
+      },
+      {
+         "id": "384634338233143_452191048144138",
+         "from": {
+            "name": "Cristiane Tavares",
+            "id": "100000401238331"
+         },
+         "to": {
+            "data": [
+               {
+                  "name": "Cibercultura UNIRIO 2012.1",
+                  "version": 1,
+                  "id": "384634338233143"
+               }
+            ]
+         },
+         "message": "Boa noite pessoal....\nTemos ainda duas atividades a apresenta\u00e7\u00e3o e avalia\u00e7\u00e3o das monografias....\nPor\u00e9m n\u00e3o teremos aula esta semana dia 15 e dia 22 ser\u00e1 feriado.\nAssim a apresenta\u00e7\u00e3o ficar\u00e1 para o dia 29 e a avalia\u00e7\u00e3o dos trabalhos do grupo no dia 6 ou somente faremos a apresenta\u00e7\u00e3o dia 29?",
+         "actions": [
+            {
+               "name": "Comment",
+               "link": "http://www.facebook.com/384634338233143/posts/452191048144138"
+            },
+            {
+               "name": "Like",
+               "link": "http://www.facebook.com/384634338233143/posts/452191048144138"
+            }
+         ],
+         "privacy": {
+            "value": ""
+         },
+         "type": "status",
+         "created_time": "2012-06-12T21:54:17+0000",
+         "updated_time": "2012-06-12T22:55:30+0000",
+         "comments": {
+            "data": [
+               {
+                  "id": "384634338233143_452191048144138_452222171474359",
+                  "from": {
+                     "name": "Cristiane Iglesias",
+                     "id": "100000000103086"
+                  },
+                  "message": "Acho que nao teremos apresenta\u00e7\u00e3o. S\u00f3 a avalia\u00e7\u00e3o dos trabalhos dos colegas. \u00c9 isso Mariano? Bjsss",
+                  "created_time": "2012-06-12T22:55:30+0000"
+               }
+            ],
+            "count": 1
+         }
+      },
+      {
+         "id": "384634338233143_449230991773477",
+         "from": {
+            "name": "Renata Araujo",
+            "id": "100000108890489"
+         },
+         "to": {
+            "data": [
+               {
+                  "name": "Cibercultura UNIRIO 2012.1",
+                  "version": 1,
+                  "id": "384634338233143"
+               }
+            ]
+         },
+         "message": "Ferramenta interessante, bem na linha de nossas discuss\u00f5es sobre Democracia Eletr\u00f4nica e fortes conota\u00e7\u00f5es de discuss\u00f5es colaborativas.",
+         "picture": "http://external.ak.fbcdn.net/safe_image.php?d=AQCL18NPGl_IHEX4&w=154&h=154&url=http\u00253A\u00252F\u00252Fagoradelibera.com.br\u00252Fwp-content\u00252Fuploads\u00252F2012\u00252F04\u00252Fslide2.png",
+         "link": "http://agoradelibera.com.br/",
+         "name": "Delibera | Outro site Delibera",
+         "caption": "agoradelibera.com.br",
+         "description": "Organiza\u00e7\u00f5es grandes ou pequenas demandam de processos que possibilitem a tomada de decis\u00e3o de forma \u00e1gil e legitima e que agreguem as contribui\u00e7\u00f5es dos envolvidos.",
+         "icon": "http://static.ak.fbcdn.net/rsrc.php/v2/yD/r/aS8ecmYRys0.gif",
+         "actions": [
+            {
+               "name": "Comment",
+               "link": "http://www.facebook.com/384634338233143/posts/449230991773477"
+            },
+            {
+               "name": "Like",
+               "link": "http://www.facebook.com/384634338233143/posts/449230991773477"
+            }
+         ],
+         "privacy": {
+            "value": ""
+         },
+         "type": "link",
+         "created_time": "2012-06-07T16:05:00+0000",
+         "updated_time": "2012-06-07T16:05:00+0000",
+         "comments": {
+            "count": 0
+         }
+      },
+      {
+         "id": "384634338233143_447997915230118",
+         "from": {
+            "name": "Cristiane Tavares",
+            "id": "100000401238331"
+         },
+         "to": {
+            "data": [
+               {
+                  "name": "Cibercultura UNIRIO 2012.1",
+                  "version": 1,
+                  "id": "384634338233143"
+               }
+            ]
+         },
+         "message": "Estas foram minhas apresenta\u00e7\u00f5es.",
+         "actions": [
+            {
+               "name": "Comment",
+               "link": "http://www.facebook.com/384634338233143/posts/447997915230118"
+            },
+            {
+               "name": "Like",
+               "link": "http://www.facebook.com/384634338233143/posts/447997915230118"
+            }
+         ],
+         "privacy": {
+            "value": ""
+         },
+         "type": "status",
+         "created_time": "2012-06-05T13:46:56+0000",
+         "updated_time": "2012-06-05T13:46:56+0000",
+         "comments": {
+            "count": 0
+         }
+      }
+   ],
+   "paging": {
+      "previous": "https://graph.facebook.com/384634338233143/feed?limit=25&__paging_token=384634338233143_462508987112344&access_token=BAACEdEose0cBAPZBI28WzvaYYv9AuZBxQxC3CqKZBrrHdGH03ZCvYog39aLaiSfZAUepTkYIv30VUn6bb7SzD1A3LZBCpXxq02uSA6CqCLe4weArtsDAGS3sm4Lkxp7ZCfgAT9ZA6c5OXV3RTK0ZALO2vjcfJrtee6ih7V0UK9c5lajGQ3sUg34RqIVidK91EQIHXV3I809jmlMHuqUbeBeQZAqpGUfhaTTS5OOpF944V8zAZDZD&since=1341103987&__previous=1",
+      "next": "https://graph.facebook.com/384634338233143/feed?limit=25&access_token=BAACEdEose0cBAPZBI28WzvaYYv9AuZBxQxC3CqKZBrrHdGH03ZCvYog39aLaiSfZAUepTkYIv30VUn6bb7SzD1A3LZBCpXxq02uSA6CqCLe4weArtsDAGS3sm4Lkxp7ZCfgAT9ZA6c5OXV3RTK0ZALO2vjcfJrtee6ih7V0UK9c5lajGQ3sUg34RqIVidK91EQIHXV3I809jmlMHuqUbeBeQZAqpGUfhaTTS5OOpF944V8zAZDZD&until=1338904016&__paging_token=384634338233143_447997915230118"
+   }
+}
