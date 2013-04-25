@@ -17,5 +17,8 @@ public class User extends CoreEntity {
     public void setName(String name) {
         this.name = name;
     }
-   
+
+    public String toString() {
+        return name;
+    }
 }
