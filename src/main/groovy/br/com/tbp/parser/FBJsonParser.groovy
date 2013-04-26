@@ -1,4 +1,4 @@
-package br.com.tpb.parser
+package br.com.tbp.parser
 
 import groovy.json.*
 import br.com.tbp.model.User
@@ -7,23 +7,10 @@ import br.com.tbp.model.Graph
 
 class FBJsonParser {
 
-    def parse(String jsonText) {
+    def Graph parse(String jsonText) {
         def json = new JsonSlurper().parseText(jsonText)
-        // criar um objeto grafo
-
         def graph =  buildGraph(json)
-
-        graph.edgeSet.each { edge ->
-            System.out.println(edge.user1.name + " " + edge.user1.id)
-            System.out.println(edge.user2.name + " " + edge.user2.id)
-            System.out.println(edge.weight)
-            System.out.println("=========================")
-        }
-
-        graph.userSet.each { user ->
-            System.out.println(user)
-        }
-
+        return graph
     }
 
     private Graph buildGraph(json) {

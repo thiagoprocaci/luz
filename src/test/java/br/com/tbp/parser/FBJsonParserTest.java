@@ -5,7 +5,10 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-import br.com.tpb.parser.FBJsonParser;
+import br.com.tbp.file.FileManager;
+import br.com.tbp.model.Graph;
+import br.com.tbp.printer.GMLPrinter;
+import br.com.tbp.parser.FBJsonParser;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -42,6 +45,9 @@ public class FBJsonParserTest {
 
     @Test
     public void testParse() throws  IOException {
-        fbJsonParser.parse(jsonString);
+       Graph graph = fbJsonParser.parse(jsonString);
+        FileManager fileManager = new FileManager();
+       GMLPrinter printer = new GMLPrinter(fileManager);
+       printer.print(graph);
     }
 }
