@@ -18,7 +18,12 @@
 		<repository>
 			<id>codehaus</id>
 			<url>http://repository.codehaus.org/org/codehaus</url>
-		</repository>		
+		</repository>
+
+        <repository>
+            <id>gephi-releases</id>
+            <url>http://nexus.gephi.org/nexus/content/repositories/releases/</url>
+        </repository>
      </repositories>
  
 
@@ -105,14 +110,21 @@
             <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy-all</artifactId>
             <version>2.0.4</version>
-        </dependency>		
+        </dependency>
+
+        <dependency>
+            <groupId>org.gephi</groupId>
+            <artifactId>statistics-plugin</artifactId>
+            <version>0.8.2</version>
+        </dependency>
 
         <dependency>
         	<groupId>org.mockito</groupId>
 			<artifactId>mockito-all</artifactId>
 			<version>1.9.0</version>
 			<scope>test</scope>
-        </dependency>	
+        </dependency>
+
         
         <dependency>		  	
 		    <groupId>junit</groupId>
