@@ -2,7 +2,10 @@ package br.com.tbp.model;
 
 public class User extends CoreEntity {    
     
-    private String name;  
+    private String name;
+    private double eccentricity;
+    private double closeness;
+    private double betweenness;
     
     public User(String id, String name) {        
         if(id == null) {
@@ -18,7 +21,32 @@ public class User extends CoreEntity {
         this.name = name;
     }
 
+    public double getEccentricity() {
+        return eccentricity;
+    }
+
+    public void setEccentricity(double eccentricity) {
+        this.eccentricity = eccentricity;
+    }
+
+    public double getCloseness() {
+        return closeness;
+    }
+
+    public void setCloseness(double closeness) {
+        this.closeness = closeness;
+    }
+
+    public double getBetweenness() {
+        return betweenness;
+    }
+
+    public void setBetweenness(double betweenness) {
+        this.betweenness = betweenness;
+    }
+
     public String toString() {
         return name;
+
     }
 }

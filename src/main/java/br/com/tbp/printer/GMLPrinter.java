@@ -20,7 +20,7 @@ public class GMLPrinter {
         buffer.append("[ \n");
         buffer.append("  directed 0 \n");
 
-        for (User user: graph.getUserSet()) {
+        for (User user: graph.getNodeSet()) {
             buffer.append("  node \n");
             buffer.append("  [ \n");
             buffer.append("    id ");

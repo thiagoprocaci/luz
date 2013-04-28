@@ -49,4 +49,10 @@ public class Edge extends CoreEntity  {
         weight++;
     }
 
+    @Override
+    public String toString() {
+        return
+                "user1=" + user1 +
+                ", user2=" + user2 ;
+    }
 }

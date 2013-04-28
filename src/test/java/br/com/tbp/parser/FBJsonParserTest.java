@@ -5,8 +5,10 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
+import br.com.tbp.algorithm.GraphDistance;
 import br.com.tbp.file.FileManager;
 import br.com.tbp.model.Graph;
+import br.com.tbp.model.User;
 import br.com.tbp.printer.GMLPrinter;
 import br.com.tbp.parser.FBJsonParser;
 import org.junit.Before;
@@ -48,6 +50,23 @@ public class FBJsonParserTest {
        Graph graph = fbJsonParser.parse(jsonString);
         FileManager fileManager = new FileManager();
        GMLPrinter printer = new GMLPrinter(fileManager);
-       printer.print(graph);
+    //   printer.print(graph);
+        GraphDistance graphDistance = new GraphDistance();
+        graphDistance.execute(graph);
+
+        System.out.println("Diameter " + graph.getDiameter());
+        System.out.println("AvgDist " + graph.getAvgDist());
+        System.out.println("Radius " + graph.getRadius());
+        System.out.println("ShortestPaths " + graph.getShortestPaths());
+
+        System.out.println("===========================");
+
+        for (User user: graph.getNodeSet()) {
+            System.out.println("Nome " + user.getName());
+            System.out.println("Betweenness " + user.getBetweenness());
+            System.out.println("Eccentricity " + user.getEccentricity());
+            System.out.println("Closeness " + user.getCloseness());
+            System.out.println("===========================");
+        }
     }
 }

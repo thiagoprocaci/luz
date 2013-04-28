@@ -112,11 +112,12 @@
             <version>2.0.4</version>
         </dependency>
 
+        <!--
         <dependency>
             <groupId>org.gephi</groupId>
             <artifactId>statistics-plugin</artifactId>
             <version>0.8.2</version>
-        </dependency>
+        </dependency> -->
 
         <dependency>
         	<groupId>org.mockito</groupId>

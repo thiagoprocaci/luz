@@ -37,7 +37,7 @@ class FBJsonParser {
                 }
             }
             createEdge(userList, edgeMap)
-            graph.getUserSet().addAll(userList)
+            graph.getNodeSet().addAll(userList)
             userList.clear()
         }
         graph.getEdgeSet().addAll(edgeMap.values())
