@@ -1,7 +1,7 @@
 package br.com.tbp.parser
 
 import groovy.json.*
-import br.com.tbp.model.User
+import br.com.tbp.model.Node
 import br.com.tbp.model.Edge
 import br.com.tbp.model.Graph
 
@@ -16,9 +16,9 @@ class FBJsonParser {
     private Graph buildGraph(json) {
         Graph graph = new Graph();
         Map<Edge,Edge> edgeMap = new HashMap<Edge,Edge>()
-        List<User> userList = new ArrayList<User>()
-        User user1 = null
-        User user2 = null
+        List<Node> userList = new ArrayList<Node>()
+        Node user1 = null
+        Node user2 = null
 
         // iteracao nos posts
         def posts = json.data
@@ -26,13 +26,13 @@ class FBJsonParser {
 
             // recupera autor do post
             def postAuthor = post.from
-            user1 = new User(postAuthor.id, postAuthor.name)
+            user1 = new Node(postAuthor.id, postAuthor.name)
             userList.add(user1)
             // iteracao nos comentarios do post
             if(post.comments != null && post.comments.data != null && post.comments.data.from != null) {
                 def commentsAuthors = post.comments.data.from
                 commentsAuthors.each { ca ->
-                    user2 = new User(ca.id, ca.name)
+                    user2 = new Node(ca.id, ca.name)
                     userList.add(user2)
                 }
             }

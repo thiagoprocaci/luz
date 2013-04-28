@@ -3,10 +3,14 @@ package br.com.tbp.algorithm;
 
 import br.com.tbp.model.Edge;
 import br.com.tbp.model.Graph;
-import br.com.tbp.model.User;
+import br.com.tbp.model.Node;
 
 import java.util.*;
 
+/**
+ * Algoritmo adaptado do projeto gephi.
+ * Creditos para: Patick J. McSweeney, Sebastien Heymann
+ */
 public class GraphDistance {
 
     public void execute(Graph graph) {
@@ -18,33 +22,33 @@ public class GraphDistance {
         double avgDist = 0;
         int shortestPaths = 0;
         int radius = Integer.MAX_VALUE;
-        HashMap<User, Integer> indicies = new HashMap<User, Integer>();
+        HashMap<Node, Integer> indicies = new HashMap<Node, Integer>();
         int index = 0;
-        for (User s : graph.getNodeSet()) {
+        for (Node s : graph.getNodeSet()) {
             indicies.put(s, index);
             index++;
         }
-        for (User s : graph.getNodeSet()) {
-            Stack<User> S = new Stack<User>();
-            LinkedList<User>[] P = new LinkedList[N];
+        for (Node s : graph.getNodeSet()) {
+            Stack<Node> S = new Stack<Node>();
+            LinkedList<Node>[] P = new LinkedList[N];
             double[] theta = new double[N];
             int[] d = new int[N];
             for (int j = 0; j < N; j++) {
-                P[j] = new LinkedList<User>();
+                P[j] = new LinkedList<Node>();
                 theta[j] = 0;
                 d[j] = -1;
             }
             int s_index = indicies.get(s);
             theta[s_index] = 1;
             d[s_index] = 0;
-            LinkedList<User> Q = new LinkedList<User>();
+            LinkedList<Node> Q = new LinkedList<Node>();
             Q.addLast(s);
             while (!Q.isEmpty()) {
-                User v = Q.removeFirst();
+                Node v = Q.removeFirst();
                 S.push(v);
                 int v_index = indicies.get(v);
                 for (Edge edge : getEdges(v, graph)) {
-                    User reachable = getOpposite(v, edge);
+                    Node reachable = getOpposite(v, edge);
                     int r_index = indicies.get(reachable);
                     if (d[r_index] < 0) {
                         Q.addLast(reachable);
@@ -73,11 +77,11 @@ public class GraphDistance {
             shortestPaths += reachable;
             double[] delta = new double[N];
             while (!S.empty()) {
-                User w = S.pop();
+                Node w = S.pop();
                 int w_index = indicies.get(w);
-                ListIterator<User> iter1 = P[w_index].listIterator();
+                ListIterator<Node> iter1 = P[w_index].listIterator();
                 while (iter1.hasNext()) {
-                    User u = iter1.next();
+                    Node u = iter1.next();
                     int u_index = indicies.get(u);
                     delta[u_index] += (theta[u_index] / theta[w_index]) * (1 + delta[w_index]);
                 }
@@ -87,7 +91,7 @@ public class GraphDistance {
             }
         }
         avgDist /= shortestPaths;//mN * (mN - 1.0f);
-        for (User s : graph.getNodeSet()) {
+        for (Node s : graph.getNodeSet()) {
             int s_index = indicies.get(s);
             betweenness[s_index] /= 2;
             s.setBetweenness(betweenness[s_index]);
@@ -98,25 +102,24 @@ public class GraphDistance {
         graph.setDiameter(diameter);
         graph.setRadius(radius);
         graph.setShortestPaths(shortestPaths);
-
     }
 
-    private Set<Edge> getEdges(User source, Graph graph) {
+    private Set<Edge> getEdges(Node source, Graph graph) {
         Set<Edge> edges = new HashSet<Edge>();
         for (Edge edge : graph.getEdgeSet()) {
-            if (edge.getUser1().equals(source) || edge.getUser2().equals(source)) {
+            if (edge.getNode1().equals(source) || edge.getNode2().equals(source)) {
                 edges.add(edge);
             }
         }
         return edges;
     }
 
-    private User getOpposite(User user, Edge edge) {
-        if(edge.getUser1().equals(user)) {
-            return edge.getUser2();
+    private Node getOpposite(Node node, Edge edge) {
+        if(edge.getNode1().equals(node)) {
+            return edge.getNode2();
         }
-        if(edge.getUser2().equals(user)) {
-            return edge.getUser1();
+        if(edge.getNode2().equals(node)) {
+            return edge.getNode1();
         }
         return null;
     }

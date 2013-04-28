@@ -2,43 +2,42 @@ package br.com.tbp.model;
 
 
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
 public class Edge extends CoreEntity  {
-    private User user1;
-    private User user2;
+    private Node node1;
+    private Node node2;
     private Integer weight;
 
-    public Edge(User user1, User user2) {
-        if(user1 == null || user2 == null) {
-            throw new IllegalArgumentException("User can not be null");
+    public Edge(Node node1, Node node2) {
+        if(node1 == null || node2 == null) {
+            throw new IllegalArgumentException("Node can not be null");
         }
-        this.user1 = user1;
-        this.user2 = user2;
+        this.node1 = node1;
+        this.node2 = node2;
         this.weight = 1;
 
         // logica para a construcao do id
-        List<String> list = Arrays.asList(user1.getId(), user2.getId());
+        List<String> list = Arrays.asList(node1.getId(), node2.getId());
         Collections.sort(list);
         setId(list.get(0) + "-" + list.get(1));
     }
 
-    public User getUser1() {
-        return user1;
+    public Node getNode1() {
+        return node1;
     }
 
-    public void setUser1(User user1) {
-        this.user1 = user1;
+    public void setNode1(Node node1) {
+        this.node1 = node1;
     }
 
-    public User getUser2() {
-        return user2;
+    public Node getNode2() {
+        return node2;
     }
 
-    public void setUser2(User user2) {
-        this.user2 = user2;
+    public void setNode2(Node node2) {
+        this.node2 = node2;
     }
 
     public Integer getWeight() {
@@ -49,10 +48,14 @@ public class Edge extends CoreEntity  {
         weight++;
     }
 
+    public void setWeight(Integer weight) {
+        this.weight = weight;
+    }
+
     @Override
     public String toString() {
         return
-                "user1=" + user1 +
-                ", user2=" + user2 ;
+                "node1=" + node1 +
+                ", node2=" + node2;
     }
 }

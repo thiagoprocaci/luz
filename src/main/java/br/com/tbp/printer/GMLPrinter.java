@@ -4,7 +4,7 @@ package br.com.tbp.printer;
 import br.com.tbp.file.FileManager;
 import br.com.tbp.model.Edge;
 import br.com.tbp.model.Graph;
-import br.com.tbp.model.User;
+import br.com.tbp.model.Node;
 
 public class GMLPrinter {
 
@@ -20,15 +20,15 @@ public class GMLPrinter {
         buffer.append("[ \n");
         buffer.append("  directed 0 \n");
 
-        for (User user: graph.getNodeSet()) {
+        for (Node node : graph.getNodeSet()) {
             buffer.append("  node \n");
             buffer.append("  [ \n");
             buffer.append("    id ");
-            buffer.append(user.getId());
+            buffer.append(node.getId());
             buffer.append("\n");
             buffer.append("    label ");
             buffer.append("\"");
-            buffer.append(user.getName());
+            buffer.append(node.getName());
             buffer.append("\"");
             buffer.append("\n");
             buffer.append("  ] \n");
@@ -38,10 +38,10 @@ public class GMLPrinter {
             buffer.append("  edge \n");
             buffer.append("  [ \n");
             buffer.append("    source ");
-            buffer.append(edge.getUser1().getId());
+            buffer.append(edge.getNode1().getId());
             buffer.append("\n");
             buffer.append("    target ");
-            buffer.append(edge.getUser2().getId());
+            buffer.append(edge.getNode2().getId());
             buffer.append("\n");
             buffer.append("    weight ");
             buffer.append(edge.getWeight());

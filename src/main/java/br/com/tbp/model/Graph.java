@@ -6,7 +6,7 @@ import java.util.UUID;
 
 public class Graph extends CoreEntity {
 
-    private Set<User> userSet;
+    private Set<Node> nodeSet;
     private Set<Edge> edgeSet;
     private int diameter;
     private double avgDist;
@@ -15,16 +15,16 @@ public class Graph extends CoreEntity {
 
     public Graph() {
         setId(UUID.randomUUID().toString());
-        userSet = new HashSet<User>();
+        nodeSet = new HashSet<Node>();
         edgeSet = new HashSet<Edge>();
     }
 
-    public Set<User> getNodeSet() {
-        return userSet;
+    public Set<Node> getNodeSet() {
+        return nodeSet;
     }
 
-    public void setNodeSet(Set<User> nodeSet) {
-        this.userSet = nodeSet;
+    public void setNodeSet(Set<Node> nodeSet) {
+        this.nodeSet = nodeSet;
     }
 
     public Set<Edge> getEdgeSet() {

@@ -7,11 +7,11 @@ public class EdgeTest {
 
     @Test
     public void testEquals() {
-        User user1 = new User("1", "nome1");
-        User user2 = new User("2", "nome2");
+        Node node1 = new Node("1", "nome1");
+        Node node2 = new Node("2", "nome2");
 
-        Edge edge1 = new Edge(user1, user2);
-        Edge edge2 = new Edge(user2, user1);
+        Edge edge1 = new Edge(node1, node2);
+        Edge edge2 = new Edge(node2, node1);
 
         assertEquals(edge1, edge2);
         assertTrue(edge1.equals(edge2));

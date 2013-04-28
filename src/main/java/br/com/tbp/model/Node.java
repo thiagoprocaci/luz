@@ -1,13 +1,13 @@
 package br.com.tbp.model;
 
-public class User extends CoreEntity {    
+public class Node extends CoreEntity {
     
     private String name;
     private double eccentricity;
     private double closeness;
     private double betweenness;
     
-    public User(String id, String name) {        
+    public Node(String id, String name) {
         if(id == null) {
             throw new IllegalArgumentException("The user id can not be null");
         }

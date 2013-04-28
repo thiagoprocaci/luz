@@ -60,7 +60,7 @@
                      {
                         "id": "100001811053281",
                         "name": "Roberto Lima",
-                        "type": "user",
+                        "type": "node",
                         "offset": 0,
                         "length": 12
                      }
@@ -134,7 +134,7 @@
                      {
                         "id": "100003649575550",
                         "name": "Kizzy Macedo Benjamin",
-                        "type": "user",
+                        "type": "node",
                         "offset": 35,
                         "length": 21
                      }
