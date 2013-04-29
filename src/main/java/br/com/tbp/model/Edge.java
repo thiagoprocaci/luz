@@ -8,7 +8,7 @@ import java.util.List;
 public class Edge extends CoreEntity  {
     private Node node1;
     private Node node2;
-    private Integer weight;
+    private Float weight;
 
     public Edge(Node node1, Node node2) {
         if(node1 == null || node2 == null) {
@@ -16,7 +16,7 @@ public class Edge extends CoreEntity  {
         }
         this.node1 = node1;
         this.node2 = node2;
-        this.weight = 1;
+        this.weight = 1F;
 
         // logica para a construcao do id
         List<String> list = Arrays.asList(node1.getId(), node2.getId());
@@ -40,7 +40,7 @@ public class Edge extends CoreEntity  {
         this.node2 = node2;
     }
 
-    public Integer getWeight() {
+    public Float getWeight() {
         return weight;
     }
 
@@ -48,7 +48,7 @@ public class Edge extends CoreEntity  {
         weight++;
     }
 
-    public void setWeight(Integer weight) {
+    public void setWeight(Float weight) {
         this.weight = weight;
     }
 

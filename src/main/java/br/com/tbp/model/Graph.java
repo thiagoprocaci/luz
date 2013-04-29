@@ -8,10 +8,15 @@ public class Graph extends CoreEntity {
 
     private Set<Node> nodeSet;
     private Set<Edge> edgeSet;
+
+    // atributos que serao preechidos com os algoritmos
     private int diameter;
     private double avgDist;
     private int shortestPaths;
     private int radius;
+    private double modularity;
+    private double modularityResolution;
+    private int numberOfCommunities;
 
     public Graph() {
         setId(UUID.randomUUID().toString());
@@ -65,5 +70,29 @@ public class Graph extends CoreEntity {
 
     public void setRadius(int radius) {
         this.radius = radius;
+    }
+
+    public double getModularity() {
+        return modularity;
+    }
+
+    public void setModularity(double modularity) {
+        this.modularity = modularity;
+    }
+
+    public double getModularityResolution() {
+        return modularityResolution;
+    }
+
+    public void setModularityResolution(double modularityResolution) {
+        this.modularityResolution = modularityResolution;
+    }
+
+    public int getNumberOfCommunities() {
+        return numberOfCommunities;
+    }
+
+    public void setNumberOfCommunities(int numberOfCommunities) {
+        this.numberOfCommunities = numberOfCommunities;
     }
 }

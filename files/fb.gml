@@ -40,48 +40,48 @@ graph
   [ 
     source 100000000103086
     target 100000401238331
-    weight 1
+    weight 1.0
   ] 
   edge 
   [ 
     source 100002164977849
     target 100000401238331
-    weight 1
+    weight 1.0
   ] 
   edge 
   [ 
     source 100002164977849
     target 100000015795070
-    weight 2
+    weight 2.0
   ] 
   edge 
   [ 
     source 100002164977849
     target 100000348062784
-    weight 3
+    weight 3.0
   ] 
   edge 
   [ 
     source 100000000103086
     target 100000348062784
-    weight 9
+    weight 9.0
   ] 
   edge 
   [ 
     source 100002164977849
     target 100000000103086
-    weight 10
+    weight 10.0
   ] 
   edge 
   [ 
     source 100000000103086
     target 100000015795070
-    weight 3
+    weight 3.0
   ] 
   edge 
   [ 
     source 100002164977849
     target 100001811053281
-    weight 4
+    weight 4.0
   ] 
 ] 
