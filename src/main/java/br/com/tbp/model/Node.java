@@ -6,6 +6,7 @@ public class Node extends CoreEntity {
     private double eccentricity;
     private double closeness;
     private double betweenness;
+    private Integer modularityClass;
     
     public Node(String id, String name) {
         if(id == null) {
@@ -45,8 +46,15 @@ public class Node extends CoreEntity {
         this.betweenness = betweenness;
     }
 
+    public Integer getModularityClass() {
+        return modularityClass;
+    }
+
+    public void setModularityClass(Integer modularityClass) {
+        this.modularityClass = modularityClass;
+    }
+
     public String toString() {
         return name;
-
     }
 }

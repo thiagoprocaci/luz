@@ -3,6 +3,9 @@ package br.com.tbp.algorithm
 import br.com.tbp.parser.FBJsonParser
 import br.com.tbp.support.FileReader
 import br.com.tbp.model.Graph
+import br.com.tbp.model.Node
+import br.com.tbp.printer.GMLPrinter
+import br.com.tbp.file.FileManager
 
 
 class ModularityTest extends GroovyTestCase {
@@ -21,6 +24,10 @@ class ModularityTest extends GroovyTestCase {
 
     void testCompute() {
         Graph graph = fbJsonParser.parse(jsonString);
+        FileManager fileManager = new FileManager();
+        GMLPrinter printer = new GMLPrinter(fileManager);
+
+        printer.print(graph)
         modularity.setRandom(true)
         modularity.setUseWeight(true)
         modularity.execute(graph)
@@ -28,5 +35,9 @@ class ModularityTest extends GroovyTestCase {
         println(graph.getModularity())
         println(graph.getModularityResolution())
         println(graph.getNumberOfCommunities())
+
+        for (Node node: graph.getNodeSet()) {
+            println(node.name + " " + node.modularityClass);
+        }
     }
 }
