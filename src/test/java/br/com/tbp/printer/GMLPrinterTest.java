@@ -32,8 +32,8 @@ public class GMLPrinterTest {
     public void testPrint() {
         Graph graph = fbJsonParser.parse(jsonString);
         gmlPrinter.print(graph);
-        String expectedContent = FileReader.readFile("src/test/resources/br/com/tbp/printer/fb_.gml").trim();
-        String content = FileReader.readFile("files" +  File.separator + "fb.gml").trim();
+        String expectedContent = FileReader.readFile("src/test/resources/br/com/tbp/printer/fb_.gml").trim().replaceAll("\\s","").replaceAll("\\n","");
+        String content = FileReader.readFile("files" +  File.separator + "fb.gml").trim().replaceAll("\\s","").replaceAll("\\n","");
         assertEquals(expectedContent, content);
     }
 

@@ -23,9 +23,9 @@ public class CommunityStructure {
     private int N;
     private HashMap<Integer, Community> invMap;
 
-    public CommunityStructure(Graph hgraph, boolean useWeight) {
-        this.graph = hgraph;
-        N = hgraph.getNodeSet().size();
+    public CommunityStructure(Graph graph, boolean useWeight) {
+        this.graph = graph;
+        N = graph.getNodeSet().size();
         invMap = new HashMap<Integer, Community>();
         nodeConnectionsWeight = new HashMap[N];
         nodeConnectionsCount = new HashMap[N];
@@ -35,7 +35,7 @@ public class CommunityStructure {
         communities = new LinkedList<Community>();
         int index = 0;
         weights = new double[N];
-        for (Node node : hgraph.getNodeSet()) {
+        for (Node node : graph.getNodeSet()) {
             map.put(node, index);
             nodeCommunities[index] = new Community(this);
             nodeConnectionsWeight[index] = new HashMap<Community, Float>();
@@ -48,18 +48,18 @@ public class CommunityStructure {
             communities.add(nodeCommunities[index]);
             index++;
         }
-        for (Node node : hgraph.getNodeSet()) {
+        for (Node node : graph.getNodeSet()) {
             int node_index = map.get(node);
             topology[node_index] = new LinkedList<ModEdge>();
 
-            for (Node neighbor : GraphUtils.getNeighbors(node, hgraph)) {
+            for (Node neighbor : GraphUtils.getNeighbors(node, graph)) {
                 if (node.equals(neighbor)) {
                     continue;
                 }
                 int neighbor_index = map.get(neighbor);
                 float weight = 1;
                 if(useWeight) {
-                    weight = GraphUtils.getEdge(node, neighbor, hgraph).getWeight();
+                    weight = GraphUtils.getEdge(node, neighbor, graph).getWeight();
                 }
                 weights[node_index] += weight;
                 ModEdge me = new ModEdge(node_index, neighbor_index, weight);

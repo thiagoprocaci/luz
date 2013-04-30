@@ -4,22 +4,23 @@ import br.com.tbp.support.FileReader
 import br.com.tbp.model.Graph
 import br.com.tbp.model.Node
 import br.com.tbp.model.Edge
+import br.com.tbp.parser.FBJsonParser
 
 
 class ModularityTest extends GroovyTestCase {
 
 
-    private String xmlString;
+    private String xmlString
+    private Modularity modularity
 
-    private Modularity modularity;
 
     public ModularityTest() {
         xmlString = FileReader.readFile("src/test/resources/br/com/tbp/algorithm/PowerGrid.graphml")
         modularity = new Modularity()
-
     }
 
-    void testCompute() {
+
+    void testCompute2() {
 
         def xml = new XmlSlurper().parseText(xmlString)
         def nodes = xml.graph.node
@@ -46,13 +47,11 @@ class ModularityTest extends GroovyTestCase {
         graph.getEdgeSet().addAll(edgeMap.values())
         graph.getNodeSet().addAll(nodeMap.values())
 
-        modularity.setRandom(false)
-        modularity.setUseWeight(false)
-        modularity.execute(graph)
+        modularity.execute(graph, false, false)
 
-        println(graph.getModularity())
-        println(graph.getModularityResolution())
-        println(graph.getNumberOfCommunities())
+        assertTrue(0.93 < graph.getModularity())
+        assertTrue(0.93 < graph.getModularityResolution())
+        assertTrue(30 < graph.getNumberOfCommunities() && graph.getNumberOfCommunities() < 40)
 
     }
 }

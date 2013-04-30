@@ -10,42 +10,11 @@ import java.util.*;
 
 public class Modularity {
 
-    private CommunityStructure structure;
-    private double modularity;
-    private double modularityResolution;
-    private boolean isRandomized = false;
-    private boolean useWeight = true;
     private double resolution = 1.;
 
-    public void setRandom(boolean isRandomized) {
-        this.isRandomized = isRandomized;
-    }
-
-    public boolean getRandom() {
-        return isRandomized;
-    }
-
-    public void setUseWeight(boolean useWeight) {
-        this.useWeight = useWeight;
-    }
-
-    public boolean getUseWeight() {
-        return useWeight;
-    }
-
-    public void setResolution(double resolution) {
-        this.resolution = resolution;
-    }
-
-    public double getResolution() {
-        return resolution;
-    }
-
-
-
-    public void execute(Graph hgraph) {
+    public void execute(Graph graph, boolean isRandomized, boolean useWeight) {
         Random rand = new Random();
-        structure = new CommunityStructure(hgraph, useWeight);
+        CommunityStructure structure = new CommunityStructure(graph, useWeight);
         double totalWeight = structure.getGraphWeightSum();
         double[] nodeDegrees = structure.getWeights().clone();
         boolean someChange = true;
@@ -66,7 +35,7 @@ public class Modularity {
                    // Community nodecom = structure.getNodeCommunities()[i];
                     Set<Community> iter = structure.getNodeConnectionsWeight()[i].keySet();
                     for(Community com : iter) {
-                        double qValue = q(i, com);
+                        double qValue = q(i, com, structure);
                         if (qValue > best) {
                             best = qValue;
                             bestCommunity = com;
@@ -86,7 +55,7 @@ public class Modularity {
             }
         }
 
-        int[] comStructure = new int[hgraph.getNodeSet().size()];
+        int[] comStructure = new int[graph.getNodeSet().size()];
         int count = 0;
         double[] degreeCount = new double[structure.getCommunities().size()];
         for (Community com : structure.getCommunities()) {
@@ -98,24 +67,24 @@ public class Modularity {
             }
             count++;
         }
-        for (Node node : hgraph.getNodeSet()) {
+        for (Node node : graph.getNodeSet()) {
             int index = structure.getMap().get(node);
             if(useWeight) {
                 degreeCount[comStructure[index]] += nodeDegrees[index];
             } else {
-                degreeCount[comStructure[index]] += GraphUtils.getTotalDegree(node, hgraph);
+                degreeCount[comStructure[index]] += GraphUtils.getTotalDegree(node, graph);
             }
 
         }
 
-        modularity = finalQ(comStructure, degreeCount, hgraph, totalWeight, 1.);
-        modularityResolution = finalQ(comStructure, degreeCount, hgraph,  totalWeight, resolution);
+        double modularity = finalQ(comStructure, degreeCount, graph, totalWeight, 1., structure, useWeight);
+        double modularityResolution = finalQ(comStructure, degreeCount, graph,  totalWeight, resolution, structure, useWeight);
 
-        hgraph.setModularity(modularity);
-        hgraph.setModularityResolution(modularityResolution);
-        hgraph.setNumberOfCommunities(structure.getCommunities().size());
+        graph.setModularity(modularity);
+        graph.setModularityResolution(modularityResolution);
+        graph.setNumberOfCommunities(structure.getCommunities().size());
 
-        for (Node n : hgraph.getNodeSet()) {
+        for (Node n : graph.getNodeSet()) {
             int n_index = structure.getMap().get(n);
             n.setModularityClass(comStructure[n_index]);
         }
@@ -123,7 +92,7 @@ public class Modularity {
 
     }
 
-    private double finalQ(int[] struct, double[] degrees, Graph hgraph, double totalWeight, double usedResolution) {
+    private double finalQ(int[] struct, double[] degrees, Graph hgraph, double totalWeight, double usedResolution, CommunityStructure structure, boolean useWeight) {
         double res = 0;
         double[] internal = new double[degrees.length];
         for (Node n : hgraph.getNodeSet()) {
@@ -149,11 +118,7 @@ public class Modularity {
         return res;
     }
 
-    public double getModularity() {
-        return modularity;
-    }
-
-    private double q(int node, Community community) {
+    private double q(int node, Community community, CommunityStructure structure) {
         Float edgesToFloat = structure.getNodeConnectionsWeight()[node].get(community);
         double edgesTo = 0;
         if (edgesToFloat != null) {

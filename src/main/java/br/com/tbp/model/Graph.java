@@ -1,6 +1,7 @@
 package br.com.tbp.model;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.UUID;
 
@@ -20,8 +21,8 @@ public class Graph extends CoreEntity {
 
     public Graph() {
         setId(UUID.randomUUID().toString());
-        nodeSet = new HashSet<Node>();
-        edgeSet = new HashSet<Edge>();
+        nodeSet = new LinkedHashSet<Node>();
+        edgeSet = new LinkedHashSet<Edge>();
     }
 
     public Set<Node> getNodeSet() {
