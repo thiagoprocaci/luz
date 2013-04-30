@@ -8,7 +8,8 @@ public class Node extends CoreEntity {
     private double betweenness;
     private Integer modularityClass;
     private double degree;
-    
+    private double pagerank;
+
     public Node(String id, String name) {
         if(id == null) {
             throw new IllegalArgumentException("The user id can not be null");
@@ -61,6 +62,14 @@ public class Node extends CoreEntity {
 
     public void setDegree(double degree) {
         this.degree = degree;
+    }
+
+    public double getPagerank() {
+        return pagerank;
+    }
+
+    public void setPagerank(double pagerank) {
+        this.pagerank = pagerank;
     }
 
     public String toString() {
