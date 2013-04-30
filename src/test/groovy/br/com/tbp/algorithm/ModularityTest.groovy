@@ -20,7 +20,7 @@ class ModularityTest extends GroovyTestCase {
     }
 
 
-    void testCompute2() {
+    void testCompute() {
 
         def xml = new XmlSlurper().parseText(xmlString)
         def nodes = xml.graph.node

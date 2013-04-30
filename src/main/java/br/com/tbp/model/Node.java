@@ -7,6 +7,7 @@ public class Node extends CoreEntity {
     private double closeness;
     private double betweenness;
     private Integer modularityClass;
+    private double degree;
     
     public Node(String id, String name) {
         if(id == null) {
@@ -52,6 +53,14 @@ public class Node extends CoreEntity {
 
     public void setModularityClass(Integer modularityClass) {
         this.modularityClass = modularityClass;
+    }
+
+    public double getDegree() {
+        return degree;
+    }
+
+    public void setDegree(double degree) {
+        this.degree = degree;
     }
 
     public String toString() {

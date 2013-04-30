@@ -4,6 +4,7 @@ package br.com.tbp.algorithm;
 import br.com.tbp.model.Edge;
 import br.com.tbp.model.Graph;
 import br.com.tbp.model.Node;
+import br.com.tbp.support.GraphUtils;
 
 import java.util.*;
 
@@ -47,8 +48,8 @@ public class GraphDistance {
                 Node v = Q.removeFirst();
                 S.push(v);
                 int v_index = indicies.get(v);
-                for (Edge edge : getEdges(v, graph)) {
-                    Node reachable = getOpposite(v, edge);
+                for (Edge edge : GraphUtils.getEdges(v, graph)) {
+                    Node reachable = GraphUtils.getOpposite(v, edge);
                     int r_index = indicies.get(reachable);
                     if (d[r_index] < 0) {
                         Q.addLast(reachable);
@@ -103,26 +104,4 @@ public class GraphDistance {
         graph.setRadius(radius);
         graph.setShortestPaths(shortestPaths);
     }
-
-    private Set<Edge> getEdges(Node source, Graph graph) {
-        Set<Edge> edges = new HashSet<Edge>();
-        for (Edge edge : graph.getEdgeSet()) {
-            if (edge.getNode1().equals(source) || edge.getNode2().equals(source)) {
-                edges.add(edge);
-            }
-        }
-        return edges;
-    }
-
-    private Node getOpposite(Node node, Edge edge) {
-        if(edge.getNode1().equals(node)) {
-            return edge.getNode2();
-        }
-        if(edge.getNode2().equals(node)) {
-            return edge.getNode1();
-        }
-        return null;
-    }
-
-
 }
