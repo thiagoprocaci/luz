@@ -1,5 +1,9 @@
 package br.com.tbp.model;
 
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Node extends CoreEntity {
     
     private String name;
@@ -9,6 +13,7 @@ public class Node extends CoreEntity {
     private Integer modularityClass;
     private double degree;
     private double pagerank;
+    private List<String> comments;
 
     public Node(String id, String name) {
         if(id == null) {
@@ -70,6 +75,14 @@ public class Node extends CoreEntity {
 
     public void setPagerank(double pagerank) {
         this.pagerank = pagerank;
+    }
+
+    public List<String> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<String> comments) {
+        this.comments = comments;
     }
 
     public String toString() {

@@ -34,6 +34,12 @@ class FBJsonParserTest extends GroovyTestCase {
            assertTrue(graph.nodeSet.contains(new Node(node.id, node.name)))
         }
 
+       // graph.getNodeSet().each { n ->
+        //    println(n.name)
+         //   println(n.comments)
+         //   println("===============")
+       // }
+
         edges.each { edge ->
             def node1 = new Node(edge.node1.id, edge.node1.name)
             def node2 = new Node(edge.node2.id, edge.node2.name)

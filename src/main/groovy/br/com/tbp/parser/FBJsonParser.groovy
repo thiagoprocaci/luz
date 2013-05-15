@@ -19,30 +19,45 @@ class FBJsonParser {
         List<Node> userList = new ArrayList<Node>()
         Node user1 = null
         Node user2 = null
+        Map<Node, List<String>>  commentsMap = new HashMap<Node, List<String>>()
 
         // iteracao nos posts
         def posts = json.data
         posts.each { post ->
-
             // recupera autor do post
             def postAuthor = post.from
             user1 = new Node(postAuthor.id, postAuthor.name)
             userList.add(user1)
+            addComment(user1, post.message, commentsMap)
             // iteracao nos comentarios do post
             if(post.comments != null && post.comments.data != null && post.comments.data.from != null) {
-                def commentsAuthors = post.comments.data.from
-                commentsAuthors.each { ca ->
-                    user2 = new Node(ca.id, ca.name)
+                post.comments.data.each { data ->
+                    user2 = new Node(data.from.id, data.from.name)
                     userList.add(user2)
+                    addComment(user2, data.message, commentsMap)
                 }
+
             }
             createEdge(userList, edgeMap)
             graph.getNodeSet().addAll(userList)
             userList.clear()
         }
         graph.getEdgeSet().addAll(edgeMap.values())
+        graph.getNodeSet().each { n ->
+            n.setComments(commentsMap.get(n))
+        }
         return graph
     }
+
+    private addComment(Node node, String comment, Map<Node, List<String>> commentsMap) {
+        if(comment != null) {
+            if(!commentsMap.containsKey(node)) {
+                commentsMap.put(node, new ArrayList<String>())
+            }
+            commentsMap.get(node).add(comment)
+        }
+    }
+
 
     private void createEdge(userList, edgeMap) {
         // percorrer a lista de traz pra frente
