@@ -1,7 +1,6 @@
 package br.com.tbp.model;
 
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Node extends CoreEntity {
