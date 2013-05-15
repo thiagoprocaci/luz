@@ -13,22 +13,11 @@ public class PageRank {
 
     private double epsilon = 0.001;
     private double probability = 0.85;
-    private boolean useEdgeWeight = false;
-    private double[] pageranks;
-    private boolean isDirected;
 
 
-    public void setDirected(boolean isDirected) {
-        this.isDirected = isDirected;
-    }
-
-    public boolean getDirected() {
-        return isDirected;
-    }
-
-    public void execute(Graph graph) {
+    public void execute(Graph graph, boolean useEdgeWeight) {
         int N = graph.getNodeSet().size();
-        pageranks = new double[N];
+        double[] pageranks = new double[N];
         double[] temp = new double[N];
         HashMap<Node, Integer> indicies = new HashMap<Node, Integer>();
         int index = 0;
@@ -110,11 +99,4 @@ public class PageRank {
         return epsilon;
     }
 
-    public boolean isUseEdgeWeight() {
-        return useEdgeWeight;
-    }
-
-    public void setUseEdgeWeight(boolean useEdgeWeight) {
-        this.useEdgeWeight = useEdgeWeight;
-    }
 }

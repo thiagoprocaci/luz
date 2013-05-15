@@ -1,4 +1,4 @@
-package br.com.tbp.algorithm.support;
+package br.com.tbp.algorithm;
 
 import br.com.tbp.model.Graph;
 import br.com.tbp.model.Node;

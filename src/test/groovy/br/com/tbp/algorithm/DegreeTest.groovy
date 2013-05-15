@@ -3,7 +3,7 @@ package br.com.tbp.algorithm;
 
 import br.com.tbp.parser.FBJsonParser;
 import br.com.tbp.support.FileReader
-import br.com.tbp.algorithm.support.Degree
+
 import br.com.tbp.model.Graph;
 
 class DegreeTest extends GroovyTestCase {
