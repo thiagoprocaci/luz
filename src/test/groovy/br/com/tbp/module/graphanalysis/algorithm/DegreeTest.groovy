@@ -1,8 +1,8 @@
-package br.com.tbp.algorithm;
+package br.com.tbp.module.graphanalysis.algorithm;
 
 
 import br.com.tbp.parser.FBJsonParser;
-import br.com.tbp.support.FileReader
+import br.com.tbp.module.graphanalysis.support.FileReader
 
 import br.com.tbp.model.Graph;
 

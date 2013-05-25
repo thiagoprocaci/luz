@@ -1,4 +1,4 @@
-package br.com.tbp.algorithm.support;
+package br.com.tbp.module.graphanalysis.algorithm.support;
 
 
 import java.util.HashMap;

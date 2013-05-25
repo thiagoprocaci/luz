@@ -5,7 +5,7 @@ import br.com.tbp.model.Graph
 import br.com.tbp.model.Node
 import groovy.json.JsonSlurper
 import br.com.tbp.model.Edge
-import br.com.tbp.support.FileReader
+import br.com.tbp.module.graphanalysis.support.FileReader
 
 
 

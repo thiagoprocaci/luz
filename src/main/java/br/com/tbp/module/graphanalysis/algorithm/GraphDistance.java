@@ -1,10 +1,10 @@
-package br.com.tbp.algorithm;
+package br.com.tbp.module.graphanalysis.algorithm;
 
 
 import br.com.tbp.model.Edge;
 import br.com.tbp.model.Graph;
 import br.com.tbp.model.Node;
-import br.com.tbp.support.GraphUtils;
+import br.com.tbp.module.graphanalysis.support.GraphUtils;
 
 import java.util.*;
 

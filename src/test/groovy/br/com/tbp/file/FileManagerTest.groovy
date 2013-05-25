@@ -1,5 +1,5 @@
 package br.com.tbp.file
-import br.com.tbp.support.FileReader
+import br.com.tbp.module.graphanalysis.support.FileReader
 
 
 class FileManagerTest extends GroovyTestCase {

@@ -1,9 +1,9 @@
-package br.com.tbp.algorithm.support;
+package br.com.tbp.module.graphanalysis.algorithm.support;
 
 
 import br.com.tbp.model.Graph;
 import br.com.tbp.model.Node;
-import br.com.tbp.support.GraphUtils;
+import br.com.tbp.module.graphanalysis.support.GraphUtils;
 
 import java.util.HashMap;
 import java.util.LinkedList;
