@@ -5,10 +5,11 @@ package br.com.tbp.module.graphanalysis.algorithm;
 import br.com.tbp.model.Graph;
 import br.com.tbp.parser.FBJsonParser;
 
-import br.com.tbp.module.graphanalysis.support.FileReader
+
 import groovy.json.JsonSlurper
 import br.com.tbp.model.Node
 import br.com.tbp.model.Edge;
+import br.com.tbp.file.FileReader
 
 
 class GraphDistanceTest extends GroovyTestCase {

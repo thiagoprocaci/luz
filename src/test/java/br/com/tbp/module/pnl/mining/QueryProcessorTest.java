@@ -1,9 +1,9 @@
 package br.com.tbp.module.pnl.mining;
 
 
+import br.com.tbp.file.FileReader;
 import br.com.tbp.model.Graph;
 import br.com.tbp.model.Node;
-import br.com.tbp.module.graphanalysis.support.FileReader;
 import br.com.tbp.module.pnl.indexer.TextIndexer;
 import br.com.tbp.module.pnl.preprocessor.PortugueseAnalyzer;
 import br.com.tbp.module.pnl.preprocessor.StopWordManager;
@@ -51,6 +51,7 @@ public class QueryProcessorTest {
     @Test
     public void testRunQuery() throws IOException, ParseException {
 
+        // TODO terminar esse teste
         queryProcessor.runQuery("versao ", docs);
 
    //     StopWordManager stopWordManager = new StopWordManager();

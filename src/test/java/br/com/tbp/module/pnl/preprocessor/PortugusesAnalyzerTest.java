@@ -1,8 +1,7 @@
 package br.com.tbp.module.pnl.preprocessor;
 
 
-import br.com.tbp.module.graphanalysis.support.FileReader;
-
+import br.com.tbp.file.FileReader;
 import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;

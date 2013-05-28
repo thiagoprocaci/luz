@@ -1,7 +1,7 @@
 package br.com.tbp.module.pnl.indexer;
 
 
-import br.com.tbp.module.graphanalysis.support.FileReader;
+import br.com.tbp.file.FileReader;
 import br.com.tbp.module.pnl.preprocessor.PortugueseAnalyzer;
 import br.com.tbp.module.pnl.preprocessor.StopWordManager;
 import br.com.tbp.module.pnl.support.Doc;
@@ -12,7 +12,6 @@ import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 

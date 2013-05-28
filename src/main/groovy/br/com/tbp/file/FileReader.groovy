@@ -1,4 +1,4 @@
-package br.com.tbp.module.graphanalysis.support
+package br.com.tbp.file
 
 class FileReader {
 

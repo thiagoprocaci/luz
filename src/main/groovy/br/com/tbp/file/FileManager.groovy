@@ -10,4 +10,12 @@ class FileManager {
         fop.flush();
         fop.close();
     }
+
+    def save(String text, String fileName) {
+        def file = new File("files" +  File.separator + fileName)
+        FileOutputStream fop = new FileOutputStream(file);
+        fop.write(text.getBytes());
+        fop.flush();
+        fop.close();
+    }
 }
