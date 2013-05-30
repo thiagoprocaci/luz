@@ -12,7 +12,7 @@ public class Node extends CoreEntity {
     private Integer modularityClass;
     private double degree;
     private double pagerank;
-    private List<String> comments;
+    private List<Message> messages;
 
     public Node(String id, String name) {
         if(id == null) {
@@ -76,12 +76,12 @@ public class Node extends CoreEntity {
         this.pagerank = pagerank;
     }
 
-    public List<String> getComments() {
-        return comments;
+    public List<Message> getMessages() {
+        return messages;
     }
 
-    public void setComments(List<String> comments) {
-        this.comments = comments;
+    public void setMessages(List<Message> messages) {
+        this.messages = messages;
     }
 
     public String toString() {

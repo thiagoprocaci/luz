@@ -1,5 +1,6 @@
 package br.com.tbp.parser
 
+import br.com.tbp.model.Message
 import groovy.json.*
 import br.com.tbp.model.Node
 import br.com.tbp.model.Edge
@@ -19,7 +20,7 @@ class FBJsonParser {
         List<Node> userList = new ArrayList<Node>()
         Node user1 = null
         Node user2 = null
-        Map<Node, List<String>>  commentsMap = new HashMap<Node, List<String>>()
+        Map<Node, List<Message>>  commentsMap = new HashMap<Node, List<Message>>()
 
         // iteracao nos posts
         def posts = json.data
@@ -28,13 +29,15 @@ class FBJsonParser {
             def postAuthor = post.from
             user1 = new Node(postAuthor.id, postAuthor.name)
             userList.add(user1)
-            addComment(user1, post.message, commentsMap)
+            def message = new Message(post.id, post.message, getDate(post.created_time.trim()), user1)
+            def previousMessage = addMessage(user1, message, null, commentsMap)
             // iteracao nos comentarios do post
             if(post.comments != null && post.comments.data != null && post.comments.data.from != null) {
                 post.comments.data.each { data ->
                     user2 = new Node(data.from.id, data.from.name)
                     userList.add(user2)
-                    addComment(user2, data.message, commentsMap)
+                    message = new Message(data.id, data.message, getDate(data.created_time.trim()), user2)
+                    previousMessage = addMessage(user2, message, previousMessage, commentsMap)
                 }
 
             }
@@ -44,18 +47,42 @@ class FBJsonParser {
         }
         graph.getEdgeSet().addAll(edgeMap.values())
         graph.getNodeSet().each { n ->
-            n.setComments(commentsMap.get(n))
+            n.setMessages(commentsMap.get(n))
         }
         return graph
     }
 
-    private addComment(Node node, String comment, Map<Node, List<String>> commentsMap) {
-        if(comment != null) {
+    private Date getDate(String s) {
+        Integer year = Integer.valueOf(s.subSequence(0, 4).toString());
+        Integer month = Integer.valueOf(s.subSequence(5, 7).toString());
+        Integer day = Integer.valueOf(s.subSequence(8, 10).toString());
+        Integer hour = Integer.valueOf(s.subSequence(11, 13).toString());
+        Integer min = Integer.valueOf(s.subSequence(14, 16).toString());
+        Integer sec = Integer.valueOf(s.subSequence(17, 19).toString());
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.YEAR, year);
+        calendar.set(Calendar.MONTH, month - 1);
+        calendar.set(Calendar.DAY_OF_MONTH, day);
+        calendar.set(Calendar.HOUR_OF_DAY, hour);
+        calendar.set(Calendar.MINUTE, min);
+        calendar.set(Calendar.SECOND, sec);
+        return calendar.getTime()
+    }
+
+
+    private Message addMessage(Node node, Message message, Message previousMessage, Map<Node, List<Message>> commentsMap) {
+        if(message != null) {
             if(!commentsMap.containsKey(node)) {
-                commentsMap.put(node, new ArrayList<String>())
+                commentsMap.put(node, new ArrayList<Message>())
             }
-            commentsMap.get(node).add(comment)
+            if(previousMessage != null) {
+                previousMessage.next = message
+                message.previous = previousMessage
+            }
+            commentsMap.get(node).add(message)
         }
+        return message
     }
 
 

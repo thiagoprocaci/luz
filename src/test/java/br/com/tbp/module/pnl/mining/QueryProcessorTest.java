@@ -3,6 +3,7 @@ package br.com.tbp.module.pnl.mining;
 
 import br.com.tbp.file.FileReader;
 import br.com.tbp.model.Graph;
+import br.com.tbp.model.Message;
 import br.com.tbp.model.Node;
 import br.com.tbp.module.pnl.indexer.TextIndexer;
 import br.com.tbp.module.pnl.preprocessor.PortugueseAnalyzer;
@@ -39,10 +40,12 @@ public class QueryProcessorTest {
         docs = new HashSet<Doc>();
         int i = 0;
         for (Node node : graph.getNodeSet()) {
-            for(String comment : node.getComments() ) {
-                doc = new Doc(node.getId() + "-" + i , comment);
-                docs.add(doc);
-                i++;
+            for(Message message : node.getMessages() ) {
+                if(message.getContent() != null) {
+                    doc = new Doc(message.getId() , message.getContent());
+                    docs.add(doc);
+                    i++;
+                }
             }
 
         }

@@ -48,12 +48,13 @@ class ModularityTest extends GroovyTestCase {
 
         modularity.execute(graph, false, false)
 
-        println("Modularity " + graph.getModularity())
-        println("ModularityResolution " + graph.getModularityResolution())
-        println("NumberOfCommunities " + graph.getNumberOfCommunities())
+     //   println("Modularity " + graph.getModularity())
+     //   println("ModularityResolution " + graph.getModularityResolution())
+     //   println("NumberOfCommunities " + graph.getNumberOfCommunities())
 
-        assertTrue(0.9 < graph.getModularity())
-        assertTrue(0.9 < graph.getModularityResolution())
+        9316296034418473
+        assertTrue(graph.getModularity().toString().startsWith("0.9"))
+        assertTrue(graph.getModularityResolution().toString().startsWith("0.9"))
         assertTrue(30 < graph.getNumberOfCommunities() && graph.getNumberOfCommunities() < 40)
 
 
