@@ -41,7 +41,6 @@ public class QueryProcessor {
         searcher.search(query, collector);
         ScoreDoc[] scoreDocs = collector.topDocs().scoreDocs;
 
-        System.out.println(scoreDocs.length);
         for (ScoreDoc sd : scoreDocs) {
             Document d = searcher.doc(sd.doc);
             System.out.println("Arquivo: " + d);

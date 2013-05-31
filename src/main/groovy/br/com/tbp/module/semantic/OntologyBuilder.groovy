@@ -101,50 +101,52 @@ class OntologyBuilder {
     }
 
     private void buildTokens(Set<Token> tokens, StringBuffer buffer) {
-        StringBuffer bufferFrequency = new StringBuffer()
-        for(Token token : tokens) {
-             buffer.append("    <owl:NamedIndividual rdf:about=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
-             buffer.append(token.getId())
-             buffer.append("\"> \n")
-             buffer.append("        <rdf:type rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token\"/> \n")
-             buffer.append("        <tokenId rdf:datatype=\"&xsd;string\">")
-             buffer.append(token.getId())
-             buffer.append("</tokenId> \n")
-             buffer.append("        <tokenWord rdf:datatype=\"&xsd;string\">")
-             buffer.append(token.getWord())
-             buffer.append("</tokenWord> \n")
+        StringBuffer bufferFrequency = null
+        for (Token token : tokens) {
+            bufferFrequency = new StringBuffer()
+            buffer.append("    <owl:NamedIndividual rdf:about=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
+            buffer.append(token.getId())
+            buffer.append("\"> \n")
+            buffer.append("        <rdf:type rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token\"/> \n")
+            buffer.append("        <tokenId rdf:datatype=\"&xsd;string\">")
+            buffer.append(token.getId())
+            buffer.append("</tokenId> \n")
+            buffer.append("        <tokenWord rdf:datatype=\"&xsd;string\">")
+            buffer.append(token.getWord())
+            buffer.append("</tokenWord> \n")
 
-             for (Node node : token.getFrequency().keySet()) {
-                 buffer.append("        <hasTokenFrequency rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
-                 buffer.append(token.getId())
-                 buffer.append("-")
-                 buffer.append(node.getId())
-                 buffer.append("\"/> \n")
+            for (Node node : token.getFrequency().keySet()) {
+                buffer.append("        <hasTokenFrequency rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
+                buffer.append(token.getId())
+                buffer.append("-")
+                buffer.append(node.getId())
+                buffer.append("\"/> \n")
 
-                 bufferFrequency.append("    <owl:NamedIndividual rdf:about=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
-                 bufferFrequency.append(token.getId())
-                 bufferFrequency.append("-")
-                 bufferFrequency.append(node.getId())
-                 bufferFrequency.append("\"> \n")
-                 bufferFrequency.append("        <rdf:type rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency\"/> \n")
-                 bufferFrequency.append("        <tokenFrequencyCount rdf:datatype=\"&xsd;integer\">")
-                 bufferFrequency.append(token.getFrequency().get(node))
-                 bufferFrequency.append("</tokenFrequencyCount> \n")
-                 bufferFrequency.append("        <tokenFrequencyId rdf:datatype=\"&xsd;string\">")
-                 bufferFrequency.append(token.getId())
-                 bufferFrequency.append("-")
-                 bufferFrequency.append(node.getId())
-                 bufferFrequency.append("</tokenFrequencyId> \n")
-                 bufferFrequency.append("        <belongsToUser rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
-                 bufferFrequency.append(node.getId())
-                 bufferFrequency.append("\"/> \n")
-                 bufferFrequency.append("        <belongsToToken rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
-                 bufferFrequency.append(token.getId())
-                 bufferFrequency.append("\"/> \n")
-                 bufferFrequency.append("    </owl:NamedIndividual> \n");
-             }
-             buffer.append("    </owl:NamedIndividual> \n");
-             buffer.append(bufferFrequency)
+                bufferFrequency.append("    <owl:NamedIndividual rdf:about=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
+                bufferFrequency.append(token.getId())
+                bufferFrequency.append("-")
+                bufferFrequency.append(node.getId())
+                bufferFrequency.append("\"> \n")
+                bufferFrequency.append("        <rdf:type rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency\"/> \n")
+                bufferFrequency.append("        <tokenFrequencyCount rdf:datatype=\"&xsd;integer\">")
+                bufferFrequency.append(token.getFrequency().get(node))
+                bufferFrequency.append("</tokenFrequencyCount> \n")
+                bufferFrequency.append("        <tokenFrequencyId rdf:datatype=\"&xsd;string\">")
+                bufferFrequency.append(token.getId())
+                bufferFrequency.append("-")
+                bufferFrequency.append(node.getId())
+                bufferFrequency.append("</tokenFrequencyId> \n")
+                bufferFrequency.append("        <belongsToUser rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
+                bufferFrequency.append(node.getId())
+                bufferFrequency.append("\"/> \n")
+                bufferFrequency.append("        <belongsToToken rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
+                bufferFrequency.append(token.getId())
+                bufferFrequency.append("\"/> \n")
+                bufferFrequency.append("    </owl:NamedIndividual> \n");
+            }
+            buffer.append(bufferFrequency)
+            buffer.append("    </owl:NamedIndividual> \n");
+
         }
     }
 

@@ -26,4 +26,5 @@ class FileManager {
         def file = new File(FILES + File.separator + fileName)
         return write(file, text)
     }
+
 }
