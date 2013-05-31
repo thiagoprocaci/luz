@@ -11,6 +11,9 @@ public class Message extends CoreEntity {
     private Node author;
 
     public Message(String id, String content, Date createdTime, Node author) {
+        if (id == null) {
+            throw new IllegalArgumentException("The message id can not be null");
+        }
         this.content = (content == null ? "" : content.trim());
         this.createdTime = createdTime;
         this.author = author;

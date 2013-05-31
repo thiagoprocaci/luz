@@ -17,6 +17,7 @@ public class Graph extends CoreEntity {
     private double modularity;
     private double modularityResolution;
     private int numberOfCommunities;
+    private Set<Token> tokens;
 
     public Graph() {
         setId(UUID.randomUUID().toString());
@@ -94,5 +95,13 @@ public class Graph extends CoreEntity {
 
     public void setNumberOfCommunities(int numberOfCommunities) {
         this.numberOfCommunities = numberOfCommunities;
+    }
+
+    public Set<Token> getTokens() {
+        return tokens;
+    }
+
+    public void setTokens(Set<Token> tokens) {
+        this.tokens = tokens;
     }
 }

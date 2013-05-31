@@ -9,7 +9,9 @@ import org.apache.lucene.util.Version;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.StringReader;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 public class PortugueseAnalyzer {
@@ -21,14 +23,17 @@ public class PortugueseAnalyzer {
         this.stopWordManager = stopWordManager;
     }
 
-    public Set<String> tokenizer(String text) throws IOException {
+    public Map<String, Integer> tokenizer(String text) throws IOException {
         TokenStream stream = getAnalyzer().tokenStream(null, new StringReader(text));
         String word = null;
-        Set<String> result = new HashSet<String>();
+        Map<String, Integer> result = new HashMap<String, Integer>();
         while (stream.incrementToken()) {
             word = stream.getAttribute(CharTermAttribute.class).toString();
-            if (word != null) {
-                result.add(word);
+            if (isWordValid(word)) {
+                if(!result.containsKey(word)) {
+                    result.put(word, 0);
+                }
+                result.put(word, result.get(word)+ 1);
             }
         }
         return result;
@@ -41,6 +46,17 @@ public class PortugueseAnalyzer {
             analyzer = new BrazilianAnalyzer(Version.LUCENE_35, stopWords);
         }
         return analyzer;
+    }
+
+    private boolean isWordValid(String word) {
+        if (word == null || word.length() <= 3 ||
+                word.startsWith("1") || word.startsWith("2") || word.startsWith("3")
+                || word.startsWith("4") || word.startsWith("5") || word.startsWith("6")
+                || word.startsWith("7") || word.startsWith("8") || word.startsWith("9")
+                || word.startsWith("0")) {
+            return false;
+        }
+        return true;
     }
 
 }

@@ -1,6 +1,8 @@
 package br.com.tbp.module.pnl.preprocessor;
 
 
+import br.com.tbp.file.FileReader;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashSet;
@@ -12,7 +14,7 @@ public class StopWordManager {
 
     public Set<String> loadStopWords() throws FileNotFoundException {
         Set<String> stopWords = new HashSet<String>();
-        Scanner scanner = new Scanner(new File("src/main/resources/stop_words_portugues.txt".replace("/", File.separator)));
+        Scanner scanner = new Scanner(FileReader.readFile("src/main/resources/stop_words_portugues.txt"));
         String string = null;
         while (scanner.hasNext()) {
             string = scanner.nextLine();

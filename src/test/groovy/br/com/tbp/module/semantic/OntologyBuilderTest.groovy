@@ -1,12 +1,19 @@
 package br.com.tbp.module.semantic
 
 import br.com.tbp.model.Graph
+import br.com.tbp.module.pnl.preprocessor.MessageGraphTokenizer
+import br.com.tbp.module.pnl.preprocessor.PortugueseAnalyzer
+import br.com.tbp.module.pnl.preprocessor.StopWordManager
 import br.com.tbp.parser.FBJsonParser
 
 class OntologyBuilderTest extends GroovyTestCase {
 
     private OntologyBuilder ontologyBuilder
     private Graph graph
+    private MessageGraphTokenizer messageGraphTokenizer
+    private StopWordManager stopWordManager
+    private PortugueseAnalyzer portugueseAnalyzer
+
 
 
     public OntologyBuilderTest() {
@@ -14,6 +21,11 @@ class OntologyBuilderTest extends GroovyTestCase {
         FBJsonParser fbJsonParser = new FBJsonParser()
         ontologyBuilder = new OntologyBuilder()
         graph = fbJsonParser.parse(jsonString);
+
+        stopWordManager = new StopWordManager();
+        portugueseAnalyzer = new PortugueseAnalyzer(stopWordManager)
+        messageGraphTokenizer = new MessageGraphTokenizer(portugueseAnalyzer)
+      //  messageGraphTokenizer.buildTokens(graph)
     }
 
     void testOntologyBuilder() {

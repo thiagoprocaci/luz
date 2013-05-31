@@ -16,447 +16,349 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl"/>
-    
 
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#belongsToToken">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+    </owl:ObjectProperty>
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#belongsToUser">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
+    </owl:ObjectProperty>
 
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasAuthor -->
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasTokenFrequency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+    </owl:ObjectProperty>
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasAuthor">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasDestNode -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasDestNode">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
     </owl:ObjectProperty>
 
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasNextMessage -->
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasNextMessage">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/>
     </owl:ObjectProperty>
-
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasPreviousMessage -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasPreviousMessage">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/>
     </owl:ObjectProperty>
 
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasSourceNode -->
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasSourceNode">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasUser -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasUser">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Community"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#communityId -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#communityId">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Community"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#edgeId -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#edgeId">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#edgeWeight -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#edgeWeight">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#messageContent -->
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#messageContent">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
-
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#messageCreatedTime -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#messageCreatedTime">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
 
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#messageId -->
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#messageId">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userBetweenness -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userBetweenness">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userCloseness -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userCloseness">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userDegree -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userDegree">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userEccentricity -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userEccentricity">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userId -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userId">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userName -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userName">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userPagerank -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userPagerank">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
-    
 
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tokenFrequencyCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tokenFrequencyId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
 
-    
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tokenId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
 
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Community -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tokenWord">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
 
     <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Community"/>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
     
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/> 
-    <userDegree rdf:datatype="&xsd;double">0.0</userDegree> 
-    <userPagerank rdf:datatype="&xsd;double">0.0</userPagerank> 
-    <userCloseness rdf:datatype="&xsd;double">0.0</userCloseness> 
-    <userBetweenness rdf:datatype="&xsd;double">0.0</userBetweenness> 
-    <userEccentricity rdf:datatype="&xsd;double">0.0</userEccentricity> 
-    <userId rdf:datatype="&xsd;string">100001811053281</userId> 
-    <userName rdf:datatype="&xsd;string">Roberto Lima</userName> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/> 
-    <userDegree rdf:datatype="&xsd;double">0.0</userDegree> 
-    <userPagerank rdf:datatype="&xsd;double">0.0</userPagerank> 
-    <userCloseness rdf:datatype="&xsd;double">0.0</userCloseness> 
-    <userBetweenness rdf:datatype="&xsd;double">0.0</userBetweenness> 
-    <userEccentricity rdf:datatype="&xsd;double">0.0</userEccentricity> 
-    <userId rdf:datatype="&xsd;string">100002164977849</userId> 
-    <userName rdf:datatype="&xsd;string">Pimentel Mariano</userName> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/> 
-    <userDegree rdf:datatype="&xsd;double">0.0</userDegree> 
-    <userPagerank rdf:datatype="&xsd;double">0.0</userPagerank> 
-    <userCloseness rdf:datatype="&xsd;double">0.0</userCloseness> 
-    <userBetweenness rdf:datatype="&xsd;double">0.0</userBetweenness> 
-    <userEccentricity rdf:datatype="&xsd;double">0.0</userEccentricity> 
-    <userId rdf:datatype="&xsd;string">100000401238331</userId> 
-    <userName rdf:datatype="&xsd;string">Cristiane Tavares</userName> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/> 
-    <userDegree rdf:datatype="&xsd;double">0.0</userDegree> 
-    <userPagerank rdf:datatype="&xsd;double">0.0</userPagerank> 
-    <userCloseness rdf:datatype="&xsd;double">0.0</userCloseness> 
-    <userBetweenness rdf:datatype="&xsd;double">0.0</userBetweenness> 
-    <userEccentricity rdf:datatype="&xsd;double">0.0</userEccentricity> 
-    <userId rdf:datatype="&xsd;string">100000000103086</userId> 
-    <userName rdf:datatype="&xsd;string">Cristiane Iglesias</userName> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/> 
-    <userDegree rdf:datatype="&xsd;double">0.0</userDegree> 
-    <userPagerank rdf:datatype="&xsd;double">0.0</userPagerank> 
-    <userCloseness rdf:datatype="&xsd;double">0.0</userCloseness> 
-    <userBetweenness rdf:datatype="&xsd;double">0.0</userBetweenness> 
-    <userEccentricity rdf:datatype="&xsd;double">0.0</userEccentricity> 
-    <userId rdf:datatype="&xsd;string">100000348062784</userId> 
-    <userName rdf:datatype="&xsd;string">Thiago Baesso Procaci</userName> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/> 
-    <userDegree rdf:datatype="&xsd;double">0.0</userDegree> 
-    <userPagerank rdf:datatype="&xsd;double">0.0</userPagerank> 
-    <userCloseness rdf:datatype="&xsd;double">0.0</userCloseness> 
-    <userBetweenness rdf:datatype="&xsd;double">0.0</userBetweenness> 
-    <userEccentricity rdf:datatype="&xsd;double">0.0</userEccentricity> 
-    <userId rdf:datatype="&xsd;string">100000015795070</userId> 
-    <userName rdf:datatype="&xsd;string">Claudia Cappelli</userName> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000108890489"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/> 
-    <userDegree rdf:datatype="&xsd;double">0.0</userDegree> 
-    <userPagerank rdf:datatype="&xsd;double">0.0</userPagerank> 
-    <userCloseness rdf:datatype="&xsd;double">0.0</userCloseness> 
-    <userBetweenness rdf:datatype="&xsd;double">0.0</userBetweenness> 
-    <userEccentricity rdf:datatype="&xsd;double">0.0</userEccentricity> 
-    <userId rdf:datatype="&xsd;string">100000108890489</userId> 
-    <userName rdf:datatype="&xsd;string">Renata Araujo</userName> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086-100000401238331"> 
-    <hasSourceNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
-    <hasDestNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/> 
-    <edgeWeight rdf:datatype="&xsd;float">1.0</edgeWeight> 
-    <edgeId rdf:datatype="&xsd;string">100000000103086-100000401238331</edgeId> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331-100002164977849"> 
-    <hasSourceNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
-    <hasDestNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/> 
-    <edgeWeight rdf:datatype="&xsd;float">1.0</edgeWeight> 
-    <edgeId rdf:datatype="&xsd;string">100000401238331-100002164977849</edgeId> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070-100002164977849"> 
-    <hasSourceNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
-    <hasDestNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/> 
-    <edgeWeight rdf:datatype="&xsd;float">2.0</edgeWeight> 
-    <edgeId rdf:datatype="&xsd;string">100000015795070-100002164977849</edgeId> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086-100000348062784"> 
-    <hasSourceNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
-    <hasDestNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/> 
-    <edgeWeight rdf:datatype="&xsd;float">9.0</edgeWeight> 
-    <edgeId rdf:datatype="&xsd;string">100000000103086-100000348062784</edgeId> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784-100002164977849"> 
-    <hasSourceNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
-    <hasDestNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/> 
-    <edgeWeight rdf:datatype="&xsd;float">3.0</edgeWeight> 
-    <edgeId rdf:datatype="&xsd;string">100000348062784-100002164977849</edgeId> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086-100000015795070"> 
-    <hasSourceNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
-    <hasDestNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/> 
-    <edgeWeight rdf:datatype="&xsd;float">3.0</edgeWeight> 
-    <edgeId rdf:datatype="&xsd;string">100000000103086-100000015795070</edgeId> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086-100002164977849"> 
-    <hasSourceNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
-    <hasDestNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/> 
-    <edgeWeight rdf:datatype="&xsd;float">10.0</edgeWeight> 
-    <edgeId rdf:datatype="&xsd;string">100000000103086-100002164977849</edgeId> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281-100002164977849"> 
-    <hasSourceNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
-    <hasDestNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/> 
-    <edgeWeight rdf:datatype="&xsd;float">4.0</edgeWeight> 
-    <edgeId rdf:datatype="&xsd;string">100001811053281-100002164977849</edgeId> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#null"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Community"/> 
-    <communityId rdf:datatype="&xsd;string">null</communityId> 
-    <hasUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/> 
-    <hasUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
-    <hasUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/> 
-    <hasUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
-    <hasUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/> 
-    <hasUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/> 
-    <hasUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000108890489"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461661140530462"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Fri Jun 29 03:21:21 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[use o firefox.]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_461645247198718_461661140530462</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/> 
-    <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718"/> 
-    <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461667907196452"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461668620529714"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Fri Jun 29 03:40:26 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[putz!! Tenta atualizar a versão. Depois acende uma vela e reza! -)]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_461645247198718_461668620529714</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/> 
-    <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461667907196452"/> 
-    <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461668863863023"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461668863863023"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Fri Jun 29 03:41:00 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[a kizzy teve o mesmo problema]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_461645247198718_461668863863023</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/> 
-    <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461668620529714"/> 
-    <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461670293862880"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 30 12:59:46 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Mandei a monografia via e-mail, pois também não consegui carregar a monografia. Tentei via chome, IE e Firefox...
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/> 
+        <userDegree rdf:datatype="&xsd;double">0.0</userDegree> 
+        <userPagerank rdf:datatype="&xsd;double">0.0</userPagerank> 
+        <userCloseness rdf:datatype="&xsd;double">0.0</userCloseness> 
+        <userBetweenness rdf:datatype="&xsd;double">0.0</userBetweenness> 
+        <userEccentricity rdf:datatype="&xsd;double">0.0</userEccentricity> 
+        <userId rdf:datatype="&xsd;string">100001811053281</userId> 
+        <userName rdf:datatype="&xsd;string">Roberto Lima</userName> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/> 
+        <userDegree rdf:datatype="&xsd;double">0.0</userDegree> 
+        <userPagerank rdf:datatype="&xsd;double">0.0</userPagerank> 
+        <userCloseness rdf:datatype="&xsd;double">0.0</userCloseness> 
+        <userBetweenness rdf:datatype="&xsd;double">0.0</userBetweenness> 
+        <userEccentricity rdf:datatype="&xsd;double">0.0</userEccentricity> 
+        <userId rdf:datatype="&xsd;string">100002164977849</userId> 
+        <userName rdf:datatype="&xsd;string">Pimentel Mariano</userName> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/> 
+        <userDegree rdf:datatype="&xsd;double">0.0</userDegree> 
+        <userPagerank rdf:datatype="&xsd;double">0.0</userPagerank> 
+        <userCloseness rdf:datatype="&xsd;double">0.0</userCloseness> 
+        <userBetweenness rdf:datatype="&xsd;double">0.0</userBetweenness> 
+        <userEccentricity rdf:datatype="&xsd;double">0.0</userEccentricity> 
+        <userId rdf:datatype="&xsd;string">100000401238331</userId> 
+        <userName rdf:datatype="&xsd;string">Cristiane Tavares</userName> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/> 
+        <userDegree rdf:datatype="&xsd;double">0.0</userDegree> 
+        <userPagerank rdf:datatype="&xsd;double">0.0</userPagerank> 
+        <userCloseness rdf:datatype="&xsd;double">0.0</userCloseness> 
+        <userBetweenness rdf:datatype="&xsd;double">0.0</userBetweenness> 
+        <userEccentricity rdf:datatype="&xsd;double">0.0</userEccentricity> 
+        <userId rdf:datatype="&xsd;string">100000000103086</userId> 
+        <userName rdf:datatype="&xsd;string">Cristiane Iglesias</userName> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/> 
+        <userDegree rdf:datatype="&xsd;double">0.0</userDegree> 
+        <userPagerank rdf:datatype="&xsd;double">0.0</userPagerank> 
+        <userCloseness rdf:datatype="&xsd;double">0.0</userCloseness> 
+        <userBetweenness rdf:datatype="&xsd;double">0.0</userBetweenness> 
+        <userEccentricity rdf:datatype="&xsd;double">0.0</userEccentricity> 
+        <userId rdf:datatype="&xsd;string">100000348062784</userId> 
+        <userName rdf:datatype="&xsd;string">Thiago Baesso Procaci</userName> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/> 
+        <userDegree rdf:datatype="&xsd;double">0.0</userDegree> 
+        <userPagerank rdf:datatype="&xsd;double">0.0</userPagerank> 
+        <userCloseness rdf:datatype="&xsd;double">0.0</userCloseness> 
+        <userBetweenness rdf:datatype="&xsd;double">0.0</userBetweenness> 
+        <userEccentricity rdf:datatype="&xsd;double">0.0</userEccentricity> 
+        <userId rdf:datatype="&xsd;string">100000015795070</userId> 
+        <userName rdf:datatype="&xsd;string">Claudia Cappelli</userName> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000108890489"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/> 
+        <userDegree rdf:datatype="&xsd;double">0.0</userDegree> 
+        <userPagerank rdf:datatype="&xsd;double">0.0</userPagerank> 
+        <userCloseness rdf:datatype="&xsd;double">0.0</userCloseness> 
+        <userBetweenness rdf:datatype="&xsd;double">0.0</userBetweenness> 
+        <userEccentricity rdf:datatype="&xsd;double">0.0</userEccentricity> 
+        <userId rdf:datatype="&xsd;string">100000108890489</userId> 
+        <userName rdf:datatype="&xsd;string">Renata Araujo</userName> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086-100000401238331"> 
+        <hasSourceNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
+        <hasDestNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/> 
+        <edgeWeight rdf:datatype="&xsd;float">1.0</edgeWeight> 
+        <edgeId rdf:datatype="&xsd;string">100000000103086-100000401238331</edgeId> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331-100002164977849"> 
+        <hasSourceNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
+        <hasDestNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/> 
+        <edgeWeight rdf:datatype="&xsd;float">1.0</edgeWeight> 
+        <edgeId rdf:datatype="&xsd;string">100000401238331-100002164977849</edgeId> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070-100002164977849"> 
+        <hasSourceNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
+        <hasDestNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/> 
+        <edgeWeight rdf:datatype="&xsd;float">2.0</edgeWeight> 
+        <edgeId rdf:datatype="&xsd;string">100000015795070-100002164977849</edgeId> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086-100000348062784"> 
+        <hasSourceNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
+        <hasDestNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/> 
+        <edgeWeight rdf:datatype="&xsd;float">9.0</edgeWeight> 
+        <edgeId rdf:datatype="&xsd;string">100000000103086-100000348062784</edgeId> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784-100002164977849"> 
+        <hasSourceNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
+        <hasDestNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/> 
+        <edgeWeight rdf:datatype="&xsd;float">3.0</edgeWeight> 
+        <edgeId rdf:datatype="&xsd;string">100000348062784-100002164977849</edgeId> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086-100000015795070"> 
+        <hasSourceNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
+        <hasDestNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/> 
+        <edgeWeight rdf:datatype="&xsd;float">3.0</edgeWeight> 
+        <edgeId rdf:datatype="&xsd;string">100000000103086-100000015795070</edgeId> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086-100002164977849"> 
+        <hasSourceNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
+        <hasDestNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/> 
+        <edgeWeight rdf:datatype="&xsd;float">10.0</edgeWeight> 
+        <edgeId rdf:datatype="&xsd;string">100000000103086-100002164977849</edgeId> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281-100002164977849"> 
+        <hasSourceNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
+        <hasDestNode rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/> 
+        <edgeWeight rdf:datatype="&xsd;float">4.0</edgeWeight> 
+        <edgeId rdf:datatype="&xsd;string">100001811053281-100002164977849</edgeId> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#null"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Community"/> 
+        <communityId rdf:datatype="&xsd;string">null</communityId> 
+        <hasUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/> 
+        <hasUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
+        <hasUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/> 
+        <hasUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
+        <hasUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/> 
+        <hasUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/> 
+        <hasUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000108890489"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461661140530462"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Fri Jun 29 03:21:21 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[use o firefox.]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_461645247198718_461661140530462</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/> 
+        <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718"/> 
+        <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461667907196452"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461668620529714"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Fri Jun 29 03:40:26 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[putz!! Tenta atualizar a versão. Depois acende uma vela e reza! -)]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_461645247198718_461668620529714</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/> 
+        <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461667907196452"/> 
+        <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461668863863023"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461668863863023"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Fri Jun 29 03:41:00 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[a kizzy teve o mesmo problema]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_461645247198718_461668863863023</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/> 
+        <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461668620529714"/> 
+        <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461670293862880"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 30 12:59:46 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Mandei a monografia via e-mail, pois também não consegui carregar a monografia. Tentei via chome, IE e Firefox...
 
 Já existe uma issue sem resposta para esse bug: https://www.facebook.com/help/community/question/?id=2245037
 Acompanhem...]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_462508987112344</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/> 
-    <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344_462763460420230"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344_462790393750870"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 30 23:43:01 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Mandei...]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_462508987112344_462790393750870</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/> 
-    <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344_462763460420230"/> 
-    <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344_462809637082279"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461441660552410"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Thu Jun 28 17:34:41 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Será?]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_461441660552410</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461441013885808"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Thu Jun 28 17:32:40 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_461441013885808</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 16 21:25:55 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Pessoal,
+        <messageId rdf:datatype="&xsd;string">384634338233143_462508987112344</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/> 
+        <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344_462763460420230"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344_462790393750870"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 30 23:43:01 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Mandei...]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_462508987112344_462790393750870</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/> 
+        <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344_462763460420230"/> 
+        <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344_462809637082279"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461441660552410"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Thu Jun 28 17:34:41 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Será?]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_461441660552410</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461441013885808"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Thu Jun 28 17:32:40 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_461441013885808</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 16 21:25:55 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Pessoal,
 
 Dia 22 não teremos aula presencial por causa da Rio +20.
 
@@ -467,183 +369,179 @@ Do dia 30 ao dia 5 vocês farão a avaliação-colaborativa online (critérios a
 Dia 6 as notas finais serão divulgadas.
 
 Bjs,]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_454394097923833</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/> 
-    <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_454404294589480"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_449230991773477"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Thu Jun 07 16:05:00 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Ferramenta interessante, bem na linha de nossas discussões sobre Democracia Eletrônica e fortes conotações de discussões colaborativas.]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_449230991773477</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000108890489"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462764413753468"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 30 22:26:45 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[olá prof...já vi o formulário de avaliação das monografias...aparecem 3 listadas para serem avaliadas a do Thiago,da CrisI e do Mozart. Já tem a relaçao de quem avalia qual?]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_462764413753468</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/> 
-    <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462764413753468_462767423753167"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462293227133920"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 30 03:11:00 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Olá estou recebendo uma msg de erro ao tentar fazer o upload da monografia..estou enviando por emial para o prof.]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_462293227133920</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_452191048144138"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Tue Jun 12 21:54:17 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Boa noite pessoal....
+        <messageId rdf:datatype="&xsd;string">384634338233143_454394097923833</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/> 
+        <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_454404294589480"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_449230991773477"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Thu Jun 07 16:05:00 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Ferramenta interessante, bem na linha de nossas discussões sobre Democracia Eletrônica e fortes conotações de discussões colaborativas.]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_449230991773477</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000108890489"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462764413753468"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 30 22:26:45 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[olá prof...já vi o formulário de avaliação das monografias...aparecem 3 listadas para serem avaliadas a do Thiago,da CrisI e do Mozart. Já tem a relaçao de quem avalia qual?]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_462764413753468</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/> 
+        <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462764413753468_462767423753167"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462293227133920"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 30 03:11:00 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Olá estou recebendo uma msg de erro ao tentar fazer o upload da monografia..estou enviando por emial para o prof.]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_462293227133920</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_452191048144138"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Tue Jun 12 21:54:17 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Boa noite pessoal....
 Temos ainda duas atividades a apresentação e avaliação das monografias....
 Porém não teremos aula esta semana dia 15 e dia 22 será feriado.
 Assim a apresentação ficará para o dia 29 e a avaliação dos trabalhos do grupo no dia 6 ou somente faremos a apresentação dia 29?]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_452191048144138</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/> 
-    <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_452191048144138_452222171474359"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_447997915230118"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Tue Jun 05 13:46:56 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Estas foram minhas apresentações.]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_447997915230118</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Fri Jun 29 02:43:52 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Tentei colocar aqui a monografia, mas dá erro e não carrega o arquivo em pdf. O que fazer neste caso? bjs]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_461645247198718</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
-    <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461661140530462"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461667907196452"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Fri Jun 29 03:38:43 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Eu uso... Não sei pq tá dando erro... Bj]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_461645247198718_461667907196452</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
-    <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461661140530462"/> 
-    <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461668620529714"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461670293862880"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Fri Jun 29 03:44:34 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Kkkkk ok bj]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_461645247198718_461670293862880</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
-    <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461668863863023"/> 
-    <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461775350519041"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_460180230678553_460265807336662"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Tue Jun 26 19:42:15 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Mas antes disso, a monografia tem que ser apreciada pelos professores. Mas gostei da idéia, se for possível, quero tentar... Rs bjsss]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_460180230678553_460265807336662</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
-    <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_460180230678553"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_454404294589480"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 16 21:50:01 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Esta entrega no dia 29 será feita por aqui ou no moodle? bjs]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_454394097923833_454404294589480</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
-    <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833"/> 
-    <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_454405624589347"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_454406771255899"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 16 21:55:55 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Ok... obrigada e bom fim de semana à todos... bjss]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_454394097923833_454406771255899</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
-    <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_454405624589347"/> 
-    <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_458050690891507"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_458050690891507"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Fri Jun 22 22:57:37 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Esqueci de perguntar. A avaliação que nós faremos será de 2 trabalhos para cada aluno, certo? bjs]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_454394097923833_458050690891507</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
-    <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_454406771255899"/> 
-    <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_458081087555134"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_452191048144138_452222171474359"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Tue Jun 12 22:55:30 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Acho que nao teremos apresentação. Só a avaliação dos trabalhos dos colegas. É isso Mariano? Bjsss]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_452191048144138_452222171474359</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
-    <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_452191048144138"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344_462763460420230"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 30 22:24:17 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Roberto Lima, me manda o DOC, vou gerar o arquivo novamente... desconfio que possa ser isso.]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_462508987112344_462763460420230</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
-    <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344"/> 
-    <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344_462790393750870"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344_462809637082279"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Sun Jul 01 00:53:07 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[ainda não foi... vamos continuar tentando mais tarde.]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_462508987112344_462809637082279</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
-    <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344_462790393750870"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462764413753468_462767423753167"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 30 22:35:51 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Estamos aguardando a monografia da Kizzy Macedo Benjamin]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_462764413753468_462767423753167</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
-    <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462764413753468"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461775350519041"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Fri Jun 29 07:56:11 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[esse problema ocorre às vezes. Outras vezes o facebook aceita normalmente. Continue tentando.]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_461645247198718_461775350519041</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
-    <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461670293862880"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_460180230678553"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Tue Jun 26 16:25:29 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Para quem está pensando em levar essa história de monografia em cibercultura para frente, terá mais um mês para refinar um artigo para submeter no Simpósio ABCiber (até 30/07!):
+        <messageId rdf:datatype="&xsd;string">384634338233143_452191048144138</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/> 
+        <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_452191048144138_452222171474359"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_447997915230118"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Tue Jun 05 13:46:56 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Estas foram minhas apresentações.]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_447997915230118</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Fri Jun 29 02:43:52 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Tentei colocar aqui a monografia, mas dá erro e não carrega o arquivo em pdf. O que fazer neste caso? bjs]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_461645247198718</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
+        <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461661140530462"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461667907196452"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Fri Jun 29 03:38:43 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Eu uso... Não sei pq tá dando erro... Bj]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_461645247198718_461667907196452</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
+        <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461661140530462"/> 
+        <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461668620529714"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461670293862880"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Fri Jun 29 03:44:34 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Kkkkk ok bj]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_461645247198718_461670293862880</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
+        <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461668863863023"/> 
+        <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461775350519041"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_460180230678553_460265807336662"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Tue Jun 26 19:42:15 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Mas antes disso, a monografia tem que ser apreciada pelos professores. Mas gostei da idéia, se for possível, quero tentar... Rs bjsss]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_460180230678553_460265807336662</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
+        <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_460180230678553"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_454404294589480"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 16 21:50:01 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Esta entrega no dia 29 será feita por aqui ou no moodle? bjs]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_454394097923833_454404294589480</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
+        <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833"/> 
+        <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_454405624589347"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_454406771255899"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 16 21:55:55 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Ok... obrigada e bom fim de semana à todos... bjss]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_454394097923833_454406771255899</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
+        <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_454405624589347"/> 
+        <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_458050690891507"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_458050690891507"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Fri Jun 22 22:57:37 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Esqueci de perguntar. A avaliação que nós faremos será de 2 trabalhos para cada aluno, certo? bjs]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_454394097923833_458050690891507</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
+        <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_454406771255899"/> 
+        <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_458081087555134"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_452191048144138_452222171474359"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Tue Jun 12 22:55:30 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Acho que nao teremos apresentação. Só a avaliação dos trabalhos dos colegas. É isso Mariano? Bjsss]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_452191048144138_452222171474359</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/> 
+        <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_452191048144138"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344_462763460420230"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 30 22:24:17 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Roberto Lima, me manda o DOC, vou gerar o arquivo novamente... desconfio que possa ser isso.]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_462508987112344_462763460420230</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
+        <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344"/> 
+        <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344_462790393750870"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344_462809637082279"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Sun Jul 01 00:53:07 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[ainda não foi... vamos continuar tentando mais tarde.]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_462508987112344_462809637082279</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
+        <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462508987112344_462790393750870"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462764413753468_462767423753167"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 30 22:35:51 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Estamos aguardando a monografia da Kizzy Macedo Benjamin]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_462764413753468_462767423753167</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
+        <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_462764413753468"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461775350519041"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Fri Jun 29 07:56:11 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[esse problema ocorre às vezes. Outras vezes o facebook aceita normalmente. Continue tentando.]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_461645247198718_461775350519041</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
+        <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_461645247198718_461670293862880"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_460180230678553"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Tue Jun 26 16:25:29 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Para quem está pensando em levar essa história de monografia em cibercultura para frente, terá mais um mês para refinar um artigo para submeter no Simpósio ABCiber (até 30/07!):
 http://aplicweb.feevale.br/site/hotsite/default.asp?intIdHotSite=152&intIdSecao=5572]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_460180230678553</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
-    <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_460180230678553_460265807336662"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_454405624589347"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 16 21:53:13 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[Por aqui mesmo]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_454394097923833_454405624589347</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
-    <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_454404294589480"/> 
-    <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_454406771255899"/> 
-</owl:NamedIndividual> 
-<owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_458081087555134"> 
-    <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
-    <messageCreatedTime rdf:datatype="&xsd;dateTime">Fri Jun 22 23:42:36 BRT 2012</messageCreatedTime> 
-    <messageContent rdf:datatype="&xsd;string"><![CDATA[sim]]></messageContent> 
-    <messageId rdf:datatype="&xsd;string">384634338233143_454394097923833_458081087555134</messageId> 
-    <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
-    <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_458050690891507"/> 
-</owl:NamedIndividual> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_460180230678553</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
+        <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_460180230678553_460265807336662"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_454405624589347"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Sat Jun 16 21:53:13 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[Por aqui mesmo]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_454394097923833_454405624589347</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
+        <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_454404294589480"/> 
+        <hasNextMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_454406771255899"/> 
+    </owl:NamedIndividual> 
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_458081087555134"> 
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/> 
+        <messageCreatedTime rdf:datatype="&xsd;dateTime">Fri Jun 22 23:42:36 BRT 2012</messageCreatedTime> 
+        <messageContent rdf:datatype="&xsd;string"><![CDATA[sim]]></messageContent> 
+        <messageId rdf:datatype="&xsd;string">384634338233143_454394097923833_458081087555134</messageId> 
+        <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/> 
+        <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_458050690891507"/> 
+    </owl:NamedIndividual> 
 
 
 </rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
 

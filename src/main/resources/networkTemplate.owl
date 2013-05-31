@@ -16,250 +16,148 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl"/>
-    
 
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#belongsToToken">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+    </owl:ObjectProperty>
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#belongsToUser">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
+    </owl:ObjectProperty>
 
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasAuthor -->
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasTokenFrequency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+    </owl:ObjectProperty>
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasAuthor">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasDestNode -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasDestNode">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
     </owl:ObjectProperty>
 
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasNextMessage -->
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasNextMessage">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/>
     </owl:ObjectProperty>
-
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasPreviousMessage -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasPreviousMessage">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/>
     </owl:ObjectProperty>
 
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasSourceNode -->
-
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasSourceNode">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasUser -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hasUser">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Community"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#communityId -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#communityId">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Community"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#edgeId -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#edgeId">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#edgeWeight -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#edgeWeight">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
 
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#messageContent -->
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#messageContent">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
-
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#messageCreatedTime -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#messageCreatedTime">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
 
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#messageId -->
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#messageId">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Message"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userBetweenness -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userBetweenness">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userCloseness -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userCloseness">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userDegree -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userDegree">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userEccentricity -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userEccentricity">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userId -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userId">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userName -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userName">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userPagerank -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#userPagerank">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
-    
 
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tokenFrequencyCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tokenFrequencyId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
 
-    
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tokenId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
 
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Community -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tokenWord">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
 
     <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Community"/>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/>
-    
-
-
-    <!-- http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#User"/>
-    
 
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
     
 #INSTANCES
 
 </rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
 
