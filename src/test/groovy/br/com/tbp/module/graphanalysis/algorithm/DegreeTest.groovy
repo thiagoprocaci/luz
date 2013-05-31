@@ -1,10 +1,8 @@
-package br.com.tbp.module.graphanalysis.algorithm;
+package br.com.tbp.module.graphanalysis.algorithm
 
-
-import br.com.tbp.parser.FBJsonParser;
-
-import br.com.tbp.model.Graph;
 import br.com.tbp.file.FileReader
+import br.com.tbp.model.Graph
+import br.com.tbp.parser.FBJsonParser
 
 class DegreeTest extends GroovyTestCase {
 
@@ -12,7 +10,7 @@ class DegreeTest extends GroovyTestCase {
     private FBJsonParser fbJsonParser
     private Degree degree
 
-    public  DegreeTest() {
+    public DegreeTest() {
         jsonString = FileReader.readFile("src/test/resources/br/com/tbp/parser/feed_cibercultura.txt")
         fbJsonParser = new FBJsonParser()
         degree = new Degree()
@@ -22,9 +20,9 @@ class DegreeTest extends GroovyTestCase {
         Graph graph = fbJsonParser.parse(jsonString)
         degree.execute(graph)
         graph.nodeSet.each { node ->
-            if(node.id == "100001811053281") {
+            if (node.id == "100001811053281") {
                 assertEquals(1.0, node.degree)
-            } else if (node.id == "100002164977849" ) {
+            } else if (node.id == "100002164977849") {
                 assertEquals(5.0, node.degree)
             } else if (node.id == "100000401238331") {
                 assertEquals(2.0, node.degree)
@@ -34,7 +32,7 @@ class DegreeTest extends GroovyTestCase {
                 assertEquals(2.0, node.degree)
             } else if (node.id == "100000015795070") {
                 assertEquals(2.0, node.degree)
-            } else if(node.id == "100000108890489") {
+            } else if (node.id == "100000108890489") {
                 assertEquals(0.0, node.degree)
             } else {
                 fail("unknown node!")

@@ -40,9 +40,9 @@ public class QueryProcessorTest {
         docs = new HashSet<Doc>();
         int i = 0;
         for (Node node : graph.getNodeSet()) {
-            for(Message message : node.getMessages() ) {
-                if(message.getContent() != null) {
-                    doc = new Doc(message.getId() , message.getContent());
+            for (Message message : node.getMessages()) {
+                if (message.getContent() != null) {
+                    doc = new Doc(message.getId(), message.getContent());
                     docs.add(doc);
                     i++;
                 }
@@ -57,12 +57,6 @@ public class QueryProcessorTest {
         // TODO terminar esse teste
         queryProcessor.runQuery("versao ", docs);
 
-   //     StopWordManager stopWordManager = new StopWordManager();
-   //     PortugueseAnalyzer portugueseAnalyzer = new PortugueseAnalyzer(stopWordManager);
-
-      //  for (String s : portugueseAnalyzer.tokenizer(docs.toString())) {
-       //     System.out.println(s);
-      //  }
 
     }
 

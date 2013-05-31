@@ -34,7 +34,7 @@ public class GMLPrinter {
             buffer.append("  ] \n");
         }
 
-        for (Edge edge: graph.getEdgeSet()) {
+        for (Edge edge : graph.getEdgeSet()) {
             buffer.append("  edge \n");
             buffer.append("  [ \n");
             buffer.append("    source ");

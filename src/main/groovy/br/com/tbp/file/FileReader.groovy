@@ -2,7 +2,7 @@ package br.com.tbp.file
 
 class FileReader {
 
-    private static String read(File file) throws IOException {
+    public static String readFile(File file) throws IOException {
         StringBuffer buffer = new StringBuffer();
         BufferedReader br = null;
         try {
@@ -23,7 +23,7 @@ class FileReader {
     public static String readFile(String path) {
         path = path.replace("/", File.separator);
         File file = new File(path);
-        return read(file);
+        return readFile(file);
     }
 
 }

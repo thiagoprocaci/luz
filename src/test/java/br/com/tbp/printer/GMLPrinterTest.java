@@ -8,9 +8,9 @@ import br.com.tbp.parser.FBJsonParser;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 import java.io.File;
+
+import static org.junit.Assert.assertEquals;
 
 public class GMLPrinterTest {
 
@@ -32,8 +32,8 @@ public class GMLPrinterTest {
     public void testPrint() {
         Graph graph = fbJsonParser.parse(jsonString);
         gmlPrinter.print(graph);
-        String expectedContent = FileReader.readFile("src/test/resources/br/com/tbp/printer/fb_.gml").trim().replaceAll("\\s","").replaceAll("\\n","");
-        String content = FileReader.readFile("files" +  File.separator + "fb.gml").trim().replaceAll("\\s","").replaceAll("\\n","");
+        String expectedContent = FileReader.readFile("src/test/resources/br/com/tbp/printer/fb_.gml").trim().replaceAll("\\s", "").replaceAll("\\n", "");
+        String content = FileReader.readFile("files" + File.separator + "fb.gml").trim().replaceAll("\\s", "").replaceAll("\\n", "");
         assertEquals(expectedContent, content);
     }
 

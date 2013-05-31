@@ -1,10 +1,9 @@
 package br.com.tbp.module.graphanalysis.algorithm
 
-
+import br.com.tbp.file.FileReader
+import br.com.tbp.model.Edge
 import br.com.tbp.model.Graph
 import br.com.tbp.model.Node
-import br.com.tbp.model.Edge
-import br.com.tbp.file.FileReader
 
 class ModularityTest extends GroovyTestCase {
 
@@ -32,7 +31,7 @@ class ModularityTest extends GroovyTestCase {
             nodeMap.put(n.id, n)
         }
 
-         def edgeMap = new HashMap<String, Edge>()
+        def edgeMap = new HashMap<String, Edge>()
 
         edges.each { edge ->
             def node1 = nodeMap.get(edge.@source.text())
@@ -45,18 +44,9 @@ class ModularityTest extends GroovyTestCase {
         Graph graph = new Graph();
         graph.getEdgeSet().addAll(edgeMap.values())
         graph.getNodeSet().addAll(nodeMap.values())
-
         modularity.execute(graph, false, false)
-
-     //   println("Modularity " + graph.getModularity())
-     //   println("ModularityResolution " + graph.getModularityResolution())
-     //   println("NumberOfCommunities " + graph.getNumberOfCommunities())
-
-        9316296034418473
         assertTrue(graph.getModularity().toString().startsWith("0.9"))
         assertTrue(graph.getModularityResolution().toString().startsWith("0.9"))
         assertTrue(30 < graph.getNumberOfCommunities() && graph.getNumberOfCommunities() < 40)
-
-
     }
 }

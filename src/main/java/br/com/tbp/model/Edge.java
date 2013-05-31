@@ -5,13 +5,13 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class Edge extends CoreEntity  {
+public class Edge extends CoreEntity {
     private Node node1;
     private Node node2;
     private Float weight;
 
     public Edge(Node node1, Node node2) {
-        if(node1 == null || node2 == null) {
+        if (node1 == null || node2 == null) {
             throw new IllegalArgumentException("Node can not be null");
         }
         this.node1 = node1;
@@ -56,6 +56,6 @@ public class Edge extends CoreEntity  {
     public String toString() {
         return
                 "node1=" + node1 +
-                ", node2=" + node2;
+                        ", node2=" + node2;
     }
 }

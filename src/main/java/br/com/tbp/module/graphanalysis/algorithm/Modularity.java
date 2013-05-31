@@ -1,12 +1,14 @@
 package br.com.tbp.module.graphanalysis.algorithm;
 
 
-import br.com.tbp.module.graphanalysis.algorithm.support.Community;
-import br.com.tbp.module.graphanalysis.algorithm.support.CommunityStructure;
 import br.com.tbp.model.Graph;
 import br.com.tbp.model.Node;
+import br.com.tbp.module.graphanalysis.algorithm.support.Community;
+import br.com.tbp.module.graphanalysis.algorithm.support.CommunityStructure;
 import br.com.tbp.module.graphanalysis.support.GraphUtils;
-import java.util.*;
+
+import java.util.Random;
+import java.util.Set;
 
 public class Modularity {
 
@@ -32,9 +34,9 @@ public class Modularity {
                     step++;
                     double best = 0.;
                     Community bestCommunity = null;
-                   // Community nodecom = structure.getNodeCommunities()[i];
+                    // Community nodecom = structure.getNodeCommunities()[i];
                     Set<Community> iter = structure.getNodeConnectionsWeight()[i].keySet();
-                    for(Community com : iter) {
+                    for (Community com : iter) {
                         double qValue = q(i, com, structure);
                         if (qValue > best) {
                             best = qValue;
@@ -69,7 +71,7 @@ public class Modularity {
         }
         for (Node node : graph.getNodeSet()) {
             int index = structure.getMap().get(node);
-            if(useWeight) {
+            if (useWeight) {
                 degreeCount[comStructure[index]] += nodeDegrees[index];
             } else {
                 degreeCount[comStructure[index]] += GraphUtils.getTotalDegree(node, graph);
@@ -78,7 +80,7 @@ public class Modularity {
         }
 
         double modularity = finalQ(comStructure, degreeCount, graph, totalWeight, 1., structure, useWeight);
-        double modularityResolution = finalQ(comStructure, degreeCount, graph,  totalWeight, resolution, structure, useWeight);
+        double modularityResolution = finalQ(comStructure, degreeCount, graph, totalWeight, resolution, structure, useWeight);
 
         graph.setModularity(modularity);
         graph.setModularityResolution(modularityResolution);
@@ -103,7 +105,7 @@ public class Modularity {
                 }
                 int neigh_index = structure.getMap().get(neighbor);
                 if (struct[neigh_index] == struct[n_index]) {
-                    if(useWeight) {
+                    if (useWeight) {
                         internal[struct[neigh_index]] += GraphUtils.getEdge(n, neighbor, hgraph).getWeight();
                     } else {
                         internal[struct[neigh_index]]++;

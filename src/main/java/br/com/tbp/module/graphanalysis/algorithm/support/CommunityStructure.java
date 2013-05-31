@@ -58,7 +58,7 @@ public class CommunityStructure {
                 }
                 int neighbor_index = map.get(neighbor);
                 float weight = 1;
-                if(useWeight) {
+                if (useWeight) {
                     weight = GraphUtils.getEdge(node, neighbor, graph).getWeight();
                 }
                 weights[node_index] += weight;
@@ -221,11 +221,11 @@ public class CommunityStructure {
                 hidden.getNodes().addAll(oldHidden.getNodes());
             }
             newInvMap.put(index, hidden);
-            for(Community adjCom : iter) {
+            for (Community adjCom : iter) {
                 int target = communities.indexOf(adjCom);
                 float weight = com.getConnectionsWeight().get(adjCom);
-                if(target == index)
-                    weightSum += 2.*weight;
+                if (target == index)
+                    weightSum += 2. * weight;
                 else
                     weightSum += weight;
                 ModEdge e = new ModEdge(index, target, weight);

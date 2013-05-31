@@ -1,7 +1,7 @@
 package br.com.tbp.model;
 
 public class CoreEntity {
-    
+
     private String id;
 
     public String getId() {

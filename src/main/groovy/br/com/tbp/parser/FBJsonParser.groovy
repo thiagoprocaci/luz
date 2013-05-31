@@ -1,26 +1,26 @@
 package br.com.tbp.parser
 
-import br.com.tbp.model.Message
-import groovy.json.*
-import br.com.tbp.model.Node
 import br.com.tbp.model.Edge
 import br.com.tbp.model.Graph
+import br.com.tbp.model.Message
+import br.com.tbp.model.Node
+import groovy.json.JsonSlurper
 
 class FBJsonParser {
 
     def Graph parse(String jsonText) {
         def json = new JsonSlurper().parseText(jsonText)
-        def graph =  buildGraph(json)
+        def graph = buildGraph(json)
         return graph
     }
 
     private Graph buildGraph(json) {
         Graph graph = new Graph();
-        Map<Edge,Edge> edgeMap = new HashMap<Edge,Edge>()
+        Map<Edge, Edge> edgeMap = new HashMap<Edge, Edge>()
         List<Node> userList = new ArrayList<Node>()
         Node user1 = null
         Node user2 = null
-        Map<Node, List<Message>>  commentsMap = new HashMap<Node, List<Message>>()
+        Map<Node, List<Message>> commentsMap = new HashMap<Node, List<Message>>()
 
         // iteracao nos posts
         def posts = json.data
@@ -32,7 +32,7 @@ class FBJsonParser {
             def message = new Message(post.id, post.message, getDate(post.created_time.trim()), user1)
             def previousMessage = addMessage(user1, message, null, commentsMap)
             // iteracao nos comentarios do post
-            if(post.comments != null && post.comments.data != null && post.comments.data.from != null) {
+            if (post.comments != null && post.comments.data != null && post.comments.data.from != null) {
                 post.comments.data.each { data ->
                     user2 = new Node(data.from.id, data.from.name)
                     userList.add(user2)
@@ -72,11 +72,11 @@ class FBJsonParser {
 
 
     private Message addMessage(Node node, Message message, Message previousMessage, Map<Node, List<Message>> commentsMap) {
-        if(message != null) {
-            if(!commentsMap.containsKey(node)) {
+        if (message != null) {
+            if (!commentsMap.containsKey(node)) {
                 commentsMap.put(node, new ArrayList<Message>())
             }
-            if(previousMessage != null) {
+            if (previousMessage != null) {
                 previousMessage.next = message
                 message.previous = previousMessage
             }
@@ -90,19 +90,19 @@ class FBJsonParser {
         // percorrer a lista de traz pra frente
         int maxIndex = userList.size() - 1
         for (int i = maxIndex; i >= 1; i--) {
-            for (int j = i -1; j >= 0; j--) {
-                 createEdge(edgeMap, userList.get(i), userList.get(j))
+            for (int j = i - 1; j >= 0; j--) {
+                createEdge(edgeMap, userList.get(i), userList.get(j))
             }
         }
     }
 
     private void createEdge(edgeMap, user1, user2) {
-        if(!user1.equals(user2)) {
+        if (!user1.equals(user2)) {
             Edge edge = new Edge(user1, user2)
-            if(edgeMap.get(edge) != null) {
+            if (edgeMap.get(edge) != null) {
                 edge = edgeMap.get(edge)
                 edge.increaseWeight()
-            } else  {
+            } else {
                 edgeMap.put(edge, edge)
             }
         }

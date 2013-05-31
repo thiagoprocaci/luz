@@ -24,7 +24,7 @@ public class PortugusesAnalyzerTest {
     @Test
     public void testTokenizer() throws IOException {
         Set<String> result = portugueseAnalyzer.tokenizer(jsonString);
-        for (String s: result) {
+        for (String s : result) {
             Assert.assertNotNull(s);
         }
     }

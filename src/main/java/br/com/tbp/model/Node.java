@@ -4,7 +4,7 @@ package br.com.tbp.model;
 import java.util.List;
 
 public class Node extends CoreEntity {
-    
+
     private String name;
     private double eccentricity;
     private double closeness;
@@ -15,15 +15,17 @@ public class Node extends CoreEntity {
     private List<Message> messages;
 
     public Node(String id, String name) {
-        if(id == null) {
+        if (id == null) {
             throw new IllegalArgumentException("The user id can not be null");
         }
         setId(id.trim());
         this.name = name.trim();
     }
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }

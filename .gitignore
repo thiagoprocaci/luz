@@ -51,6 +51,21 @@ target/
 *.iws
 
 
+# Lucene #
+######################
+
+*.fdt
+*.fdx
+*.fnm
+*.frq
+*.nrm
+*.prx
+*.tii
+*.tis
+*.gen
+segments_1
+
 # other crazy things #
 ######################
 *.exe.stackdump
+

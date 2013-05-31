@@ -7,7 +7,7 @@ import br.com.tbp.module.graphanalysis.support.GraphUtils;
 public class Degree {
 
     public void execute(Graph graph) {
-        for (Node node: graph.getNodeSet()) {
+        for (Node node : graph.getNodeSet()) {
             node.setDegree(GraphUtils.getTotalDegree(node, graph));
         }
     }

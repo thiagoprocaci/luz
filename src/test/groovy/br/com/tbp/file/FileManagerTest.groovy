@@ -5,7 +5,7 @@ class FileManagerTest extends GroovyTestCase {
     void testSave() {
         FileManager fileManager = new FileManager()
         fileManager.save("teste")
-        String path = "files" +  File.separator + "fb.gml"
+        String path = "files" + File.separator + "fb.gml"
         def file = new File(path)
 
         assertTrue(file.exists())

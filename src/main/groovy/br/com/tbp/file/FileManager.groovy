@@ -3,19 +3,27 @@ package br.com.tbp.file
 
 class FileManager {
 
-    def save(String text) {
-        def file = new File("files" +  File.separator + "fb.gml")
-        FileOutputStream fop = new FileOutputStream(file);
-        fop.write(text.getBytes());
-        fop.flush();
-        fop.close();
+    private static final String FILES = "files"
+
+    private File write(File file, String text) {
+        Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "UTF-8"));
+        try {
+            out.write(text);
+        } finally {
+            out.flush();
+            out.close();
+        }
+        return file
     }
 
-    def save(String text, String fileName) {
-        def file = new File("files" +  File.separator + fileName)
-        FileOutputStream fop = new FileOutputStream(file);
-        fop.write(text.getBytes());
-        fop.flush();
-        fop.close();
+    def File save(String text) {
+        def file = new File(FILES + File.separator + "fb.gml")
+        return write(file, text)
+
+    }
+
+    def File save(String text, String fileName) {
+        def file = new File(FILES + File.separator + fileName)
+        return write(file, text)
     }
 }

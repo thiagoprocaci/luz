@@ -21,10 +21,10 @@ public class GraphUtils {
     }
 
     public static Node getOpposite(Node node, Edge edge) {
-        if(edge.getNode1().equals(node)) {
+        if (edge.getNode1().equals(node)) {
             return edge.getNode2();
         }
-        if(edge.getNode2().equals(node)) {
+        if (edge.getNode2().equals(node)) {
             return edge.getNode1();
         }
         return null;
@@ -33,7 +33,7 @@ public class GraphUtils {
     public static Set<Node> getNeighbors(Node node, Graph graph) {
         Set<Edge> edges = getEdges(node, graph);
         Set<Node> nodeSet = new HashSet<Node>();
-        for (Edge edge: edges) {
+        for (Edge edge : edges) {
             nodeSet.add(getOpposite(node, edge));
         }
         return nodeSet;

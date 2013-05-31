@@ -1,14 +1,11 @@
 package br.com.tbp.parser
 
-
+import br.com.tbp.file.FileReader
+import br.com.tbp.model.Edge
 import br.com.tbp.model.Graph
 import br.com.tbp.model.Message
 import br.com.tbp.model.Node
 import groovy.json.JsonSlurper
-import br.com.tbp.model.Edge
-import br.com.tbp.file.FileReader
-
-
 
 class FBJsonParserTest extends GroovyTestCase {
 
@@ -22,7 +19,7 @@ class FBJsonParserTest extends GroovyTestCase {
         jsonStringExpected = FileReader.readFile("src/test/resources/br/com/tbp/parser/fb.txt")
     }
 
-    void testParse()  {
+    void testParse() {
         Graph graph = fbJsonParser.parse(jsonString);
 
         def json = new JsonSlurper().parseText(jsonStringExpected)
@@ -32,13 +29,13 @@ class FBJsonParserTest extends GroovyTestCase {
         assertEquals(edges.size(), graph.edgeSet.size())
 
         nodes.each { node ->
-           assertTrue(graph.nodeSet.contains(new Node(node.id, node.name)))
+            assertTrue(graph.nodeSet.contains(new Node(node.id, node.name)))
         }
 
         def set = new HashSet<Message>()
         graph.getNodeSet().each { n ->
             n.messages.each { m ->
-                if(m.previous == null) {
+                if (m.previous == null) {
                     set.add(m)
                 }
             }
@@ -47,15 +44,15 @@ class FBJsonParserTest extends GroovyTestCase {
         set.each { m ->
             def finish = false
             def message = m
-      //      println("Root")
+            //      println("Root")
             assertNull(m.previous)
-            while(!finish) {
-                if(message == null) {
+            while (!finish) {
+                if (message == null) {
                     finish = true
                 } else {
                     assertNotNull(message)
                     assertNotNull(message.createdTime)
-            //        printMessage (message)
+                    //        printMessage (message)
                     message = message.next
                 }
             }
@@ -75,7 +72,6 @@ class FBJsonParserTest extends GroovyTestCase {
         println("created time:" + m.createdTime)
         println("****************************")
     }
-
 
 
 }

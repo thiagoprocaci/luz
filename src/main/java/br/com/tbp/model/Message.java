@@ -1,7 +1,6 @@
 package br.com.tbp.model;
 
 
-
 import java.util.Date;
 
 public class Message extends CoreEntity {
@@ -12,7 +11,7 @@ public class Message extends CoreEntity {
     private Node author;
 
     public Message(String id, String content, Date createdTime, Node author) {
-        this.content = (content == null ? "" : content.trim()) ;
+        this.content = (content == null ? "" : content.trim());
         this.createdTime = createdTime;
         this.author = author;
         setId(id);

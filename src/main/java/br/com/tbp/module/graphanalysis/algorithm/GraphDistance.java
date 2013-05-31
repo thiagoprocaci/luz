@@ -6,7 +6,10 @@ import br.com.tbp.model.Graph;
 import br.com.tbp.model.Node;
 import br.com.tbp.module.graphanalysis.support.GraphUtils;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.ListIterator;
+import java.util.Stack;
 
 /**
  * Algoritmo adaptado do projeto gephi.
