@@ -99,7 +99,7 @@ class OntologyBuilder {
 
     }
 
-    def buildMessages(messages, buffer) {
+    private void buildMessages(messages, buffer) {
         messages.each { m ->
             buffer.append("<owl:NamedIndividual rdf:about=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
             buffer.append(m.id)
