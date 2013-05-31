@@ -6,6 +6,7 @@ import br.com.tbp.module.graphanalysis.algorithm.Degree;
 import br.com.tbp.module.graphanalysis.algorithm.GraphDistance;
 import br.com.tbp.module.graphanalysis.algorithm.Modularity;
 import br.com.tbp.module.graphanalysis.algorithm.PageRank;
+import br.com.tbp.module.pnl.preprocessor.MessageGraphTokenizer;
 import br.com.tbp.module.semantic.NetworkSemanticStructure;
 import br.com.tbp.module.semantic.OntologyBuilder;
 import br.com.tbp.parser.FBJsonParser;
@@ -14,6 +15,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.IOException;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
@@ -28,6 +30,7 @@ public class NetworkSemanticStructureTest {
     private FBJsonParser fbJsonParser;
     private OntologyBuilder ontologyBuilder;
     private NetworkSemanticStructure networkSemanticStructure;
+    private MessageGraphTokenizer messageGraphTokenizer ;
 
     @Before
     public void doBefore() {
@@ -37,11 +40,12 @@ public class NetworkSemanticStructureTest {
         pageRank = mock(PageRank.class);
         fbJsonParser = mock(FBJsonParser.class);
         ontologyBuilder = mock(OntologyBuilder.class);
-        networkSemanticStructure = new NetworkSemanticStructure(degree, graphDistance, modularity, pageRank, fbJsonParser, ontologyBuilder);
+        messageGraphTokenizer = mock(MessageGraphTokenizer.class);
+        networkSemanticStructure = new NetworkSemanticStructure(degree, graphDistance, modularity, pageRank, fbJsonParser, ontologyBuilder,messageGraphTokenizer);
     }
 
     @Test
-    public void testBuild() {
+    public void testBuild() throws IOException {
         String text = "text";
         Graph graph = new Graph();
         graph.setId("graph");
@@ -55,6 +59,7 @@ public class NetworkSemanticStructureTest {
         verify(graphDistance).execute(graph);
         verify(modularity).execute(graph, true, true);
         verify(pageRank).execute(graph, true);
+        verify(messageGraphTokenizer).buildTokens(graph);
         verify(ontologyBuilder).buildOntology(graph);
         Assert.assertEquals(f, f2);
 
