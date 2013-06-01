@@ -65,6 +65,9 @@ target/
 *.gen
 segments_1
 
+#generated files
+files/
+
 # other crazy things #
 ######################
 *.exe.stackdump
