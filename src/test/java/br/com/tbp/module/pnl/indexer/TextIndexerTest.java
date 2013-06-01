@@ -43,7 +43,7 @@ public class TextIndexerTest {
         File file = new File("src/main/resources/index".replace("/", File.separator));
         File[] files = file.listFiles();
         Assert.assertNotNull(files);
-        Assert.assertEquals(10, files.length);
+        Assert.assertEquals(11, files.length);
         for (File f : files) {
             Assert.assertNotNull(f);
         }
@@ -54,7 +54,9 @@ public class TextIndexerTest {
         File[] files = file.listFiles();
         // limpa lixo
         for (File f : files) {
-            f.delete();
+            if(!f.getName().contains("a.txt")) {
+                f.delete();
+            }
         }
     }
 }

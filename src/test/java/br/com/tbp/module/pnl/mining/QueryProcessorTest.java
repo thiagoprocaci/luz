@@ -11,9 +11,11 @@ import br.com.tbp.module.pnl.preprocessor.StopWordManager;
 import br.com.tbp.module.pnl.support.Doc;
 import br.com.tbp.parser.FBJsonParser;
 import org.apache.lucene.queryParser.ParseException;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
@@ -21,7 +23,6 @@ import java.util.Set;
 public class QueryProcessorTest {
     private QueryProcessor queryProcessor;
     private Set<Doc> docs;
-
 
     @Before
     public void doBefore() {
@@ -47,7 +48,18 @@ public class QueryProcessorTest {
                     i++;
                 }
             }
+        }
+    }
 
+    @After
+    public void doAfter() {
+        File file = new File("src/main/resources/index".replace("/", File.separator));
+        File[] files = file.listFiles();
+        // limpa lixo
+        for (File f : files) {
+            if(!f.getName().contains("a.txt")) {
+                f.delete();
+            }
         }
     }
 

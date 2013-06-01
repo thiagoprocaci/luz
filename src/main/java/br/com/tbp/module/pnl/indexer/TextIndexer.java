@@ -24,7 +24,8 @@ public class TextIndexer {
 
 
     public Directory index(Set<Doc> docs) throws IOException {
-        Directory dir = FSDirectory.open(new File("src/main/resources/index".replace("/", File.separator)));
+        File indexDir = new File("src/main/resources/index".replace("/", File.separator));
+        Directory dir = FSDirectory.open(indexDir);
         IndexWriterConfig config = new IndexWriterConfig(Version.LUCENE_35, portugueseAnalyzer.getAnalyzer());
         IndexWriter indexWriter = new IndexWriter(dir, config);
         Document d = null;
