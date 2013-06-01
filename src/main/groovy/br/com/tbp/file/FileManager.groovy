@@ -3,7 +3,7 @@ package br.com.tbp.file
 
 class FileManager {
 
-    private static final String FILES = "files"
+    private static final String FILES_FOLDER = "files"
 
     private File write(File file, String text) {
         Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "UTF-8"));
@@ -17,14 +17,24 @@ class FileManager {
     }
 
     def File save(String text) {
-        def file = new File(FILES + File.separator + "fb.gml")
-        return write(file, text)
+        return write(getFile("fb.gml"), text)
 
     }
 
     def File save(String text, String fileName) {
-        def file = new File(FILES + File.separator + fileName)
-        return write(file, text)
+        return write(getFile(fileName), text)
+    }
+
+    private File getFile(String path) {
+        def folder = new File(FILES_FOLDER)
+        if(!folder.exists()) {
+            folder.mkdir()
+        }
+        def file = new File(folder.getAbsolutePath(), path)
+        if(!file.exists()) {
+            file.createNewFile();
+        }
+        return file
     }
 
 }
