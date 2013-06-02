@@ -1,6 +1,5 @@
 package br.com.tbp.module;
 
-
 import br.com.tbp.model.Graph;
 import br.com.tbp.module.graphanalysis.algorithm.Degree;
 import br.com.tbp.module.graphanalysis.algorithm.GraphDistance;
@@ -17,9 +16,7 @@ import org.junit.Test;
 import java.io.File;
 import java.io.IOException;
 
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 public class NetworkSemanticStructureTest {
 

@@ -1,9 +1,7 @@
 package br.com.tbp.module.pnl.preprocessor;
 
-
 import br.com.tbp.file.FileReader;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashSet;
 import java.util.Scanner;

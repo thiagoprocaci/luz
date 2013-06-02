@@ -1,17 +1,13 @@
 package br.com.tbp.module.pnl.preprocessor;
 
-
 import br.com.tbp.file.FileReader;
 import br.com.tbp.model.Graph;
-import br.com.tbp.model.Message;
-import br.com.tbp.model.Node;
 import br.com.tbp.parser.FBJsonParser;
 import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Map;
 
 public class PortugueseTokenizerTest {

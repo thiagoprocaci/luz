@@ -4,7 +4,6 @@ import br.com.tbp.model.Edge
 import br.com.tbp.model.Graph
 import br.com.tbp.model.Message
 import br.com.tbp.model.Node
-import br.com.tbp.model.Token
 import groovy.json.JsonSlurper
 
 class FBJsonParser {

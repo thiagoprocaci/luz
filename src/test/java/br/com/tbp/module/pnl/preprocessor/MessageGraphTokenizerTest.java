@@ -1,16 +1,17 @@
 package br.com.tbp.module.pnl.preprocessor;
 
-
 import br.com.tbp.file.FileReader;
 import br.com.tbp.model.Graph;
 import br.com.tbp.model.Node;
 import br.com.tbp.model.Token;
 import br.com.tbp.parser.FBJsonParser;
-import static junit.framework.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
+
+import static junit.framework.Assert.assertFalse;
+import static junit.framework.Assert.assertNotNull;
 
 public class MessageGraphTokenizerTest {
 

@@ -2,11 +2,7 @@ package br.com.tbp.module.semantic
 
 import br.com.tbp.file.FileManager
 import br.com.tbp.file.FileReader
-import br.com.tbp.model.Edge
-import br.com.tbp.model.Graph
-import br.com.tbp.model.Message
-import br.com.tbp.model.Node
-import br.com.tbp.model.Token
+import br.com.tbp.model.*
 
 class OntologyBuilder {
 

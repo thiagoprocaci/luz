@@ -58,6 +58,7 @@ public class NetworkSemanticStructure {
         PortugueseAnalyzer portugueseAnalyzer = new PortugueseAnalyzer(stopWordManager);
         PortugueseTokenizer portugueseTokenizer = new PortugueseTokenizer(portugueseAnalyzer);
         MessageGraphTokenizer messageGraphTokenizer = new MessageGraphTokenizer(portugueseTokenizer);
+
         NetworkSemanticStructure networkSemanticStructure = new NetworkSemanticStructure(degree,graphDistance,modularity,pageRank,fbJsonParser, ontologyBuilder,messageGraphTokenizer);
         String jsonString = br.com.tbp.file.FileReader.readFile("src/test/resources/br/com/tbp/parser/feed_cibercultura.txt");
         networkSemanticStructure.build(jsonString);
