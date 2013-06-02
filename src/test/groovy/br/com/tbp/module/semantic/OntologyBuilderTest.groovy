@@ -3,6 +3,7 @@ package br.com.tbp.module.semantic
 import br.com.tbp.model.Graph
 import br.com.tbp.module.pnl.preprocessor.MessageGraphTokenizer
 import br.com.tbp.module.pnl.preprocessor.PortugueseAnalyzer
+import br.com.tbp.module.pnl.preprocessor.PortugueseTokenizer
 import br.com.tbp.module.pnl.preprocessor.StopWordManager
 import br.com.tbp.parser.FBJsonParser
 
@@ -13,6 +14,7 @@ class OntologyBuilderTest extends GroovyTestCase {
     private MessageGraphTokenizer messageGraphTokenizer
     private StopWordManager stopWordManager
     private PortugueseAnalyzer portugueseAnalyzer
+    private PortugueseTokenizer portugueseTokenizer;
 
 
 
@@ -24,7 +26,8 @@ class OntologyBuilderTest extends GroovyTestCase {
 
         stopWordManager = new StopWordManager();
         portugueseAnalyzer = new PortugueseAnalyzer(stopWordManager)
-        messageGraphTokenizer = new MessageGraphTokenizer(portugueseAnalyzer)
+        portugueseTokenizer = new PortugueseTokenizer(portugueseAnalyzer)
+        messageGraphTokenizer = new MessageGraphTokenizer(portugueseTokenizer)
         messageGraphTokenizer.buildTokens(graph)
     }
 
@@ -38,6 +41,6 @@ class OntologyBuilderTest extends GroovyTestCase {
         String ontologyString = br.com.tbp.file.FileReader.readFile(ontologyFile)
         ontologyString =  ontologyString.replaceAll("\\s+","");
 
-      //  assertEquals(expectedString, ontologyString)
+        assertEquals(expectedString.length(), ontologyString.length())
     }
 }

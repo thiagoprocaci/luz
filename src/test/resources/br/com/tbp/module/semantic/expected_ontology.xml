@@ -541,6 +541,1787 @@ http://aplicweb.feevale.br/site/hotsite/default.asp?intIdHotSite=152&intIdSecao=
         <hasAuthor rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
         <hasPreviousMessage rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#384634338233143_454394097923833_458050690891507"/>
     </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#firefox">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">firefox</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">firefox</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#firefox-100001811053281"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#firefox-100000348062784"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#firefox-100001811053281">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">firefox-100001811053281</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#firefox"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#firefox-100000348062784">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">firefox-100000348062784</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#firefox"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#mand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">mand</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">mand</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#mand-100001811053281"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#mand-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#mand-100001811053281">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">2</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">mand-100001811053281</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#mand"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#mand-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">mand-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#mand"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#submet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">submet</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">submet</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#submet-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#submet-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">submet-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#submet"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#simposi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">simposi</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">simposi</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#simposi-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#simposi-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">simposi-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#simposi"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#fort">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">fort</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">fort</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#fort-100000108890489"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#fort-100000108890489">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">fort-100000108890489</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000108890489"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#fort"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#www.facebook.com">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">www.facebook.com</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">www.facebook.com</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#www.facebook.com-100001811053281"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#www.facebook.com-100001811053281">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">www.facebook.com-100001811053281</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#www.facebook.com"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#apresent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">apresent</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">apresent</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#apresent-100000015795070"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#apresent-100000401238331"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#apresent-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#apresent-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">3</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">apresent-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#apresent"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#apresent-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">4</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">apresent-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#apresent"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#apresent-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">apresent-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#apresent"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#grup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">grup</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">grup</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#grup-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#grup-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">grup-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#grup"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#colaborat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">colaborat</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">colaborat</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#colaborat-100000015795070"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#colaborat-100000108890489"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#colaborat-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">2</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">colaborat-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#colaborat"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#colaborat-100000108890489">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">colaborat-100000108890489</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000108890489"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#colaborat"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#trabalh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">trabalh</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">trabalh</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#trabalh-100000015795070"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#trabalh-100000401238331"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#trabalh-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#trabalh-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">trabalh-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#trabalh"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#trabalh-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">trabalh-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#trabalh"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#trabalh-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">2</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">trabalh-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#trabalh"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">tard</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">tard</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tard-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tard-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">tard-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tard"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#monograf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">monograf</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">monograf</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#monograf-100001811053281"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#monograf-100000015795070"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#monograf-100000401238331"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#monograf-100002164977849"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#monograf-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#monograf-100001811053281">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">2</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">monograf-100001811053281</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#monograf"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#monograf-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">monograf-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#monograf"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#monograf-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">3</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">monograf-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#monograf"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#monograf-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">2</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">monograf-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#monograf"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#monograf-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">2</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">monograf-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#monograf"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#http">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">http</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">http</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#http-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#http-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">http-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#http"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#cibercultur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">cibercultur</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">cibercultur</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#cibercultur-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#cibercultur-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">cibercultur-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#cibercultur"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#caus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">caus</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">caus</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#caus-100000015795070"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#caus-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">caus-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#caus"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#temp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">temp</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">temp</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#temp-100000015795070"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#temp-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">temp-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#temp"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#artig">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">artig</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">artig</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#artig-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#artig-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">artig-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#artig"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#receb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">receb</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">receb</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#receb-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#receb-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">receb-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#receb"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hotsit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">hotsit</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">hotsit</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hotsit-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hotsit-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">hotsit-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#hotsit"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#histor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">histor</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">histor</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#histor-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#histor-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">histor-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#histor"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#exist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">exist</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">exist</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#exist-100001811053281"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#exist-100001811053281">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">exist-100001811053281</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#exist"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#pens">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">pens</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">pens</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#pens-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#pens-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">pens-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#pens"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#desconfi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">desconfi</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">desconfi</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#desconfi-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#desconfi-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">desconfi-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#desconfi"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#conot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">conot</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">conot</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#conot-100000108890489"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#conot-100000108890489">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">conot-100000108890489</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000108890489"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#conot"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#horari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">horari</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">horari</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#horari-100000015795070"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#horari-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">horari-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#horari"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#help">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">help</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">help</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#help-100001811053281"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#help-100001811053281">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">help-100001811053281</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#help"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#cert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">cert</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">cert</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#cert-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#cert-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">cert-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#cert"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#feri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">feri</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">feri</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#feri-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#feri-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">feri-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#feri"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#ocorr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">ocorr</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">ocorr</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#ocorr-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#ocorr-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">ocorr-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#ocorr"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#gost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">gost</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">gost</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#gost-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#gost-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">gost-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#gost"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#seguint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">seguint</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">seguint</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#seguint-100000015795070"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#seguint-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">seguint-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#seguint"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#continu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">continu</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">continu</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#continu-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#continu-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">2</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">continu-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#continu"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#divulg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">divulg</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">divulg</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#divulg-100000015795070"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#divulg-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">divulg-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#divulg"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#assim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">assim</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">assim</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#assim-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#assim-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">assim-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#assim"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#assist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">assist</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">assist</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#assist-100000015795070"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#assist-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">assist-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#assist"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#question">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">question</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">question</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#question-100001811053281"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#question-100001811053281">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">question-100001811053281</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#question"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#chegu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">chegu</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">chegu</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#chegu-100000015795070"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#chegu-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">chegu-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#chegu"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#criteri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">criteri</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">criteri</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#criteri-100000015795070"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#criteri-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">criteri-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#criteri"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#present">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">present</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">present</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#present-100000015795070"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#present-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">present-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#present"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#pessoal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">pessoal</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">pessoal</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#pessoal-100000015795070"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#pessoal-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#pessoal-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">pessoal-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#pessoal"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#pessoal-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">pessoal-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#pessoal"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aplicweb.feevale.br">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">aplicweb.feevale.br</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">aplicweb.feevale.br</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aplicweb.feevale.br-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aplicweb.feevale.br-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">aplicweb.feevale.br-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aplicweb.feevale.br"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#thiag">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">thiag</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">thiag</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#thiag-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#thiag-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">thiag-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#thiag"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#acend">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">acend</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">acend</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#acend-100000348062784"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#acend-100000348062784">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">acend-100000348062784</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#acend"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#frent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">frent</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">frent</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#frent-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#frent-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">frent-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#frent"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#kizzy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">kizzy</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">kizzy</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#kizzy-100000348062784"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#kizzy-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#kizzy-100000348062784">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">kizzy-100000348062784</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#kizzy"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#kizzy-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">kizzy-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#kizzy"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#apreci">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">apreci</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">apreci</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#apreci-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#apreci-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">apreci-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#apreci"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#possivel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">possivel</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">possivel</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#possivel-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#possivel-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">possivel-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#possivel"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#combin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">combin</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">combin</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#combin-100000015795070"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#combin-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">combin-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#combin"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#atualiz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">atualiz</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">atualiz</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#atualiz-100000348062784"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#atualiz-100000348062784">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">atualiz-100000348062784</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#atualiz"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#pergunt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">pergunt</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">pergunt</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#pergunt-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#pergunt-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">pergunt-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#pergunt"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#alun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">alun</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">alun</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#alun-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#alun-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">alun-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#alun"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#issu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">issu</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">issu</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#issu-100001811053281"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#issu-100001811053281">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">issu-100001811053281</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#issu"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#linh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">linh</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">linh</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#linh-100000108890489"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#linh-100000108890489">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">linh-100000108890489</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000108890489"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#linh"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#upload">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">upload</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">upload</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#upload-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#upload-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">upload-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#upload"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#kkkkk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">kkkkk</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">kkkkk</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#kkkkk-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#kkkkk-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">kkkkk-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#kkkkk"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#marian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">marian</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">marian</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#marian-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#marian-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">marian-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#marian"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#objet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">objet</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">objet</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#objet-100000015795070"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#objet-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">objet-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#objet"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#entreg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">entreg</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">entreg</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#entreg-100000015795070"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#entreg-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#entreg-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">entreg-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#entreg"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#entreg-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">entreg-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#entreg"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#ativ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">ativ</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">ativ</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#ativ-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#ativ-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">ativ-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#ativ"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#prof">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">prof</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">prof</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#prof-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#prof-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">2</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">prof-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#prof"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#noit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">noit</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">noit</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#noit-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#noit-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">noit-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#noit"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#seman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">seman</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">seman</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#seman-100000015795070"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#seman-100000401238331"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#seman-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#seman-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">seman-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#seman"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#seman-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">seman-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#seman"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#seman-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">seman-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#seman"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#normal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">normal</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">normal</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#normal-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#normal-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">normal-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#normal"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#poss">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">poss</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">poss</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#poss-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#poss-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">poss-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#poss"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#arquiv">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">arquiv</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">arquiv</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#arquiv-100002164977849"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#arquiv-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#arquiv-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">arquiv-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#arquiv"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#arquiv-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">arquiv-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#arquiv"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#duas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">duas</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">duas</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#duas-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#duas-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">duas-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#duas"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#important">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">important</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">important</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#important-100000015795070"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#important-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">important-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#important"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aval">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">aval</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">aval</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aval-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aval-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">aval-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aval"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#mail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">mail</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">mail</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#mail-100001811053281"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#mail-100001811053281">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">mail-100001811053281</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#mail"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#carreg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">carreg</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">carreg</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#carreg-100001811053281"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#carreg-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#carreg-100001811053281">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">carreg-100001811053281</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#carreg"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#carreg-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">carreg-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#carreg"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#onlin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">onlin</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">onlin</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#onlin-100000015795070"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#onlin-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">onlin-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#onlin"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#abcib">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">abcib</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">abcib</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#abcib-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#abcib-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">abcib-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#abcib"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">tent</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">tent</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tent-100001811053281"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tent-100000348062784"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tent-100000401238331"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tent-100002164977849"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tent-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tent-100001811053281">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">tent-100001811053281</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tent"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tent-100000348062784">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">tent-100000348062784</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tent"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tent-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">tent-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tent"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tent-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">2</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">tent-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tent"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tent-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">2</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">tent-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#tent"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#maced">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">maced</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">maced</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#maced-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#maced-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">maced-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#maced"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#democrac">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">democrac</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">democrac</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#democrac-100000108890489"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#democrac-100000108890489">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">democrac-100000108890489</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000108890489"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#democrac"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#interessant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">interessant</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">interessant</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#interessant-100000108890489"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#interessant-100000108890489">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">interessant-100000108890489</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000108890489"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#interessant"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#envi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">envi</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">envi</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#envi-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#envi-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">envi-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#envi"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#emial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">emial</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">emial</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#emial-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#emial-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">emial-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#emial"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#discusso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">discusso</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">discusso</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#discusso-100000108890489"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#discusso-100000108890489">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">2</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">discusso-100000108890489</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000108890489"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#discusso"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aparec">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">aparec</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">aparec</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aparec-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aparec-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">aparec-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aparec"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#consegu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">consegu</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">consegu</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#consegu-100001811053281"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#consegu-100001811053281">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">consegu-100001811053281</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#consegu"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#refin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">refin</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">refin</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#refin-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#refin-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">refin-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#refin"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#chom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">chom</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">chom</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#chom-100001811053281"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#chom-100001811053281">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">chom-100001811053281</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#chom"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#relaca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">relaca</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">relaca</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#relaca-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#relaca-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">relaca-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#relaca"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#acompanh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">acompanh</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">acompanh</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#acompanh-100001811053281"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#acompanh-100001811053281">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">acompanh-100001811053281</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#acompanh"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#https">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">https</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">https</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#https-100001811053281"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#https-100001811053281">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">https-100001811053281</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#https"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#fara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">fara</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">fara</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#fara-100000015795070"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#fara-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">fara-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#fara"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#ferrament">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">ferrament</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">ferrament</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#ferrament-100000108890489"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#ferrament-100000108890489">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">ferrament-100000108890489</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000108890489"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#ferrament"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#moodl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">moodl</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">moodl</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#moodl-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#moodl-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">moodl-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#moodl"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#obrig">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">obrig</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">obrig</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#obrig-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#obrig-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">obrig-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#obrig"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#avali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">avali</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">avali</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#avali-100000015795070"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#avali-100000401238331"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#avali-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#avali-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">2</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">avali-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#avali"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#avali-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">4</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">avali-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#avali"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#avali-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">2</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">avali-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#avali"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#facebook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">facebook</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">facebook</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#facebook-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#facebook-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">facebook-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#facebook"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#benjamin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">benjamin</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">benjamin</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#benjamin-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#benjamin-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">benjamin-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#benjamin"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#putz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">putz</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">putz</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#putz-100000348062784"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#putz-100000348062784">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">putz-100000348062784</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#putz"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#esquec">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">esquec</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">esquec</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#esquec-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#esquec-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">esquec-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#esquec"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#robert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">robert</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">robert</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#robert-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#robert-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">robert-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#robert"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#soment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">soment</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">soment</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#soment-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#soment-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">soment-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#soment"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aceit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">aceit</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">aceit</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aceit-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aceit-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">aceit-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aceit"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#mozart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">mozart</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">mozart</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#mozart-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#mozart-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">mozart-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#mozart"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#respost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">respost</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">respost</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#respost-100001811053281"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#respost-100001811053281">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">respost-100001811053281</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#respost"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#coleg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">coleg</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">coleg</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#coleg-100000015795070"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#coleg-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#coleg-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">coleg-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#coleg"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#coleg-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">coleg-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#coleg"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#versa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">versa</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">versa</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#versa-100000348062784"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#versa-100000348062784">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">versa-100000348062784</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#versa"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#problem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">problem</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">problem</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#problem-100000348062784"/>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#problem-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#problem-100000348062784">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">problem-100000348062784</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000348062784"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#problem"/>
+        </owl:NamedIndividual>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#problem-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">problem-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#problem"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#community">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">community</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">community</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#community-100001811053281"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#community-100001811053281">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">community-100001811053281</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100001811053281"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#community"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#nest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">nest</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">nest</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#nest-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#nest-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">nest-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#nest"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#list">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">list</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">list</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#list-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#list-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">list-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#list"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#quer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">quer</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">quer</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#quer-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#quer-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">quer-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#quer"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#default.asp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">default.asp</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">default.asp</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#default.asp-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#default.asp-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">default.asp-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#default.asp"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#bjss">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">bjss</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">bjss</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#bjss-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#bjss-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">bjss-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#bjss"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#eletron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">eletron</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">eletron</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#eletron-100000108890489"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#eletron-100000108890489">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">eletron-100000108890489</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000108890489"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#eletron"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#professor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">professor</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">professor</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#professor-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#professor-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">professor-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#professor"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#cris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">cris</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">cris</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#cris-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#cris-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">cris-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#cris"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aguard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">aguard</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">aguard</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aguard-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aguard-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">aguard-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#aguard"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#coloc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">coloc</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">coloc</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#coloc-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#coloc-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">coloc-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#coloc"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#formulari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">formulari</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">formulari</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#formulari-100000401238331"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#formulari-100000401238331">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">formulari-100000401238331</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000401238331"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#formulari"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#bjsss">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">bjsss</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">bjsss</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#bjsss-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#bjsss-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">2</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">bjsss-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#bjsss"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#presencial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">presencial</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">presencial</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#presencial-100000015795070"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#presencial-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">presencial-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#presencial"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#intidseca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">intidseca</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">intidseca</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#intidseca-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#intidseca-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">intidseca-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#intidseca"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#junt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">junt</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">junt</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#junt-100000015795070"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#junt-100000015795070">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">junt-100000015795070</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000015795070"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#junt"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#dand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">dand</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">dand</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#dand-100000000103086"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#dand-100000000103086">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">dand-100000000103086</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100000000103086"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#dand"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#intidhotsit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Token"/>
+        <tokenId rdf:datatype="&xsd;string">intidhotsit</tokenId>
+        <tokenWord rdf:datatype="&xsd;string">intidhotsit</tokenWord>
+        <hasTokenFrequency rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#intidhotsit-100002164977849"/>
+        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#intidhotsit-100002164977849">
+            <rdf:type rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#TokenFrequency"/>
+            <tokenFrequencyCount rdf:datatype="&xsd;integer">1</tokenFrequencyCount>
+            <tokenFrequencyId rdf:datatype="&xsd;string">intidhotsit-100002164977849</tokenFrequencyId>
+            <belongsToUser rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#100002164977849"/>
+            <belongsToToken rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#intidhotsit"/>
+        </owl:NamedIndividual>
+    </owl:NamedIndividual>
 
 
 </rdf:RDF>

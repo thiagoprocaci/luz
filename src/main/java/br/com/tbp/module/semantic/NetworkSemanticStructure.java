@@ -8,6 +8,7 @@ import br.com.tbp.module.graphanalysis.algorithm.Modularity;
 import br.com.tbp.module.graphanalysis.algorithm.PageRank;
 import br.com.tbp.module.pnl.preprocessor.MessageGraphTokenizer;
 import br.com.tbp.module.pnl.preprocessor.PortugueseAnalyzer;
+import br.com.tbp.module.pnl.preprocessor.PortugueseTokenizer;
 import br.com.tbp.module.pnl.preprocessor.StopWordManager;
 import br.com.tbp.parser.FBJsonParser;
 
@@ -23,6 +24,7 @@ public class NetworkSemanticStructure {
     private FBJsonParser fbJsonParser;
     private OntologyBuilder ontologyBuilder;
     private MessageGraphTokenizer messageGraphTokenizer ;
+
 
     public NetworkSemanticStructure(Degree degree, GraphDistance graphDistance, Modularity modularity, PageRank pageRank, FBJsonParser fbJsonParser, OntologyBuilder ontologyBuilder, MessageGraphTokenizer messageGraphTokenizer) {
         this.degree = degree;
@@ -54,7 +56,8 @@ public class NetworkSemanticStructure {
         OntologyBuilder ontologyBuilder = new OntologyBuilder()  ;
         StopWordManager stopWordManager = new StopWordManager();
         PortugueseAnalyzer portugueseAnalyzer = new PortugueseAnalyzer(stopWordManager);
-        MessageGraphTokenizer messageGraphTokenizer = new MessageGraphTokenizer(portugueseAnalyzer);
+        PortugueseTokenizer portugueseTokenizer = new PortugueseTokenizer(portugueseAnalyzer);
+        MessageGraphTokenizer messageGraphTokenizer = new MessageGraphTokenizer(portugueseTokenizer);
         NetworkSemanticStructure networkSemanticStructure = new NetworkSemanticStructure(degree,graphDistance,modularity,pageRank,fbJsonParser, ontologyBuilder,messageGraphTokenizer);
         String jsonString = br.com.tbp.file.FileReader.readFile("src/test/resources/br/com/tbp/parser/feed_cibercultura.txt");
         networkSemanticStructure.build(jsonString);

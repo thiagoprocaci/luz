@@ -2,6 +2,7 @@ package br.com.tbp.module.semantic
 
 import br.com.tbp.file.FileManager
 import br.com.tbp.file.FileReader
+import br.com.tbp.model.Edge
 import br.com.tbp.model.Graph
 import br.com.tbp.model.Message
 import br.com.tbp.model.Node
@@ -9,13 +10,69 @@ import br.com.tbp.model.Token
 
 class OntologyBuilder {
 
-
     def File buildOntology(Graph graph) {
         def buffer = new StringBuffer()
         def community = new HashMap<Integer, List<Node>>()
         def messageMap = new HashMap<String, List<Message>>()
 
-        graph.nodeSet.each { node ->
+        buildNodes(graph.nodeSet, buffer, community, messageMap)
+        buildEdges(graph.edgeSet, buffer)
+        buildCommunity(community, buffer)
+        messageMap.keySet().each { key ->
+            buildMessages(messageMap.get(key), buffer)
+        }
+        buildTokens(graph.getTokens(), buffer)
+
+        def fileContent = FileReader.readFile("src/main/resources/networkTemplate.owl");
+        fileContent = fileContent.replace("#INSTANCES", buffer.toString())
+        FileManager fileManager = new FileManager()
+        fileManager.save(fileContent, "ontology.xml")
+    }
+
+    private void buildCommunity(HashMap<Integer, List<Node>> community, StringBuffer buffer) {
+        def keys = community.keySet()
+        keys.each { key ->
+            buffer.append("    <owl:NamedIndividual rdf:about=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
+            buffer.append(key)
+            buffer.append("\"> \n")
+            buffer.append("        <rdf:type rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Community\"/> \n")
+            buffer.append("        <communityId rdf:datatype=\"&xsd;string\">")
+            buffer.append(key)
+            buffer.append("</communityId> \n")
+            def list = community.get(key)
+            list.each { node ->
+                buffer.append("        <hasUser rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
+                buffer.append(node.id)
+                buffer.append("\"/> \n")
+            }
+            buffer.append("    </owl:NamedIndividual> \n")
+        }
+    }
+
+    private void buildEdges(Set<Edge> edges, StringBuffer buffer) {
+        edges.each { edge ->
+            buffer.append("    <owl:NamedIndividual rdf:about=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
+            buffer.append(edge.id)
+            buffer.append("\"> \n")
+            buffer.append("        <hasSourceNode rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
+            buffer.append(edge.node1.id)
+            buffer.append("\"/> \n")
+            buffer.append("        <hasDestNode rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
+            buffer.append(edge.node2.id)
+            buffer.append("\"/> \n")
+            buffer.append("        <rdf:type rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge\"/> \n")
+            buffer.append("        <edgeWeight rdf:datatype=\"&xsd;float\">")
+            buffer.append(edge.weight)
+            buffer.append("</edgeWeight> \n")
+            buffer.append("        <edgeId rdf:datatype=\"&xsd;string\">")
+            buffer.append(edge.id)
+            buffer.append("</edgeId> \n")
+            buffer.append("    </owl:NamedIndividual> \n")
+        }
+    }
+
+    private void buildNodes(Set<Node> nodes, StringBuffer buffer, HashMap<Integer, List<Node>> community, HashMap<String, List<Message>> messageMap) {
+        nodes.each { node ->
             buffer.append("    <owl:NamedIndividual rdf:about=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
             buffer.append(node.id)
             buffer.append("\"> \n")
@@ -49,55 +106,6 @@ class OntologyBuilder {
             community.get(node.modularityClass).add(node)
             messageMap.put(node.id, node.messages)
         }
-
-        graph.edgeSet.each { edge ->
-            buffer.append("    <owl:NamedIndividual rdf:about=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
-            buffer.append(edge.id)
-            buffer.append("\"> \n")
-            buffer.append("        <hasSourceNode rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
-            buffer.append(edge.node1.id)
-            buffer.append("\"/> \n")
-            buffer.append("        <hasDestNode rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
-            buffer.append(edge.node2.id)
-            buffer.append("\"/> \n")
-            buffer.append("        <rdf:type rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge\"/> \n")
-            buffer.append("        <edgeWeight rdf:datatype=\"&xsd;float\">")
-            buffer.append(edge.weight)
-            buffer.append("</edgeWeight> \n")
-            buffer.append("        <edgeId rdf:datatype=\"&xsd;string\">")
-            buffer.append(edge.id)
-            buffer.append("</edgeId> \n")
-            buffer.append("    </owl:NamedIndividual> \n")
-        }
-
-        def keys = community.keySet()
-        keys.each { key ->
-            buffer.append("    <owl:NamedIndividual rdf:about=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
-            buffer.append(key)
-            buffer.append("\"> \n")
-            buffer.append("        <rdf:type rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Community\"/> \n")
-            buffer.append("        <communityId rdf:datatype=\"&xsd;string\">")
-            buffer.append(key)
-            buffer.append("</communityId> \n")
-            def list = community.get(key)
-            list.each { node ->
-                buffer.append("        <hasUser rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
-                buffer.append(node.id)
-                buffer.append("\"/> \n")
-            }
-            buffer.append("    </owl:NamedIndividual> \n")
-        }
-
-        messageMap.keySet().each { key ->
-            buildMessages(messageMap.get(key), buffer)
-        }
-        buildTokens(graph.getTokens(), buffer)
-
-        def fileContent = FileReader.readFile("src/main/resources/networkTemplate.owl");
-        fileContent = fileContent.replace("#INSTANCES", buffer.toString())
-        FileManager fileManager = new FileManager()
-        fileManager.save(fileContent, "ontology.xml")
-
     }
 
     private void buildTokens(Set<Token> tokens, StringBuffer buffer) {
@@ -150,8 +158,7 @@ class OntologyBuilder {
         }
     }
 
-
-    private void buildMessages(messages, buffer) {
+    private void buildMessages(List<Message> messages, StringBuffer buffer) {
         messages.each { m ->
             buffer.append("    <owl:NamedIndividual rdf:about=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
             buffer.append(m.id)

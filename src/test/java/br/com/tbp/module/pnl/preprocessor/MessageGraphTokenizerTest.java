@@ -18,13 +18,15 @@ public class MessageGraphTokenizerTest {
     private MessageGraphTokenizer messageGraphTokenizer;
     private PortugueseAnalyzer portugueseAnalyzer;
     private StopWordManager stopWordManager;
+    private PortugueseTokenizer portugueseTokenizer;
     private Graph graph;
 
     @Before
     public void doBefore() {
         stopWordManager = new StopWordManager();
         portugueseAnalyzer = new PortugueseAnalyzer(stopWordManager);
-        messageGraphTokenizer = new MessageGraphTokenizer(portugueseAnalyzer);
+        portugueseTokenizer = new PortugueseTokenizer(portugueseAnalyzer);
+        messageGraphTokenizer = new MessageGraphTokenizer(portugueseTokenizer);
         fbJsonParser = new FBJsonParser();
         graph = fbJsonParser.parse(FileReader.readFile("src/test/resources/br/com/tbp/parser/feed_cibercultura.txt"));
     }

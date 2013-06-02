@@ -13,10 +13,10 @@ import java.util.Map;
 import java.util.Set;
 
 public class MessageGraphTokenizer {
-    private PortugueseAnalyzer portugueseAnalyzer;
+    private PortugueseTokenizer portugueseTokenizer;
 
-    public MessageGraphTokenizer(PortugueseAnalyzer portugueseAnalyzer) {
-        this.portugueseAnalyzer = portugueseAnalyzer;
+    public MessageGraphTokenizer(PortugueseTokenizer portugueseTokenizer) {
+        this.portugueseTokenizer = portugueseTokenizer;
     }
 
     public void buildTokens(Graph graph) throws IOException {
@@ -30,7 +30,7 @@ public class MessageGraphTokenizer {
         Map<String, Integer> tokenCount = null;
         Token token = null;
         for (Node node : messages.keySet()) {
-            tokenCount = portugueseAnalyzer.tokenizer(messages.get(node));
+            tokenCount = portugueseTokenizer.tokenizer(messages.get(node));
             for (String string : tokenCount.keySet()) {
                 token = new Token(string, string);
                 if (!tokens.containsKey(token)) {
