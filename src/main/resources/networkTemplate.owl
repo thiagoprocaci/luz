@@ -147,6 +147,43 @@
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
 
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#networkAvgDist">
+            <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#NetworkMetadata"/>
+            <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#networkDiameter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#NetworkMetadata"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#networkModularity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#NetworkMetadata"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#networkModularityResolution">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#NetworkMetadata"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#networkNumberOfCommunities">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#NetworkMetadata"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#networkRadius">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#NetworkMetadata"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#networkShortestPaths">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#NetworkMetadata"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#NetworkMetadata"/>
+
     <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Community"/>
 
     <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#Edge"/>

@@ -11,6 +11,7 @@ class OntologyBuilder {
         def community = new HashMap<Integer, List<Node>>()
         def messageMap = new HashMap<String, List<Message>>()
 
+        buildMetadata(graph, buffer)
         buildNodes(graph.nodeSet, buffer, community, messageMap)
         buildEdges(graph.edgeSet, buffer)
         buildCommunity(community, buffer)
@@ -24,6 +25,36 @@ class OntologyBuilder {
         FileManager fileManager = new FileManager()
         fileManager.save(fileContent, "ontology.xml")
     }
+
+    private void buildMetadata(Graph graph, StringBuffer buffer) {
+        buffer.append("    <owl:NamedIndividual rdf:about=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#")
+        buffer.append(graph.id)
+        buffer.append("\"> \n")
+        buffer.append("        <rdf:type rdf:resource=\"http://www.semanticweb.org/thiago/ontologies/2013/4/Ontology1369703745905.owl#NetworkMetadata\"/> \n")
+        buffer.append("        <networkAvgDist rdf:datatype=\"&xsd;double\">")
+        buffer.append(graph.avgDist)
+        buffer.append("</networkAvgDist> \n")
+        buffer.append("        <networkModularity rdf:datatype=\"&xsd;double\">")
+        buffer.append(graph.modularity)
+        buffer.append("</networkModularity> \n")
+        buffer.append("        <networkModularityResolution rdf:datatype=\"&xsd;double\">")
+        buffer.append(graph.modularityResolution)
+        buffer.append("</networkModularityResolution> \n")
+        buffer.append("        <networkRadius rdf:datatype=\"&xsd;integer\">")
+        buffer.append(graph.radius)
+        buffer.append("</networkRadius> \n")
+        buffer.append("        <networkNumberOfCommunities rdf:datatype=\"&xsd;integer\">")
+        buffer.append(graph.numberOfCommunities)
+        buffer.append("</networkNumberOfCommunities> \n")
+        buffer.append("        <networkDiameter rdf:datatype=\"&xsd;integer\">")
+        buffer.append(graph.diameter)
+        buffer.append("</networkDiameter> \n")
+        buffer.append("        <networkShortestPaths rdf:datatype=\"&xsd;integer\">")
+        buffer.append(graph.shortestPaths)
+        buffer.append("</networkShortestPaths> \n")
+        buffer.append("    </owl:NamedIndividual> \n")
+    }
+
 
     private void buildCommunity(HashMap<Integer, List<Node>> community, StringBuffer buffer) {
         def keys = community.keySet()
