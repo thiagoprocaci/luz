@@ -179,8 +179,9 @@ class OntologyBuilder {
                 bufferFrequency.append("\"/> \n")
                 bufferFrequency.append("    </owl:NamedIndividual> \n");
             }
-            buffer.append(bufferFrequency)
             buffer.append("    </owl:NamedIndividual> \n");
+            buffer.append(bufferFrequency)
+
 
         }
     }

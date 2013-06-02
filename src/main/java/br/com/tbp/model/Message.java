@@ -60,4 +60,8 @@ public class Message extends CoreEntity {
         this.author = author;
     }
 
+    public String toString() {
+        return content;
+    }
+
 }

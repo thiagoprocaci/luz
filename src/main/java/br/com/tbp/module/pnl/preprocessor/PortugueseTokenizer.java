@@ -39,7 +39,7 @@ public class PortugueseTokenizer {
                 word.startsWith("1") || word.startsWith("2") || word.startsWith("3")
                 || word.startsWith("4") || word.startsWith("5") || word.startsWith("6")
                 || word.startsWith("7") || word.startsWith("8") || word.startsWith("9")
-                || word.startsWith("0")) {
+                || word.startsWith("0") || word.contains(".")) {
             return false;
         }
         return true;

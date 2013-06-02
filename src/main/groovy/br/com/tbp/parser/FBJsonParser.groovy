@@ -22,28 +22,33 @@ class FBJsonParser {
         Node user2 = null
         Map<Node, List<Message>> commentsMap = new HashMap<Node, List<Message>>()
 
-        // iteracao nos posts
-        def posts = json.data
-        posts.each { post ->
-            // recupera autor do post
-            def postAuthor = post.from
-            user1 = new Node(postAuthor.id, postAuthor.name)
-            userList.add(user1)
-            def message = new Message(post.id, post.message, getDate(post.created_time.trim()), user1)
-            def previousMessage = addMessage(user1, message, null, commentsMap)
-            // iteracao nos comentarios do post
-            if (post.comments != null && post.comments.data != null && post.comments.data.from != null) {
-                post.comments.data.each { data ->
-                    user2 = new Node(data.from.id, data.from.name)
-                    userList.add(user2)
-                    message = new Message(data.id, data.message, getDate(data.created_time.trim()), user2)
-                    previousMessage = addMessage(user2, message, previousMessage, commentsMap)
-                }
 
+        def facebook = json.fb
+
+        facebook.each { fb ->
+            // iteracao nos posts
+            def posts = fb.data
+            posts.each { post ->
+                // recupera autor do post
+                def postAuthor = post.from
+                user1 = new Node(postAuthor.id, postAuthor.name)
+                userList.add(user1)
+                def message = new Message(post.id, post.message, getDate(post.created_time.trim()), user1)
+                def previousMessage = addMessage(user1, message, null, commentsMap)
+                // iteracao nos comentarios do post
+                if (post.comments != null && post.comments.data != null && post.comments.data.from != null) {
+                    post.comments.data.each { data ->
+                        user2 = new Node(data.from.id, data.from.name)
+                        userList.add(user2)
+                        message = new Message(data.id, data.message, getDate(data.created_time.trim()), user2)
+                        previousMessage = addMessage(user2, message, previousMessage, commentsMap)
+                    }
+
+                }
+                createEdge(userList, edgeMap)
+                graph.getNodeSet().addAll(userList)
+                userList.clear()
             }
-            createEdge(userList, edgeMap)
-            graph.getNodeSet().addAll(userList)
-            userList.clear()
         }
         graph.getEdgeSet().addAll(edgeMap.values())
         graph.getNodeSet().each { n ->
