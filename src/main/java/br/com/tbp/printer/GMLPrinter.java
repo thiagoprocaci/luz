@@ -2,9 +2,11 @@ package br.com.tbp.printer;
 
 
 import br.com.tbp.file.FileManager;
+import br.com.tbp.file.FileReader;
 import br.com.tbp.model.Edge;
 import br.com.tbp.model.Graph;
 import br.com.tbp.model.Node;
+import br.com.tbp.parser.FBJsonParser;
 
 public class GMLPrinter {
 
@@ -52,6 +54,17 @@ public class GMLPrinter {
         buffer.append("] \n");
         fileManager.save(buffer.toString());
 
+    }
+
+    public static void main(String... s) {
+        String jsonString = FileReader.readFile("src/main/resources/fb_feed.txt");
+        FBJsonParser fbJsonParser = new FBJsonParser();
+
+        FileManager fileManager = new FileManager();
+        GMLPrinter gmlPrinter = new GMLPrinter(fileManager);
+        Graph graph = fbJsonParser.parse(jsonString);
+
+        gmlPrinter.print(graph);
     }
 }
 
