@@ -1,0 +1,2 @@
+Numero de usuarios que so perguntam (out): 1880 
+Numero de usuarios que so respondem (in): 2650 

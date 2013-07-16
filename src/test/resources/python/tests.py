@@ -16,6 +16,21 @@ class GraphTestCase(unittest.TestCase):
         node.increase_outdegree()
         node.increase_outdegree()        
         self.assertEqual(3, node.outdegree)
+        
+    def test_graph_class(self):
+        source = Node(1,'name_1')
+        dest = Node(2,'name_2')        
+        edge = Edge(source, dest)
+        nodes = {source.id:source, dest.id:dest}
+        edges = {edge.id:edge}
+        graph = Graph(nodes, edges, 1, 2)
+        self.assertEqual(2, len(graph.nodes))
+        self.assertEqual(1, len(graph.edges))
+        self.assertEqual(1, graph.messages)
+        self.assertEqual(2, graph.threads)
+        self.assertTrue(source.id in graph.nodes)
+        self.assertTrue(dest.id in graph.nodes)
+        self.assertFalse(3 in graph.nodes)
 		
     def test_edge_class(self):
         source = Node(1,'name_1')
@@ -64,9 +79,9 @@ class GraphTestCase(unittest.TestCase):
 		
     def test_load_nodes_edges(self):
         file_path = "fb_feed.txt"
-        nodes, edges = load_graph(file_path)
-        self.assertEqual(12, len(nodes))
-        self.assertEqual(46, len(edges))	
+        graph = load_graph(file_path)
+        self.assertEqual(12, len(graph.nodes))
+        self.assertEqual(46, len(graph.edges))	
 		#melhorar esse teste
 
     def test_calc_degree(self):
@@ -75,7 +90,8 @@ class GraphTestCase(unittest.TestCase):
         edge = Edge(source, dest)
         nodes = {source.id:source, dest.id:dest}
         edges = {edge.id:edge}
-        calc_degree(nodes, edges)
+        graph = Graph(nodes, edges, 0 , 0)
+        calc_degree(graph)
         self.assertEqual(1, source.outdegree)
         self.assertEqual(0, source.indegree)
         self.assertEqual(0, dest.outdegree)
@@ -89,8 +105,9 @@ class GraphTestCase(unittest.TestCase):
         edge_ = Edge(source, dest_)
         nodes = {source.id:source, dest.id:dest, dest_.id:dest_}
         edges = {edge.id:edge, edge_.id:edge_}
-        calc_degree(nodes, edges)
-        indegrees , outdegrees = count_degree(nodes)
+        graph = Graph(nodes, edges, 0 , 0)
+        calc_degree(graph)
+        indegrees , outdegrees = count_degree(graph)
         self.assertEqual(2, len(outdegrees))
         self.assertEqual(2, len(indegrees))
         self.assertEqual(2, outdegrees.get(0))
@@ -106,7 +123,8 @@ class GraphTestCase(unittest.TestCase):
         edge_ = Edge(source, dest_)
         nodes = {source.id:source, dest.id:dest, dest_.id:dest_}
         edges = {edge.id:edge, edge_.id:edge_}
-        dict = transform_to_dict(nodes, edges)
+        graph = Graph(nodes, edges, 0 , 0)
+        dict = transform_to_dict(graph)
         self.assertEqual(3, len(dict))      
         self.assertEqual(2, len(dict.get(source.id)))		
         self.assertEqual(0, len(dict.get(dest.id)))
