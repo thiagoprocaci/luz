@@ -1,0 +1,12 @@
+classificacao da rede:
+
+Total de nós: 7598
+Total de arestas: 24745
+Total de threads: 15357
+Total de mensages: 97867
+Core (scc): 1204 nós --> 15,84%
+In (só responde): 2650 nós --> 34,87%
+Out (só pergunta): 1880 nós --> 24,74%
+Others (disconnect, tubes...): 1865 nós --> 24,54%
+
+Total de membros: 42570
