@@ -107,13 +107,20 @@ class GraphTestCase(unittest.TestCase):
         edges = {edge.id:edge, edge_.id:edge_}
         graph = Graph(nodes, edges, 0 , 0)
         calc_degree(graph)
-        indegrees , outdegrees = count_degree(graph)
+        indegrees , outdegrees, degrees = count_degree(graph)
         self.assertEqual(2, len(outdegrees))
         self.assertEqual(2, len(indegrees))
         self.assertEqual(2, outdegrees.get(0))
         self.assertEqual(1, outdegrees.get(2))
         self.assertEqual(2, indegrees.get(1))
         self.assertEqual(1, indegrees.get(0))
+        self.assertEqual(3, len(degrees))
+        self.assertEqual(1, degrees.get(0)[0])
+        self.assertEqual(2,degrees.get(0)[1])
+        self.assertEqual(2,degrees.get(1)[0])
+        self.assertEqual(0,degrees.get(1)[1])
+        self.assertEqual(0,degrees.get(2)[0])
+        self.assertEqual(1,degrees.get(2)[1])
 		
     def test_transform_to_dict(self):
         source = Node(1,'name_1')

@@ -135,7 +135,15 @@ def count_degree(graph):
             outdegrees[node.outdegree] = 1
         else:
             outdegrees[node.outdegree] = outdegrees[node.outdegree] + 1
-    return indegrees, outdegrees
+    degrees = {}
+    for key in indegrees:
+        degrees[key] = [indegrees.get(key), 0]
+    for key in outdegrees:
+        if(degrees.get(key) is not None):
+            degrees.get(key)[1] = outdegrees.get(key)
+        else:
+            degrees[key] = [0, outdegrees.get(key)]
+    return indegrees, outdegrees, degrees
 
 
 #transforma grafo em um dict (matriz de adjacencia)
@@ -165,6 +173,23 @@ def count_in_out_nodes(graph):
             count_in = count_in + 1
     return count_in, count_out
 
+#calcula a relacao do indegree do asker com os indegrees dos repliers
+#dict key=asker indegree value=list of replies indegree
+def build_rel_asker_replier(graph):
+    nodes = graph.nodes
+    edges = graph.edges
+    asker_replier = {}
+    for node_key in nodes:
+        asker = nodes.get(node_key)
+        for edge_key in edges:            
+            edge = edges.get(edge_key)
+            if(edge.source.id == asker.id):
+                if(asker_replier.get(asker.indegree) is None):
+                    asker_replier[asker.indegree] = [edge.dest.indegree]
+                else:
+                    asker_replier.get(asker.indegree).append(edge.dest.indegree)
+    return asker_replier    
+
     
 ## PRINTS ##    
 
@@ -191,13 +216,18 @@ def print_gml(graph):
 			gml.write("    ] \n")
 		gml.write( "] \n")
     
-def print_count_degree(indegrees, outdegrees):
-	with open('indegrees.csv', 'w') as f:
-		for key in indegrees:
-			f.write(str(key) + " ; " + str(indegrees.get(key)) + " \n")
-	with open('outdegrees.csv', 'w') as f:
-		for key in outdegrees:
-			f.write(str(key) + " ; " + str(outdegrees.get(key))  + " \n")
+def print_count_degree(indegrees, outdegrees, degrees):
+    with open('indegrees.csv', 'w') as f:
+        for key in indegrees:
+            f.write(str(key) + " ; " + str(indegrees.get(key)) + " \n")
+    with open('outdegrees.csv', 'w') as f:
+        for key in outdegrees:
+            f.write(str(key) + " ; " + str(outdegrees.get(key))  + " \n")    
+    with open('degrees.csv', 'w') as f:
+        f.write("Frequencia ; indegree ; outdegree  \n")
+        for key in degrees:
+			f.write(str(key) + " ; " + str(degrees.get(key)[0]) + " ; " + str(degrees.get(key)[1])  + " \n")
+    
 
 def print_in_out_components(count_in, count_out):
     with open('int_out_components.txt', 'w') as f:
@@ -213,8 +243,18 @@ def print_graph_metadata(graph):
     with open('graph_metadata.txt', 'w') as f:
         f.write("Numero de mensagens : " + str(graph.messages) + " \n")
         f.write("Numero de thread : " + str(graph.threads) + " \n")
-        f.write("Numero de nodes : " + str(len(graph(nodes))) + " \n")
-        f.write("Numero de edges : " + str(len(graph(edges))) + " \n")
+        f.write("Numero de nodes : " + str(len(graph.nodes)) + " \n")
+        f.write("Numero de edges : " + str(len(graph.edges)) + " \n")
+
+def print_rel_asker_replier(asker_replier):
+    with open('asker_replier.csv', 'w') as f:
+        f.write("asker indegree ; replier indegree  \n")
+        for asker_in_degree in asker_replier:
+            repliers = asker_replier.get(asker_in_degree)
+            for replier_in_degree in repliers:
+                f.write(str(asker_in_degree) + " ; " + str(replier_in_degree) + " \n")
+        
+    
        
 	
 #algoritmo para identificar os SCC - tarjan		
@@ -230,9 +270,9 @@ def main():
     print "printing gml ...."
     print_gml(graph)    
     print "counting the degrees ...."
-    indegrees, outdegrees = count_degree(graph) 
+    indegrees, outdegrees, degrees = count_degree(graph) 
     print "printing degrees ...."
-    print_count_degree(indegrees, outdegrees)
+    print_count_degree(indegrees, outdegrees, degrees)
     print "counting in and out components ...."
     count_in, count_out = count_in_out_nodes(graph)
     print "printing in and out components ...."
@@ -241,6 +281,10 @@ def main():
     print_node_like(graph)
     print "printing graph metadata ...."
     print_graph_metadata(graph)
+    print "building relation asker-replier ...."
+    asker_replier = build_rel_asker_replier(graph)
+    print "printing relation asker-replier ...."
+    print_rel_asker_replier(asker_replier)
     print "end"
   
 
