@@ -186,7 +186,7 @@ def build_rel_asker_replier(graph):
             if(edge.source.id == asker.id):
                 if(asker_replier.get(asker.indegree) is None):
                     asker_replier[asker.indegree] = [edge.dest.indegree]
-                else:
+                elif(edge.dest.indegree not in asker_replier.get(asker.indegree)):
                     asker_replier.get(asker.indegree).append(edge.dest.indegree)
     return asker_replier    
 
