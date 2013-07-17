@@ -90,8 +90,7 @@ class GraphTestCase(unittest.TestCase):
         edge = Edge(source, dest)
         nodes = {source.id:source, dest.id:dest}
         edges = {edge.id:edge}
-        graph = Graph(nodes, edges, 0 , 0)
-        calc_degree(graph)
+        graph = Graph(nodes, edges, 0 , 0)        
         self.assertEqual(1, source.outdegree)
         self.assertEqual(0, source.indegree)
         self.assertEqual(0, dest.outdegree)
@@ -105,8 +104,7 @@ class GraphTestCase(unittest.TestCase):
         edge_ = Edge(source, dest_)
         nodes = {source.id:source, dest.id:dest, dest_.id:dest_}
         edges = {edge.id:edge, edge_.id:edge_}
-        graph = Graph(nodes, edges, 0 , 0)
-        calc_degree(graph)
+        graph = Graph(nodes, edges, 0 , 0)        
         indegrees , outdegrees, degrees = count_degree(graph)
         self.assertEqual(2, len(outdegrees))
         self.assertEqual(2, len(indegrees))
@@ -138,7 +136,70 @@ class GraphTestCase(unittest.TestCase):
         self.assertEqual(0, len(dict.get(dest_.id)))
         self.assertTrue(dest.id in dict.get(source.id))   
         self.assertTrue(dest_.id in dict.get(source.id))   
-        self.assertFalse(source.id in dict.get(source.id))   
+        self.assertFalse(source.id in dict.get(source.id))  
+        
+    def test_find_in_out_core_nodes(self):
+        node_1 = Node(1, 'name_1')
+        node_2 = Node(2, 'name_2')   
+        node_3 = Node(3, 'name_3')
+        node_4 = Node(4, 'name_4')
+        
+        # so perguntam (in components)
+        edge_4 = Edge(node_1, node_4)
+        edge_5 = Edge(node_2, node_4)
+        
+        # so responde (out components)
+        edge_6 = Edge(node_4, node_3)        
+        
+        node_5 = Node(5, 'name_5')
+        node_6 = Node(6, 'name_6')   
+        node_7 = Node(7, 'name_7')
+        
+        edge_1 = Edge(node_5, node_6)
+        edge_2 = Edge(node_6, node_7)
+        edge_3 = Edge(node_7, node_5)        
+           
+        
+        nodes = {node_1.id:node_1, node_2.id:node_2, node_3.id:node_3, node_4.id:node_4, node_5.id:node_5, node_6.id:node_6, node_7.id:node_7} 
+        edges = {edge_1.id:edge_1, edge_2.id:edge_2, edge_3.id:edge_3, edge_4.id:edge_4, edge_5.id:edge_5, edge_6.id:edge_6}
+        
+        graph = Graph(nodes, edges, 0, 0)
+        find_scc(graph)
+        find_in_out_core_nodes(graph)
+        
+        self.assertEqual(2, len(graph.in_nodes))
+        self.assertEqual(1, len(graph.out_nodes))
+        self.assertEqual(3, len(graph.core_nodes))
+        self.assertTrue(node_1.id in graph.in_nodes)
+        self.assertTrue(node_2.id in graph.in_nodes)
+        self.assertTrue(node_3.id in graph.out_nodes)
+
+    def test_find_scc(self):
+        node_1 = Node(1, 'name_1')
+        node_2 = Node(2, 'name_2')   
+        node_3 = Node(3, 'name_3')
+        node_4 = Node(4, 'name_4')
+        node_5 = Node(4, 'name_5')
+        
+        edge_1 = Edge(node_1, node_2)
+        edge_2 = Edge(node_2, node_1)
+        edge_3 = Edge(node_1, node_3)
+        edge_4 = Edge(node_3, node_2)
+        edge_5 = Edge(node_4, node_5)
+        edge_6 = Edge(node_5, node_1)
+        
+        nodes = {node_1.id:node_1, node_2.id:node_2, node_3.id:node_3, node_4.id:node_4, node_5.id:node_5}
+        edges = {edge_1.id:edge_1, edge_2.id:edge_2, edge_3.id:edge_3, edge_4.id:edge_4, edge_5.id:edge_5, edge_6.id:edge_6}
+        
+        graph = Graph(nodes, edges, 0, 0)
+        find_scc(graph)
+        self.assertEqual(1, len(graph.scc))
+        self.assertTrue(node_1 in graph.scc.get(1))
+        self.assertTrue(node_2 in graph.scc.get(1))
+        self.assertTrue(node_3 in graph.scc.get(1))
+        
+        
+        
 		
         
 		

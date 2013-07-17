@@ -1,5 +1,6 @@
 import sys
 import json
+from tarjan import *
 
 class Node:
     id, name, indegree, outdegree, pagerank, likes = None, None, None, None, None, None
@@ -25,20 +26,42 @@ class Edge:
         self.dest = dest
         self.id = edge_id_generator(source, dest)
         self.weight = 1
+        #calcula grau no momento da criacao do edge
+        source.increase_outdegree()
+        dest.increase_indegree()
 
     def increase_weight(self):
         self.weight =  self.weight + 1
 
 class Graph:
-    nodes, edges, messages, threads = None, None, None, None
+    nodes, edges, messages, threads, scc = None, None, None, None,None
+    #classificacao dos nodes de acordo com o bow tie structure
+    in_nodes, out_nodes, core_nodes = None, None, None
     
     def __init__(self, nodes, edges, messages, threads):
         self.nodes = nodes
         self.edges = edges
         self.messages = messages
         self.threads = threads
+        self.in_nodes = {}
+        self.out_nodes = {}
+        self.core_nodes = {}  
+
+
+    def core_node_percent(self):
+        return (len(self.core_nodes) * 100.0) / len(self.nodes)
         
+    def in_node_percent(self):
+        return (len(self.in_nodes) * 100.0) / len(self.nodes)
+
+    def out_node_percent(self):
+        return (len(self.out_nodes) * 100.0) / len(self.nodes)
         
+    def others_node_percent(self):
+        return (100.0 - self.core_node_percent() - self.in_node_percent() - self.out_node_percent())
+
+    
+    
 ## LOADS ###
 		
 #metodo auxiliar para gerar os ids dos edges
@@ -59,10 +82,7 @@ def load_edge(edges, source, dest):
         id = edge_id_generator(source, dest)
         if(edges.get(id) is None):
             edge = Edge(source, dest)
-            edges[id] = edge
-			#calcula grau visando no momento da criacao do edge
-            source.increase_outdegree()
-            dest.increase_indegree()
+            edges[id] = edge			
         else:
             edges.get(id).increase_weight()
     return edges
@@ -104,20 +124,7 @@ def load_graph(file_path):
     graph = load_nodes_edges(json_data)
     return graph     
  
- ## CALCS ##
-
-#calcula graus dos nodes    
-def calc_degree(graph):
-    nodes = graph.nodes
-    edges = graph.edges
-    for key_node in nodes:
-        node = nodes.get(key_node)
-        for key_edge in edges:
-            edge = edges.get(key_edge)
-            if(node.id == edge.source.id):
-                node.increase_outdegree()
-            if(node.id == edge.dest.id):
-               node.increase_indegree()    
+ ## CALCS ## 
 
 #algoritmo para agrupar as frequencias dos graus
 #retorna dict com key=degree value=freq
@@ -145,6 +152,19 @@ def count_degree(graph):
             degrees[key] = [0, outdegrees.get(key)]
     return indegrees, outdegrees, degrees
 
+def find_scc(graph):
+    g = transform_to_dict(graph)
+    components = tarjan(g)    
+    scc = {}
+    index = 0
+    for component in components:
+        if((component is not None) and (len(component) > 1)):
+            nodes = []
+            index = index + 1
+            for node_id in component:
+                nodes.append(graph.nodes.get(node_id))
+            scc[index] = nodes
+    graph.scc = scc
 
 #transforma grafo em um dict (matriz de adjacencia)
 def transform_to_dict(graph_):
@@ -159,19 +179,32 @@ def transform_to_dict(graph_):
     return graph
 	
  
-def count_in_out_nodes(graph):
-    nodes = graph.nodes
-    #usuario so faz perguntas   
-    count_out = 0
-    #usuario que so responde
-    count_in = 0
-    for key in nodes:
-        node = nodes.get(key)
+def find_in_out_core_nodes(graph):
+    #contando componentes core    
+    ssc_nodes = {}
+    for key in graph.scc:
+        components = graph.scc.get(key)
+        for node in components:
+            if (node.id not in ssc_nodes):                
+                ssc_nodes[node.id] = node
+    graph.core_nodes = ssc_nodes        
+    
+    for key in graph.nodes:
+        node = graph.nodes.get(key)
         if(node.indegree == 0 and node.outdegree > 0):
-            count_out = count_out + 1
-        if(node.outdegree == 0 and node.indegree > 0):
-            count_in = count_in + 1
-    return count_in, count_out
+            graph.in_nodes[node.id] = node 
+        if((node.outdegree) == 0 and (node.indegree) > 0 and (answer_question_from_core(node, graph))):
+            graph.out_nodes[node.id] = node   
+
+def answer_question_from_core(node, graph):
+    edges = graph.edges
+    core_nodes = graph.core_nodes
+    for edge_key in edges:
+        edge = edges.get(edge_key)
+        if(core_nodes.get(edge.dest.id) is not None):
+            return True
+    return False
+
 
 #calcula a relacao do indegree do asker com os indegrees dos repliers
 #dict key=asker indegree value=list of replies indegree
@@ -218,22 +251,18 @@ def print_gml(graph):
     
 def print_count_degree(indegrees, outdegrees, degrees):
     with open('indegrees.csv', 'w') as f:
+        f.write("Grau Entrada ; Frequencia  \n")
         for key in indegrees:
             f.write(str(key) + " ; " + str(indegrees.get(key)) + " \n")
     with open('outdegrees.csv', 'w') as f:
+        f.write("Grau Saida ; Frequencia  \n")
         for key in outdegrees:
             f.write(str(key) + " ; " + str(outdegrees.get(key))  + " \n")    
     with open('degrees.csv', 'w') as f:
-        f.write("Frequencia ; indegree ; outdegree  \n")
+        f.write("Grau ; Frequencia Indegree ; Frequencia Outdegree  \n")
         for key in degrees:
 			f.write(str(key) + " ; " + str(degrees.get(key)[0]) + " ; " + str(degrees.get(key)[1])  + " \n")
     
-
-def print_in_out_components(count_in, count_out):
-    with open('int_out_components.txt', 'w') as f:
-        f.write("Numero de usuarios que so perguntam (out): " + str(count_out) + " \n")
-        f.write("Numero de usuarios que so respondem (in): " + str(count_in) + " \n")
-
 def print_node_like(graph):
     with open('node_likes.csv', 'w') as f:
         for key in graph.nodes:
@@ -241,10 +270,24 @@ def print_node_like(graph):
 
 def print_graph_metadata(graph):
     with open('graph_metadata.txt', 'w') as f:
-        f.write("Numero de mensagens : " + str(graph.messages) + " \n")
-        f.write("Numero de thread : " + str(graph.threads) + " \n")
-        f.write("Numero de nodes : " + str(len(graph.nodes)) + " \n")
-        f.write("Numero de edges : " + str(len(graph.edges)) + " \n")
+        f.write(" ------ Dados Gerais \n \n")
+        f.write("Total de mensagens: " + str(graph.messages) + " \n")
+        f.write("Total de threads: " + str(graph.threads) + " \n")
+        f.write("Total de nodes: " + str(len(graph.nodes)) + " \n")
+        f.write("Total de edges: " + str(len(graph.edges)) + " \n")
+        f.write("Numero de SCC: " + str(len(graph.scc)) + " \n \n")
+        
+        f.write(" ------ Bow tie structure numeros \n \n")
+        f.write("In: " + str(len(graph.in_nodes)) + " nodes \n")
+        f.write("Out: " + str(len(graph.out_nodes)) + " nodes \n")
+        f.write("Core: " + str(len(graph.core_nodes)) + " nodes \n \n")
+        
+        f.write(" ------ Bow tie structure percentagem \n \n")
+        f.write("In: " + str(graph.in_node_percent()) + " % \n")
+        f.write("Out: " + str(graph.out_node_percent()) + " % \n")
+        f.write("Core: " + str(graph.core_node_percent()) + " % \n")
+        f.write("Others: " + str(graph.others_node_percent()) + " % \n")
+        
 
 def print_rel_asker_replier(asker_replier):
     with open('asker_replier.csv', 'w') as f:
@@ -256,35 +299,37 @@ def print_rel_asker_replier(asker_replier):
         
     
        
-	
-#algoritmo para identificar os SCC - tarjan		
-#fazer algoritmo para carregar todos os membros
+#carregar os comentarios	
 #fazer algoritmo para calcular o z-score
 #implementar o page rank
 
 
 def main():	
     file_path = sys.argv[1]
+    #load e calculos
     print "loading graph ...."
     graph = load_graph(file_path)
-    print "printing gml ...."
-    print_gml(graph)    
     print "counting the degrees ...."
     indegrees, outdegrees, degrees = count_degree(graph) 
+    print "find scc"
+    find_scc(graph)    
+    print "finding in, out, core components ...."
+    find_in_out_core_nodes(graph)
+    print "building relation asker-replier ...."
+    asker_replier = build_rel_asker_replier(graph)
+    
+    #print dos dados
+    print "printing gml ...."
+    print_gml(graph)   
     print "printing degrees ...."
-    print_count_degree(indegrees, outdegrees, degrees)
-    print "counting in and out components ...."
-    count_in, count_out = count_in_out_nodes(graph)
-    print "printing in and out components ...."
-    print_in_out_components(count_in, count_out)
+    print_count_degree(indegrees, outdegrees, degrees)    
     print "printing node likes ...."
     print_node_like(graph)
     print "printing graph metadata ...."
-    print_graph_metadata(graph)
-    print "building relation asker-replier ...."
-    asker_replier = build_rel_asker_replier(graph)
+    print_graph_metadata(graph)    
     print "printing relation asker-replier ...."
     print_rel_asker_replier(asker_replier)
+    
     print "end"
   
 
