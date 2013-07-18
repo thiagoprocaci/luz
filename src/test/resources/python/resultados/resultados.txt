@@ -10,3 +10,25 @@ Out (só pergunta): 1880 nós --> 24,74%
 Others (disconnect, tubes...): 1865 nós --> 24,54%
 
 Total de membros: 42570
+================================
+ ------ Dados Gerais 
+ 
+Total de mensagens: 97867 
+Total de threads: 15357 
+Total de nodes: 7598 
+Total de edges: 24745 
+Numero de SCC: 5 
+ 
+ ------ Bow tie structure numeros 
+ 
+In: 1880 nodes 
+Out: 2650 nodes 
+Core: 1204 nodes 
+ 
+ ------ Bow tie structure percentagem 
+ 
+In: 24.7433535141 % 
+Out: 34.8775993683 % 
+Core: 15.8462753356 % 
+Others: 24.532771782 % 
+

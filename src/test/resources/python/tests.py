@@ -26,8 +26,8 @@ class GraphTestCase(unittest.TestCase):
         graph = Graph(nodes, edges, 1, 2)
         self.assertEqual(2, len(graph.nodes))
         self.assertEqual(1, len(graph.edges))
-        self.assertEqual(1, graph.messages)
-        self.assertEqual(2, graph.threads)
+        self.assertEqual(1, graph.messages_count)
+        self.assertEqual(2, graph.threads_count)
         self.assertTrue(source.id in graph.nodes)
         self.assertTrue(dest.id in graph.nodes)
         self.assertFalse(3 in graph.nodes)
@@ -232,6 +232,15 @@ class GraphTestCase(unittest.TestCase):
         self.assertFalse(answer_question_from_core(node_5, graph))
         self.assertFalse(answer_question_from_core(node_6, graph))
         self.assertFalse(answer_question_from_core(node_7, graph))
+        
+    def test_calc_median_rel_asker_replier(self):
+        asker_replier = {0: [4, 2 , 8 , 4], 1: [3,2,1], 2: [5]}
+        asker_replier_median = calc_median_rel_asker_replier(asker_replier)
+        
+        self.assertEqual(4, asker_replier_median[0])
+        self.assertEqual(2, asker_replier_median[1])
+        self.assertEqual(5, asker_replier_median[2])
+        
         
         
         
