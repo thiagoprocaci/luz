@@ -201,7 +201,7 @@ def answer_question_from_core(node, graph):
     core_nodes = graph.core_nodes
     for edge_key in edges:
         edge = edges.get(edge_key)
-        if(core_nodes.get(edge.dest.id) is not None):
+        if((core_nodes.get(edge.source.id) is not None) and (node.id == edge.dest.id) and (core_nodes.get(node.id) is None)):
             return True
     return False
 

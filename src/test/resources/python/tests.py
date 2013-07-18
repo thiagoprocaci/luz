@@ -143,17 +143,18 @@ class GraphTestCase(unittest.TestCase):
         node_2 = Node(2, 'name_2')   
         node_3 = Node(3, 'name_3')
         node_4 = Node(4, 'name_4')
+        node_5 = Node(5, 'name_5')
+        node_6 = Node(6, 'name_6')   
+        node_7 = Node(7, 'name_7')
         
         # so perguntam (in components)
         edge_4 = Edge(node_1, node_4)
         edge_5 = Edge(node_2, node_4)
         
-        # so responde (out components)
-        edge_6 = Edge(node_4, node_3)        
+        # so responde do core (out components)
+        edge_6 = Edge(node_5, node_3)        
         
-        node_5 = Node(5, 'name_5')
-        node_6 = Node(6, 'name_6')   
-        node_7 = Node(7, 'name_7')
+        
         
         edge_1 = Edge(node_5, node_6)
         edge_2 = Edge(node_6, node_7)
@@ -197,6 +198,42 @@ class GraphTestCase(unittest.TestCase):
         self.assertTrue(node_1 in graph.scc.get(1))
         self.assertTrue(node_2 in graph.scc.get(1))
         self.assertTrue(node_3 in graph.scc.get(1))
+        
+    def test_answer_question_from_core(self):
+        node_1 = Node(1, 'name_1')
+        node_2 = Node(2, 'name_2')   
+        node_3 = Node(3, 'name_3')
+        node_4 = Node(4, 'name_4')        
+        node_5 = Node(5, 'name_5')
+        node_6 = Node(6, 'name_6')   
+        node_7 = Node(7, 'name_7')
+        
+        edge_4 = Edge(node_5, node_1)
+        edge_5 = Edge(node_2, node_4)       
+        edge_6 = Edge(node_4, node_3)                
+  
+        edge_1 = Edge(node_5, node_6)
+        edge_2 = Edge(node_6, node_7)
+        edge_3 = Edge(node_7, node_5)           
+        
+           
+        
+        nodes = {node_1.id:node_1, node_2.id:node_2, node_3.id:node_3, node_4.id:node_4, node_5.id:node_5, node_6.id:node_6, node_7.id:node_7} 
+        edges = {edge_1.id:edge_1, edge_2.id:edge_2, edge_3.id:edge_3, edge_4.id:edge_4, edge_5.id:edge_5, edge_6.id:edge_6}
+        
+        graph = Graph(nodes, edges, 0, 0)        
+        #scc nodes
+        graph.core_nodes = {node_5.id:node_5, node_6.id:node_6, node_7.id:node_7}
+        
+        self.assertTrue(answer_question_from_core(node_1, graph))
+        self.assertFalse(answer_question_from_core(node_2, graph))
+        self.assertFalse(answer_question_from_core(node_3, graph))
+        self.assertFalse(answer_question_from_core(node_4, graph))
+        self.assertFalse(answer_question_from_core(node_5, graph))
+        self.assertFalse(answer_question_from_core(node_6, graph))
+        self.assertFalse(answer_question_from_core(node_7, graph))
+        
+        
         
         
         
