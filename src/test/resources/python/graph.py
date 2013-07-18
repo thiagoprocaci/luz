@@ -121,7 +121,7 @@ def load_nodes_edges(json_data):
 
 #carrega grafo contido em um arquivo	
 def load_graph(file_path):
-    fb_file = open(file_path)    
+    fb_file = open(file_path)        
     text = fb_file.read()
     #utf8_text = text.encode('utf-8')
     json_data = json.loads(text)
@@ -329,9 +329,8 @@ def print_nodes_messages(graph):
         for node_key in graph.nodes:
             f.write("node ID " + str(node_key) + " \n")
             node = graph.nodes.get(node_key)
-            for message in node.messages:
-                s = message.encode('latin-1') 
-                f.write(s + " \n \n")
+            for message in node.messages:                              
+                f.write(str(message) + " \n \n")
         f.write("==================================== \n \n")
 #fazer algoritmo para calcular o z-score
 #implementar o page rank
@@ -342,7 +341,7 @@ def main():
     #load e calculos
     print "loading graph ...."
     graph = load_graph(file_path)
-    print_nodes_messages(graph)
+    #print_nodes_messages(graph)
     print "counting the degrees ...."
     indegrees, outdegrees, degrees = count_degree(graph) 
     print "find scc ...."
@@ -367,8 +366,7 @@ def main():
     print_rel_asker_replier(asker_replier)
     print "printing median indegree asker-replier ...."
     print_rel_median_asker_replier(asker_replier_median)
-    print "printing messages ...."
-    
+    #print "printing messages ...."    
     
     print "end"
   
