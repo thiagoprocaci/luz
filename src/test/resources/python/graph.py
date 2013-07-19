@@ -3,11 +3,11 @@ import sys
 import json
 from tarjan import *
 import codecs
+import random
 
 
 class Node:
-    id, name, indegree, outdegree, pagerank, likes = None, None, None, None, None, None
-    messages = None
+    id, name, indegree, outdegree, pagerank, likes = None, None, None, None, None, None    
     
     def __init__(self, id, name):     
         self.id = id
@@ -41,6 +41,8 @@ class Graph:
     nodes, edges, messages_count, threads_count, scc = None, None, None, None,None
     #classificacao dos nodes de acordo com o bow tie structure
     in_nodes, out_nodes, core_nodes = None, None, None
+    messages, root_messages = None, None
+    random_nodes = None
     
     def __init__(self, nodes, edges, messages_count, threads_count):
         self.nodes = nodes
@@ -64,7 +66,13 @@ class Graph:
     def others_node_percent(self):
         return (100.0 - self.core_node_percent() - self.in_node_percent() - self.out_node_percent())
 
+class Message:
+    content, node, next, previous, id = None, None, None, None, None
     
+    def __init__(self, content, node, id):
+        self.content = content
+        self.node = node
+        self.id = id
     
 ## LOADS ###
 		
@@ -91,11 +99,18 @@ def load_edge(edges, source, dest):
             edges.get(id).increase_weight()
     return edges
 
-def load_message(node, message):
-    if(message is not None):
-        if(node.messages is None):
-            node.messages = []
-        node.messages.append(message)
+def load_message(messages, node, content, previous, id_content):
+    if(content is not None):        
+        if(messages is None):
+            messages = {}
+        message = Message(content, node, id_content)
+        if(previous is not None):
+            previous.next = message
+            message.previous = previous       
+        messages[message.id] = message      
+        return message
+    return None
+ 
 
 #carrega os nodes (usuarios) em uma estrutura de dados dado um string json
 def load_nodes_edges(json_data): 
@@ -103,15 +118,17 @@ def load_nodes_edges(json_data):
     message_count = 0
     nodes = {}
     edges = {}	
+    messages = {}
     fb_list = json_data.get('fb')
     for fb_item in fb_list:
         item_data = fb_item.get('data')
-        for data in item_data:		                
+        for data in item_data:	
+            previous = None
             thread_count = thread_count + 1
             message_count = message_count + 1
             nodes = load_node(nodes, data.get('from').get('id'), data.get('from').get('name'))
             source = nodes.get(data.get('from').get('id'))
-            load_message(source, data.get('message'))
+            previous = load_message(messages, source, data.get('message'), previous, data.get('id'))
             if((data.get('likes') is not None) and (data.get('likes').get('count') is not None)):
                 source.likes = source.likes + int(data.get('likes').get('count'))
             if((data.get('comments') is not None) and (data.get('comments').get('data') is not None)):
@@ -121,10 +138,12 @@ def load_nodes_edges(json_data):
                     nodes = load_node(nodes, comment.get('from').get('id'), comment.get('from').get('name'))  
                     dest = nodes.get(comment.get('from').get('id'))
                     edges = load_edge(edges, source, dest)		
-                    load_message(dest, comment.get('message'))
+                    previous = load_message(messages, dest, comment.get('message'), previous, comment.get('id'))
                     if(comment.get('like_count') is not None):
                         dest.likes = dest.likes + int(comment.get('like_count'))    
     graph = Graph(nodes, edges, message_count, thread_count)
+    graph.messages = messages
+    load_root_messages(graph)    
     return graph    
 
 #carrega grafo contido em um arquivo	
@@ -134,6 +153,15 @@ def load_graph(file_path):
     json_data = json.loads(text)    
     graph = load_nodes_edges(json_data)
     return graph     
+ 
+def load_root_messages(graph):    
+    root_messages = {}
+    for key in graph.messages:
+        message = graph.messages.get(key)
+        if(message.previous is None):
+            root_messages[message.id] = message 
+    graph.root_messages = root_messages
+ 
  
  ## CALCS ## 
 
@@ -255,7 +283,7 @@ def calc_median_rel_asker_replier(asker_replier):
 def print_gml(graph):
     nodes = graph.nodes
     edges = graph.edges
-    with open('fb.gml', 'w') as gml:
+    with codecs.open('fb.gml', 'w', 'utf-8-sig') as gml:
 		gml.write("graph \n")
 		gml.write("[ \n")
 		gml.write("    directed 0 \n")
@@ -275,7 +303,7 @@ def print_gml(graph):
 		gml.write( "] \n")
     
 def print_count_degree(indegrees, outdegrees, degrees):
-    with open('indegrees.csv', 'w') as f:
+    with codecs.open('indegrees.csv', 'w', 'utf-8-sig') as f:
         f.write("Grau Entrada ; Frequencia  \n")
         for key in indegrees:
             f.write(str(key) + " ; " + str(indegrees.get(key)) + " \n")
@@ -283,18 +311,19 @@ def print_count_degree(indegrees, outdegrees, degrees):
         f.write("Grau Saida ; Frequencia  \n")
         for key in outdegrees:
             f.write(str(key) + " ; " + str(outdegrees.get(key))  + " \n")    
-    with open('degrees.csv', 'w') as f:
+    with codecs.open('degrees.csv', 'w', 'utf-8-sig') as f:
         f.write("Grau ; Frequencia Indegree ; Frequencia Outdegree  \n")
         for key in degrees:
 			f.write(str(key) + " ; " + str(degrees.get(key)[0]) + " ; " + str(degrees.get(key)[1])  + " \n")
     
 def print_node_like(graph):
-    with open('node_likes.csv', 'w') as f:
+    with codecs.open('node_likes.csv', 'w', 'utf-8-sig') as f:
+        f.write("node ; like count  \n")
         for key in graph.nodes:
             f.write(key + " ; " + str(graph.nodes.get(key).likes) + " \n")    
 
 def print_graph_metadata(graph):
-    with open('graph_metadata.txt', 'w') as f:
+    with codecs.open('graph_metadata.txt', 'w', 'utf-8-sig') as f:
         f.write(" ------ Dados Gerais \n \n")
         f.write("Total de mensagens: " + str(graph.messages_count) + " \n")
         f.write("Total de threads: " + str(graph.threads_count) + " \n")
@@ -315,7 +344,7 @@ def print_graph_metadata(graph):
         
 
 def print_rel_asker_replier(asker_replier):
-    with open('asker_replier.csv', 'w') as f:
+    with codecs.open('asker_replier.csv', 'w', 'utf-8-sig') as f:
         f.write("asker indegree ; replier indegree  \n")
         for asker_in_degree in asker_replier:
             repliers = asker_replier.get(asker_in_degree)
@@ -326,29 +355,90 @@ def print_rel_asker_replier(asker_replier):
 def print_rel_median_asker_replier(asker_replier_median):
     keys = asker_replier_median.keys()
     keys = sorted(keys)
-    with open('asker_replier_median.csv', 'w') as f:
+    with codecs.open('asker_replier_median.csv', 'w', 'utf-8-sig') as f:
         f.write("asker indegree ; replier median indegree  \n")
         for asker_in_degree in keys:
             f.write(str(asker_in_degree) + " ; " + str(asker_replier_median.get(asker_in_degree)) + " \n")          
        
-def print_nodes_messages(graph):
-    with codecs.open('mensagens_nodes.txt', 'w', 'utf-8-sig') as f:        
-        for node_key in graph.nodes:
-            f.write("node ID " + str(node_key) + " \n")
-            node = graph.nodes.get(node_key)
-            if(node.messages is not None):
-                for message in node.messages:                
-                    f.write(message + " \n \n")
-        f.write("==================================== \n \n")
+def print_nodes_messages(graph):    
+    top_messages = graph.root_messages
+    with codecs.open('mensagens.html', 'w', 'utf-8-sig') as f: 
+        f.write("<html><head></head><body>")
+        for key in top_messages:
+            if(top_messages.get(key).node.id in graph.random_nodes):
+                f.write('<table><tr style="background-color:red">')
+            else:
+                f.write('<table><tr style="background-color:00CC99">')
+            f.write('<td>' + top_messages.get(key).node.id +  '</td>')
+            f.write('<td><pre>' + escape_html(top_messages.get(key).content) +  '</pre></td>')
+            f.write('</tr>')
+            next = top_messages.get(key).next
+            while(next is not None):
+                if(next.node.id in graph.random_nodes):
+                    f.write('<tr style="background-color:red">')
+                else:
+                    f.write('<tr style="background-color:99FF66">')                
+                f.write('<td>' + next.node.id +  '</td>')
+                f.write('<td><pre>' + escape_html(next.content) +  '</pre></td>')
+                f.write('</tr>')
+                next = next.next
+            f.write('</table>')
+            f.write('<br /> <br />')            
+        f.write("</body></html>")
+
+def print_nodes_random_messages(graph):
+    node_messages = {}
+    for key in graph.root_messages:
+        node = graph.root_messages.get(key).node
+        if(node_messages.get(node.id) is None):
+            node_messages[node.id] = []
+        node_messages[node.id].append(graph.root_messages.get(key).content)
         
+    with codecs.open('mensagens_random.txt', 'w', 'utf-8-sig') as f: 
+        for key in node_messages:
+            f.write(key +  ' \n \n ')
+            for msg in node_messages.get(key):
+                f.write(msg + '\n \n')
+            f.write('****************************************** \n \n')
+
+    with codecs.open('mensagens_random_HA.cvs', 'w', 'utf-8-sig') as f: 
+        f.write('node ; Human rating')
+        for key in node_messages:
+            f.write(key +  ' ; ' + " -  \n")
+
+def escape_html(text):
+    text = text.replace('&', '&amp;')
+    text = text.replace('"', '&quot;')
+    text = text.replace("'", '&#39;')
+    text = text.replace(">", '&gt;')
+    text = text.replace("<", '&lt;')
+    return text
+
+def define_random_nodes(graph):
+    random_nodes = {}
+    number_nodes = 50
+    index = 0
+    all_node_keys = graph.nodes.keys()
+    size = len(all_node_keys)
+    while index < 50 and 50 < size:        
+        node_key = random.choice(all_node_keys)
+        if(random_nodes.get(node_key) is None):
+            index += 1
+            random_nodes[node_key] = graph.nodes.get(node_key)   
+    graph.random_nodes = random_nodes    
+    
+    
 #fazer algoritmo para calcular o z-score
 #implementar o page rank
+
 
 def main():	
     file_path = sys.argv[1]
     #load e calculos
     print "loading graph ...."
-    graph = load_graph(file_path)    
+    graph = load_graph(file_path)        
+    print "defining random nodes ...."
+    define_random_nodes(graph)    
     print "counting the degrees ...."
     indegrees, outdegrees, degrees = count_degree(graph) 
     print "find scc ...."
@@ -373,8 +463,10 @@ def main():
     print_rel_asker_replier(asker_replier)
     print "printing median indegree asker-replier ...."
     print_rel_median_asker_replier(asker_replier_median)
-    print "printing messages ...."    
+    print "printing all messages ...."    
     print_nodes_messages(graph)
+    print "printing random nodes messages"
+    print_nodes_random_messages(graph)
     
     print "end"
   

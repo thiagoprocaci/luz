@@ -44,6 +44,15 @@ class GraphTestCase(unittest.TestCase):
         edge.increase_weight()
         self.assertEqual(3, edge.weight)	
         self.assertEqual(edge_id_generator(source, dest), edge.id)		
+        
+    def test_message_class(self):
+        node = Node(1,'name_1')
+        message = Message('txt', node, 'id')
+        self.assertEqual(node.id, message.node.id)
+        self.assertEqual('txt', message.content)
+        self.assertEqual('id', message.id)
+        self.assertTrue(message.next is None)
+        self.assertTrue(message.previous is None)
 
     def test_edge_id_generator(self):
         source = Node(1,'name_1')
@@ -60,7 +69,7 @@ class GraphTestCase(unittest.TestCase):
         nodes = load_node(nodes, 2 , 'name_2')
         self.assertEqual(2, nodes.get(2).id)
         self.assertEqual('name_2', nodes.get(2).name)
-        self.assertEqual(2, len(nodes))
+        self.assertEqual(2, len(nodes))        
 		
     def test_load_edge(self):
         source = Node(1,'name_1')
