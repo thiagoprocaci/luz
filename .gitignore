@@ -73,3 +73,6 @@ output
 ######################
 *.exe.stackdump
 
+# python #
+*.pyc
+

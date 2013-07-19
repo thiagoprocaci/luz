@@ -1,6 +1,9 @@
+# -*- coding: utf-8 -*-
 import sys
 import json
 from tarjan import *
+import codecs
+
 
 class Node:
     id, name, indegree, outdegree, pagerank, likes = None, None, None, None, None, None
@@ -11,8 +14,7 @@ class Node:
         self.name = name
         self.indegree = 0
         self.outdegree = 0
-        self.likes = 0
-        self.messages = []
+        self.likes = 0        
 		
     def increase_indegree(self):
         self.indegree = self.indegree + 1
@@ -89,6 +91,12 @@ def load_edge(edges, source, dest):
             edges.get(id).increase_weight()
     return edges
 
+def load_message(node, message):
+    if(message is not None):
+        if(node.messages is None):
+            node.messages = []
+        node.messages.append(message)
+
 #carrega os nodes (usuarios) em uma estrutura de dados dado um string json
 def load_nodes_edges(json_data): 
     thread_count = 0
@@ -103,7 +111,7 @@ def load_nodes_edges(json_data):
             message_count = message_count + 1
             nodes = load_node(nodes, data.get('from').get('id'), data.get('from').get('name'))
             source = nodes.get(data.get('from').get('id'))
-            source.messages.append(data.get('message'))
+            load_message(source, data.get('message'))
             if((data.get('likes') is not None) and (data.get('likes').get('count') is not None)):
                 source.likes = source.likes + int(data.get('likes').get('count'))
             if((data.get('comments') is not None) and (data.get('comments').get('data') is not None)):
@@ -113,7 +121,7 @@ def load_nodes_edges(json_data):
                     nodes = load_node(nodes, comment.get('from').get('id'), comment.get('from').get('name'))  
                     dest = nodes.get(comment.get('from').get('id'))
                     edges = load_edge(edges, source, dest)		
-                    dest.messages.append(comment.get('message'))
+                    load_message(dest, comment.get('message'))
                     if(comment.get('like_count') is not None):
                         dest.likes = dest.likes + int(comment.get('like_count'))    
     graph = Graph(nodes, edges, message_count, thread_count)
@@ -121,10 +129,9 @@ def load_nodes_edges(json_data):
 
 #carrega grafo contido em um arquivo	
 def load_graph(file_path):
-    fb_file = open(file_path)        
-    text = fb_file.read()
-    #utf8_text = text.encode('utf-8')
-    json_data = json.loads(text)
+    fb_file = codecs.open(file_path, 'r', 'utf-8-sig')
+    text = fb_file.read()    
+    json_data = json.loads(text)    
     graph = load_nodes_edges(json_data)
     return graph     
  
@@ -325,23 +332,23 @@ def print_rel_median_asker_replier(asker_replier_median):
             f.write(str(asker_in_degree) + " ; " + str(asker_replier_median.get(asker_in_degree)) + " \n")          
        
 def print_nodes_messages(graph):
-    with open('mensagens_nodes.txt', 'w') as f:        
+    with codecs.open('mensagens_nodes.txt', 'w', 'utf-8-sig') as f:        
         for node_key in graph.nodes:
             f.write("node ID " + str(node_key) + " \n")
             node = graph.nodes.get(node_key)
-            for message in node.messages:                              
-                f.write(str(message) + " \n \n")
+            if(node.messages is not None):
+                for message in node.messages:                
+                    f.write(message + " \n \n")
         f.write("==================================== \n \n")
+        
 #fazer algoritmo para calcular o z-score
 #implementar o page rank
-
 
 def main():	
     file_path = sys.argv[1]
     #load e calculos
     print "loading graph ...."
-    graph = load_graph(file_path)
-    #print_nodes_messages(graph)
+    graph = load_graph(file_path)    
     print "counting the degrees ...."
     indegrees, outdegrees, degrees = count_degree(graph) 
     print "find scc ...."
@@ -366,7 +373,8 @@ def main():
     print_rel_asker_replier(asker_replier)
     print "printing median indegree asker-replier ...."
     print_rel_median_asker_replier(asker_replier_median)
-    #print "printing messages ...."    
+    print "printing messages ...."    
+    print_nodes_messages(graph)
     
     print "end"
   
