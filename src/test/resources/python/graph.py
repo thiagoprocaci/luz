@@ -8,19 +8,24 @@ import random
 
 class Node:
     id, name, indegree, outdegree, pagerank, likes = None, None, None, None, None, None    
+    answer_num = None
     
     def __init__(self, id, name):     
         self.id = id
         self.name = name
         self.indegree = 0
         self.outdegree = 0
-        self.likes = 0        
+        self.likes = 0
+        self.answer_num = 0
 		
     def increase_indegree(self):
-        self.indegree = self.indegree + 1
+        self.indegree = self.indegree + 1        
 
     def increase_outdegree(self):
         self.outdegree = self.outdegree + 1
+
+    def increase_answer_num(self):
+        self.answer_num = self.answer_num + 1
 
 class Edge:
     id, source, dest, weight = None, None, None, None
@@ -33,9 +38,11 @@ class Edge:
         #calcula grau no momento da criacao do edge
         source.increase_outdegree()
         dest.increase_indegree()
+        dest.increase_answer_num()
 
     def increase_weight(self):
         self.weight =  self.weight + 1
+        self.dest.increase_answer_num()
 
 class Graph:
     nodes, edges, messages_count, threads_count, scc = None, None, None, None,None
@@ -386,25 +393,27 @@ def print_nodes_messages(graph):
             f.write('<br /> <br />')            
         f.write("</body></html>")
 
-def print_nodes_random_messages(graph):
+def print_HR_analysis_file(graph):
     node_messages = {}
-    for key in graph.root_messages:
-        node = graph.root_messages.get(key).node
-        if(node_messages.get(node.id) is None):
-            node_messages[node.id] = []
-        node_messages[node.id].append(graph.root_messages.get(key).content)
+    for key in graph.messages:
+        node = graph.messages.get(key).node
+        if(node.id in graph.random_nodes):
+            if(node_messages.get(node.id) is None):
+                node_messages[node.id] = []
+            node_messages[node.id].append(graph.messages.get(key).content)
         
     with codecs.open('mensagens_random.txt', 'w', 'utf-8-sig') as f: 
         for key in node_messages:
-            f.write(key +  ' \n \n ')
-            for msg in node_messages.get(key):
-                f.write(msg + '\n \n')
+            f.write(key +  ' \n \n ')            
+            for msg in node_messages.get(key):                
+                    f.write(msg + '\n \n')
             f.write('****************************************** \n \n')
 
-    with codecs.open('mensagens_random_HA.cvs', 'w', 'utf-8-sig') as f: 
-        f.write('node ; Human rating')
+    with codecs.open('HR.csv', 'w', 'utf-8-sig') as f: 
+        f.write('node ; HR ; Indegree ; Answer Num ; Like \n')
         for key in node_messages:
-            f.write(key +  ' ; ' + " -  \n")
+            node = graph.nodes.get(key)
+            f.write(key +  ' ;  -  ;' + str(node.indegree) + " ; " + str(node.answer_num) + " ; " + str(node.likes) +  "   \n")
 
 def escape_html(text):
     text = text.replace('&', '&amp;')
@@ -465,8 +474,8 @@ def main():
     print_rel_median_asker_replier(asker_replier_median)
     print "printing all messages ...."    
     print_nodes_messages(graph)
-    print "printing random nodes messages"
-    print_nodes_random_messages(graph)
+    print "printing HR analysis file"
+    print_HR_analysis_file(graph)
     
     print "end"
   
