@@ -1,0 +1,1805 @@
+﻿100002340032345 
+ 
+ Java handles addresses itself so you don't have to!
+ 
+the user has to give the input first and then it goes for validation, for giving the input he might have given some text field and also a corresponding ok button (if he wishes to) and when the user hits on enter in the text field or click on the button, then the validation should start, so better add a keylistener to the text field and when user presses enter, call the validate. that's it!
+ 
+what are possible? how could it be possible? where do the info come from? who will write it? how will they write it?
+ 
+Get data from the database and then new JRadioButton by passing the field name to JRadioButton constructor's parameter.
+ 
+It secured a softpedia spyware free award!!
+ 
+you'll have to say it in clarity, the guy has come up with a doubt and you'll need to solve it! how can you misguide him?
+ 
+haha! ok!
+ 
+@Hans Brinkhof: 10th Position if counted from 0. Anyways thanks for the Grammar.
+ 
+Thanks for all. Code is updated. You guys give worthy comments, but why don't some do it politely? -_-
+ 
+Because sir James Gosling like it!
+ 
+JSP is easier to code and also efficient for writing the presentation logic, even in the struts http://java-demos.blogspot.com
+ 
+He is saying about drag-and-drop option, the pre-generated source code i think so and not about creating GUI by programmers own code!
+ 
+it is 2d not 3d!, the array
+ 
+Ashwin Singh, Yes, thanks for the comment. Just take time to look at the last heading, this is even more simple, well Sachin Hegde, if you just take time to look at the last heading that is just at the cost of a method call, whatever if you don't laugh for it! o.O  :P
+ 
+use excelsior jet
+ 
+Pointers is a rock solid concept in C yet!
+ 
+strange! Is Sachin Hegde a help vampire?
+ 
+i said to see the last heading in the page!
+ 
+The user has to give the input first, and how will he give without an form of GUI/CUI?
+ 
+NetBeans is pretty good for GUI, i've been using it since a long time.
+ 
+Hans Brinkhof a jar file contains java classes and not javascript classes!
+ 
+nothing happens if we advertise free apps!!
+ 
+You're right comparing kills!
+ 
+fn
+ 
+Sharad Gautamuse winrar to extract jar file
+ 
+o.O
+ 
+Sachin Hegde Common, he helped me with Grammar, just see the top comment, ;) It is not for fun, he corrected me!
+ 
+Better start learning with Notepad first and then go for NetBeans IDE
+ 
+Hans Brinkhof You cannot say that they are incorrent, but that looked quite lengthy, and a simple way is suggested, later. All the programs worked fine for me, and after all has happened, i will post them!
+ 
+Could any same the logic for finding text in a textarea and selecting it. Like, i want the logic for Find in Notepad
+ 
+ok, how can i read from it unless something is written into it?
+ 
+i've read all those, how will you let an user directly write into a file and from where does he write? do you manually keep adding the records in the program itself or what?
+ 
+You will first need to understand about the core concepts of the database and then, see the security issues, the way the databases store the data, handling users, networking, extending database in the harddisk and over the network, write driver classes, support ORM frameworks, get SQL license from IBM. After all this was done, now think about how to code it, it really requires millions of code lines for sure.
+ 
+how is the info written into the file? through java application?
+ 
+Hans Brinkhof Are you the admin of this group? If so, can you rename the group as "Java And Grammar!" ;)
+ 
+:)
+ 
+Fine i will update it and thanks, but did you note the StringTokenizer?
+ 
+****************************************** 
+ 
+678123767 
+ 
+ Once the path is in the ENV setting, start a new CMD prompt - and recheck.
+ 
+type "path" - is the path to your JDK/bin in the resulting list?
+ 
+****************************************** 
+ 
+100002069211657 
+ 
+ thanks for you so much
+ 
+i am beginer in java .
+i need some first information about java.
+can you help me please.......
+ 
+****************************************** 
+ 
+100004360454148 
+ 
+ it may be the problem of RAM....
+ 
+jus coz of plain old dust in the memory slot n it may also hppns coz of bad HD sectors,corrupt low level driver....
+these r d reasons dat i find out wen i faced it with my PC earlier.
+ 
+use proper syntax of the database connection string..
+ 
+****************************************** 
+ 
+100002241920128 
+ 
+ friends please post your comments about 3edge solutions
+do they charge anything after interview?
+please please post your views
+ 
+****************************************** 
+ 
+1094903115 
+ 
+ dear,what the new technology of java??
+ 
+hello guys,are you have tutorial streaming??share with me..thanks a lot
+ 
+i wana be make a one project colaboration java n bluetooth..do u can help me??
+ 
+****************************************** 
+ 
+594758096 
+ 
+ Do programmers use Visual J# to create programs?
+ 
+****************************************** 
+ 
+100000095791897 
+ 
+ I think in dis way....http://www.mkyong.com/jsf2/jsf-2-graphicimage-example/
+ 
+just Googling for EditPlus.
+ 
+Use Process Class....
+ 
+Try For Some Application Specific Web Server with concepts of dynamic  load balancing, fast response time, Auto routing . . . etc with use of Frameworks say struts,  Spring, JSF, and Hibernet.
+ 
+Not..Much idea abt JSF..but let me try..!!
+ 
+Jyoti Kalonia and Ameet Sagar  Perfactly...Thanx. Its working Fine....!!!
+ 
+Karshan Khunt dat is through the JDBC...!!!i
+ 
+Gaurav Tayal : Think of this.
+ 
+Kelvin Trambadiya See dis if dis is working for u...http://livedemo.exadel.com/richfaces-demo/richfaces/fileUpload.jsf
+ 
+Eclipse
+ 
+Jithendar Burra its true  . . .
+ 
+Jyoti Kalonia ok Now i got the thing that  only one instance of SessionFactory per application. . . Thanx.
+ 
+Getting null value in action class in struts2.
+ can Any1 give reason for dat ???
+ 
+sessions are closed properly...!! dats not problem.
+ 
+In My Application m using Hibernate.
+Sometime m getting Exception named "too many connections".
+Can anyone give me solution for it.
+ 
+m sure dat am not create in loop....!!
+ 
+As a development of JAVA....IDE  must be Eclipse.
+ 
+r u asking for core JAVA ??
+ 
+ok..den use EditPlus Editor.
+ 
+Hans Brinkhof Any more possibilities ???
+ 
+Ohk...!!@kelly
+ 
+www.google.co.in
+ 
+Jyoti Kalonia....ok
+ 
+Plz Any one give good site address or video tutorial for Struts2.....
+ 
+How to remove record with composite id in hibernate ??
+ 
+Can any one tell me when to use interface and when to use abstract class ??
+If possible then give example.
+ 
+@NIts Process Class API, in details or some examples of it.
+ 
+Can any tell me, How to get metadata of a table in hibernate??
+ 
+****************************************** 
+ 
+1222191060 
+ 
+ LONDON, MARCH 26TH: Talk by Josh Long on Spring & REST in London Tuesday 26th March (TOMORROW)
+
+Hi all,
+
+A quick note to invite you to a talk by Josh Long on Spring & REST this Tuesday, March 26th at the Spring User Group meeting at Skills Matter. 
+
+Desktops, tablets, TVs, Blu-ray players and cars.... How to develop and support for today's many platforms?
+
+Join Josh Long on March 26th for a talk on how Spring can extend your reach through (sometimes Spring Security OAuth-secured) RESTful services exposed through Spring MVC, HTML5 and client-specific rendering thanks to Spring Mobile, and powerful, native support for Android with Spring Android.
+
+Attendance is free for registered participants and you can register here:
+http://skillsmatter.com/podcast/java-jee/spring-user-group-march/wd-6848
+
+If you like this talk but live to far away to attend, we'll be recording the talk and will publish the SkillsCast video (film, code, slides) the day after the talk here: http://skillsmatter.com/podcast/java-jee/spring-user-group-march/wd-6848
+
+Hope to see you there!
+
+tags: #oauth #REST #RESTful services #SpringMVC, #HTML5
+ 
+TONIGHT, APRIL 22ND, 18:30 - Spring UG meetup featuring Rob Harrop and Adrian Colyer sharing Spring and AngularJS skills - Join us!
+
+Skills Matter's CTO (and SpringSource co-founder Rob Harrop) will be joined by SpringSource CTO Adrian Colyer. They will share their experience and skills on building Rich Spring Web Applications with AngularJS. If you fancy joining these two titans of the Spring world, let us know you're coming by registering here: http://skillsmatter.com/event/java-jee/fighting-for-simplicity-with-spring-1663/wd-23
+
+If you can't make it tonight, the SkillsCast recording of both talks will be available tomorrow from the same URL: http://skillsmatter.com/event/java-jee/fighting-for-simplicity-with-spring-1663/wd-23
+ 
+Some free tickets still available for Fusesource community day on Apache camel, activeMQ, servicemix and more. Starts at 9am at skillsmatter in London http://form.fusesource.com/LP=133
+ 
+****************************************** 
+ 
+738100001 
+ 
+ Job Vacancy
+_______________________________________
+Role Senior Java Developer
+Category software Eng/Computer Eng/ Computer Science
+Career Level Mid Level (3 or 4 years of experiences)
+
+Please send your resume Resume@shuratech.com
+ 
+****************************************** 
+ 
+100000847118027 
+ 
+ thanks all of u
+ 
+i want to retrive image at a time at in table row
+ 
+i want to retrive image at a time at in table row
+ 
+how to retrive a multiple image from the database in jsp
+ 
+****************************************** 
+ 
+100000554967234 
+ 
+ Linux.....always winner
+ 
+****************************************** 
+ 
+1559874169 
+ 
+ Android Mobile App Developer required experienced or fresh
+http://www.rozee.pk/job_157969
+ 
+****************************************** 
+ 
+1120815259 
+ 
+ Buenos dias, me gustaria saber como puedo comensar aprender hibernate, algun buen manual que me recomiendan les estare muy agradecido, conosco jsf...
+ 
+****************************************** 
+ 
+100001728478185 
+ 
+ Thanks
+ 
+someone plz tell me abt hw to make a conn wid sql server
+ 
+thanks..
+ 
+Can anyone tell me the code for logging  out of an web aapln...??i hav used session.invalidate() to invalidate the session but wen i click on back buton,the session is not terminated...thanx in advance
+ 
+****************************************** 
+ 
+778535981 
+ 
+ what software shall i use to run the code
+ 
+who can create web crawler
+ 
+i m using eclipse software to implement this code.
+ 
+ready to pay
+ 
+can i get the code plz jason..
+ 
+how to create web crawler with Java?
+ 
+does any one knows the coding of client and server (networking). coding of client sending requesting to server
+ 
+it is right , i m not a programmer but really thanxs to you guys for helping me .
+ 
+i m making a web crawler on facebook. add me on ur facebook please then we can talk
+ 
+****************************************** 
+ 
+1325755394 
+ 
+ If you want the traditional Oracle JDK, I don't believe there is a "quick" way to install it. You'll have to download the binary, change permissions on it, run it in the right location and do an update-alternatives. Instructions for that are in that link above, which also has another link to instructions specifically for 12.04.
+ 
+I don't think Ubuntu supports the Oracle JDK in package form anymore. You'll have to do it manually, unless you want the OpenJDK. I use JRockit myself :) This page should give you all the info you need - https://help.ubuntu.com/community/Java
+ 
+I like these two: http://www.hunlock.com/blogs/Essential_Javascript_--_A_Javascript_Tutorial
+ 
+http://docstore.mik.ua/orelly/java-ent/jenut/index.htm (kind of old though...)
+ 
+I'm partial to JDeveloper's diagramming tools. But of course it's a whole IDE so it's a bit overkill!
+ 
+Not sure if it is what you want... I've never done it before. But could you use iText? There is a community edition of iText available. And I found some tutorials online. http://www.vaannila.com/struts/struts-example/struts-display-tag-example-1.html
+ 
+http://www.learn-javascript-tutorial.com/
+ 
+Just to mention them, there's also Oracle's JDeveloper and Intellij IDEA as well. IDEA has a commercial version and free version. http://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments#Java
+ 
+****************************************** 
+ 
+583543782 
+ 
+ They're not quite the same ...
+
+String s = "Hello World" ;
+
+This is a string literal (primative) and is stored in the string pool in the JVM, so if you then did:
+
+String s2 = "Hello World";
+
+"s" and "s2" would be exactly the same reference (s == s2 is true).
+However ... if you do this:
+
+String s3 = new String("Hello World");
+String s4 = new String("Hello World");
+
+This will create a string object stored in the heap as opposed to the string pool, so in this case (s3 == s4 is false) and will use twice the memory as "s" & "s1" - you could resolve this by "interning" s3 & s4:
+
+s3 = s3.intern(); 
+s4 = s4.intern();
+
+then s3 & s3 would be the same object reference as "s" & "s1" and the old s3 & s4 objects would be GC'd (so long as no other references exist) ... However intern() is an expensive call so should be used sparingly ...
+ 
+The problem with the image posted is that it highlights how shallow the media is (and how this can influence us ...) Both Jobs & Ritchie made major contributions to the technology arena which have have affected us all... I think the picture says more about the media than either Jobs or Ritchie... If you speak to anyone working with computers, programming, etc Ritchie is far from ignored! I wonder how we'll feel when Gosling passes on! :)
+
+BTW I Love TeX much more fun than M$ Word, etc - wrote my whole masters dissertation using Leslie Lamport's  LaTeX.
+ 
+Marshal Currier - well put! :) I fear Android will potentially suffer in the same way...
+ 
+If you have a "Parent" class that you want to be able to subclass (forcing child classes to override certain methods) & also instantiate, there's no simple way to do this....
+
+I'd create an "AbstractParent" if you like, then make the "Parent" a simple shell which more or less just calls "super.whateverMethod(...)" wherever it needs to.
+
+Then you can just subclass "AbstractParent" for other implementations...
+
+I know it's another class & you have to create a shell class... but I think it makes your intentions more clear to others - having a base class as abstract is a good warning later on that the class is used elsewhere & you need to take care with changes! :) I don't see maintenance as a significant issue....
+ 
+It depends ... I did my masters in image processing & the course was geared up for C programming & we wrote most of the functions from the ground up... being contrary I chose to use java - this was in '96, so I was using Java ~0.9! pre JIT, Hotspot :)
+
+It worked fine for me if a little slow - I was able to do FFT, Hough Transforms, Gaussian blur, etc
+
+I've not used Matlab, so I'm not to familiar with it & the Graphics 2D package in Java may not have everything you want ... but if you want to write your own functions, Java is quite capable.
+ 
+Well, I hope Android keeps up the momentum, Motorola Mobility may well give it the ability to compete with Apple head-to-head :)
+
+Perhaps we need a Google endorsed/based Linux distro.... (please don't mention Chrome OS!)
+ 
+Two objects can have the same hashcode, equals is used to make matches - the contract between equals() & hashcode() is :
+
+if two objects are "equal" they must have equal hashcodes, however, if two objects have equal hashcodes they aren't necessarily "equal"
+
+hashcode comes into play mainly with HashMap, Hashtable, HashSet (this is actually backed by a HashMap) - properly implemented hashcode & equals() gives fastest lookup in such maps.
+ 
+To answer the initial question assuming you're lookup up the objects from a Map....
+
+HashMap stores items in an array of Lists with the hashcode forming the index of the array, so to find two objects will result in a O(1) lookup for the list followed by at most a O(n) lookup followed by an O(n-1) lookup for the two objects. (n being the number of objects with the same hashcode)
+
+If they had unique hashcodes it would be two O(1) lookups (much faster)
+ 
+Java primitives aren't thread safe
+
+c+=1 is the same as c = c + 1
+
+so if both threads see c as initially 0, then they'll both add one and the result will be 
+
+"Finished Finished 1" 
+
+It's probably more rare than the other cases, though similar in likelihood to seeing "Finished Finished 2"
+ 
+class Test1 {
+    
+    public static final Integer POOL_SIZE = 2;    
+    public static final ExecutorService exe = Executors.newFixedThreadPool(POOL_SIZE);
+        
+    public static void main(String[] args) {
+        List<Future<Long>> futures = new ArrayList<Future<Long>>();
+        
+        Process1 p = new Process1();
+        for (int j=0; j<POOL_SIZE; j++) {
+            futures.add(exe.submit(p));
+        }
+                
+        Iterator<Future<Long>> i = futures.iterator();
+        while (!futures.isEmpty()) {
+            while (i.hasNext()) {
+                Future<Long> l = i.next();
+                try {
+                    Long res = l.get(10, TimeUnit.MILLISECONDS);                
+                    if (res != null) {
+                        i.remove();
+                    }
+                } catch (Exception ex) {                
+                    Logger.getLogger(Test1.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }       
+        exe.shutdown();        
+        System.out.println(p.c);
+    }
+}
+
+class Process1 implements Callable<Long> {
+
+    long c = 0;
+
+    public Long call() {
+        
+        if (c == 0) {
+            c += 1;
+        }
+        System.out.println("Finished");
+        return c;
+    }
+}
+
+// This should always print:
+// Finished
+// Finished
+// ...
+// Finished
+// 1
+// Depends on how many threads are specified in POOL_SIZE
+ 
+oops :) where i've put "s1" I meant "s2" doh!
+ 
+****************************************** 
+ 
+100000132246191 
+ 
+ Google it :)
+ 
+****************************************** 
+ 
+503786952 
+ 
+ for example if one has several variables (ex. Sting one , String two , String three) and he should compare this vaiables each in a methode that have a String
+( ex : public boolean match(String str) ) with that String str is this anyway to make it 
+shorter than that one writes ( if ( one > str) .. if ( two > str) ... if ( three > str ) ...) so my question is how can one make that shorter ? und thanks
+ 
+so return fragment;
+ 
+cann anyone with Help   with this exercise:   /**
+  * Splits the Fragment into two at the position of the cursor and returns
+  * the newly generated right Fragment.
+  *
+  * This method extracts the substring at (position,length) from this
+  * FragementCursor's Fragment and returns a new Fragment which contains that
+  * substring and uses a copy of the old fragment's style.
+  *
+  * After executing this method, the Fragment this cursor points to 
+  * is shortened up to the position of the FragmentCursor, 
+  * the cursor still points to the position after the last character in the fragment. 
+  * 
+  * MUST NOT PRODUCE EMPTY FRAGMENTS:
+  * If the the current position is at the beginning or end of the current fragment, 
+  * a split would produce an empty fragment. 
+  * This is not allowed, so the caller must ensure that these preconditions hold. 
+  * The method checks if the preconditions are met and aborts otherwise. 
+  *
+  * @return The newly generated right Fragment.
+  */
+ 
+
+public Fragment cutOff() {
+ 
+ fragment.substring(position, fragment.length());
+ return .;
+ 
+ } 
+what shall includ this return ??
+ 
+do u have Idea how can i go on ? with this excersize
+ 
+****************************************** 
+ 
+100002220560347 
+ 
+ Can anybody give free jsp application deploy servers @free ??
+ 
+Sending email to more number of persons at a time using SMTP
+
+my code
+Send.jsp
+<%@ page contentType="text/html; charset=iso-8859-1" language="java" import="java.sql.*" errorPage="" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Email Example</title>
+<style type="text/css">
+<!--
+body {
+ background-image: url();
+}
+.style2 { font-size: 36px;
+ color: #33FF66;
+}
+.style4 {color: #0000FF}
+.style5 {
+ font-size: medium;
+ color: #009966;
+}
+.style6 {color: #FF0000}
+-->
+</style>
+
+<script type="text/javascript" language="javascript">
+function valid()
+{
+if(document.form1.to.value=="")
+{
+alert("Email  can't blank...");
+document.form1.to.focus();
+  document.form1.to.style.backgroundColor = "#FF9966";
+   document.form1.to.select();
+return false;
+}
+if(document.form1.subject.value=="")
+{
+alert("Subject can't blank...");
+document.form1.subject.focus();
+  document.form1.subject.style.backgroundColor = "#FF9966";
+   document.form1.subject.select();
+return false;
+}
+if(document.form1.body.value=="")
+{
+alert("Message can't blank...");
+document.form1.body.focus();
+  document.form1.body.style.backgroundColor = "#FF9966";
+   document.form1.body.select();
+return false;
+}
+return true;
+}
+</script>
+</head>
+
+<body>
+<table width="100%" height="100%" border="0" align="center">
+  <tr>
+
+    <th width="100%" scope="col"><table width="100%" height="100%"  border="0">
+      <tr>
+        <td height="107"><div align="center"><span class="style2"> <span class="style4"> Welcome to Email send example </span> </span></div></td>
+        </tr>
+      
+    </table>    </th>
+  </tr>
+  <tr>
+    <th scope="col">&nbsp;</th>
+  </tr>
+  <tr>
+    <th scope="col">&nbsp;</th>
+  </tr>
+  <tr>
+    <th scope="col"><table width="501" height="282" border="0" align="center">
+      <form  name="form1" method="post" action="EmailsendProcess.jsp" onsubmit="return valid()">
+        <tr>
+          <th colspan="3" scope="col"><label><span class="style5">If you have any suggestion, query, questions,or if you would like to   contact me for a quote, please use the form below and we will get back   to you as soon as possible.</span></label></th>
+          </tr>
+        <tr>
+          <th width="79" scope="col"><div align="right">Email:<span class="style6">*</span></div></th>
+          <th colspan="2" scope="col"><div align="left">
+            <label>
+            <input name="to" type="email" size="50%" required="required" multiple="multiple"/>
+            </label>
+          </div></th>
+        </tr>
+        <tr>
+          <th scope="row"><div align="right">Subject:<span class="style6">*</span></div></th>
+          <td colspan="2"><label></label>
+              <div align="left">
+                <label>
+                <input name="subject" type="text" size="50%" required="required"/>
+                </label>
+            </div></td>
+        </tr>
+        <tr>
+          <th height="127" scope="row"><div align="right">Message:<span class="style6">*</span></div></th>
+          <td colspan="2"><div align="left">
+              <textarea name="body" cols="50%" wrap="off" required="required" ></textarea>
+          </div></td>
+        </tr>
+        <tr>
+          <th scope="row">&nbsp;</th>
+          <td width="107"><input type="submit" name="Submit" value="Submit" /></td>
+          <td width="301"><input type="reset" name="Submit2" value="Reset" /></td>
+        </tr>
+      </form>
+    </table></th>
+  </tr>
+  <tbody>
+  </tbody>
+  <tbody>
+  </tbody>
+</table>
+</body>
+</html>
+
+and 
+EmailsendProcess.jsp
+
+<%@ page contentType="text/html; charset=iso-8859-1" language="java" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Email send Example for project </title>
+</head>
+<body>
+<%@ page import="java.util.*" %>
+<%@ page import="javax.mail.*" %>
+<%@ page import="javax.mail.internet.*" %>
+<%@ page import="javax.activation.*" %>
+<%@ page import="javax.net.ssl.*" %>
+<%@ page import="java.lang.String.*" %>
+<%
+try
+               {
+String host = "smtp.gmail.com";
+
+String to= request.getParameter("to");
+String to1[]= request.getParameterValues("to");
+String[] parts = to.split(",");
+//String[] result =to1[].split(",");
+String part1[] = parts;
+//out.println("I am first String" +part1);
+//for(int j=0;j<=part1.length;j++){
+//out.println("\n I am first String1" +part1[0]);
+//out.println("\n I am first String2" +part1[1]);
+//out.println("\n I am first String" +part1[j]);
+String from="from address";  // write your email address means from email address.
+String subject = request.getParameter("subject");
+String messageText = request.getParameter("body");
+boolean sessionDebug = true;
+// Create some properties and get the default Session.
+//System.setProperty("smtp.protocols", "SSLv3");
+Properties props = System.getProperties();
+
+props.put("mail.smtp.starttls.enable","true");
+props.setProperty("mail.transport.protocol","smtp");
+props.setProperty("mail.host",host);
+props.put("mail.smtp.auth", "true");
+props.put("mail.smtp.starttls.enable","true");
+props.put("mail.smtp.port", "465");    //port is 587 for TLS  if you use SSL then port is 465
+props.put("mail.debug", "true");
+props.put("mail.smtp.socketFactory.port", "465");
+props.put("mail.smtp.socketFactory.fallback", "false");
+props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+
+Session mailSession = Session.getInstance(props, new javax.mail.Authenticator() {protected PasswordAuthentication getPasswordAuthentication() {return new PasswordAuthentication("email address of sender", "password");
+}
+});
+ 
+// Set debug on the Session
+// Passing false will not echo debug info, and passing True will.
+
+mailSession.setDebug(sessionDebug);
+ 
+// Instantiate a new MimeMessage and fill it with the
+// required information.
+ 
+Message msg = new MimeMessage(mailSession);
+msg.setFrom(new InternetAddress(from));
+
+for(int i=0;i<part1.length;i++){
+InternetAddress[] address = {new InternetAddress(part1[i])};
+msg.setRecipients(Message.RecipientType.TO, address);
+msg.setSubject(subject);
+msg.setSentDate(new Date());
+msg.setText(messageText);
+
+// Hand the message to the default transport service
+// for delivery.
+
+ Transport transport = mailSession.getTransport("smtp");
+transport.connect(host, "emiladdress of sender", "password");
+transport.sendMessage(msg, msg.getAllRecipients());
+transport.send(msg);
+out.println("Mail was sent to " +part1[i]);
+out.println(part1[i]);
+out.println(" from "+from);
+out.println(" using host "+host+".");
+
+}
+}
+
+catch(Exception e)
+         
+                    {
+    out.println(""+e);
+          }
+%>
+</table>
+</body>
+</html>
+
+my problem is ,mail is sending 3 times for the same user  ???
+How can i overcome ??
+can anybody help me?
+ 
+my problem is ,the mail is sending to the users more number of times ,how can i avoid it ???
+ 
+****************************************** 
+ 
+100000309022346 
+ 
+ which type of guide you need?
+ 
+****************************************** 
+ 
+1104080268 
+ 
+ You also can add a validation before the parsing and notice the user about the error
+ 
+****************************************** 
+ 
+1655433491 
+ 
+ Sorry, wasn't actually aware it was an elligal site :$... Stupid of me...
+ 
+b.t.w. I thought to remember... That on the spring website there are to handbooks who are worth a look at.
+ 
+****************************************** 
+ 
+100000246177569 
+ 
+ Walter William Milner Not Class ! i said ( Device read bar code )
+ 
+http://stackoverflow.com/questions/13916025/how-to-print-a-jasper-report-in-3-exemplar-with-little-changes ... hope it  helping u :)
+ 
+i think printing bill :)
+ 
+i asking for why only the ActionPerformed event working with Scanner and others don't !
+ 
+yup i know these events to my keyboard but ActionPerformed need pressing " Enter " to work .. when using Scanner it working without pressing anything
+ 
+I'm taking about Scanner Device not Scanner I/o ! Walter William Milner
+ 
+Hans Brinkhof eeeehm but what about ActionPerformed we need to handle keyboard event to work ... when i'm using ActionPerformed with the scanner device the event worked as keyReleased
+ 
+why Scanner ( Device read bar code ) typing event is ActionPerformed and not working with keys event such as keyPressed , keyReleased and keyTyped ?!
+ 
+Nicolas Goudard thanks more
+ 
+http://stackoverflow.com/questions/218384/what-is-a-null-pointer-exception is the best explain with examples :)
+ 
+****************************************** 
+ 
+503499379 
+ 
+ im keeping a blog on what i learn day to day at work in my blog regarding j2ee and j2se.. if anyone is interested they can visit my blog @ dinukaroshan.blogspot.com
+ 
+****************************************** 
+ 
+787540648 
+ 
+ For the Java lovers in Iasi, we are preapring a knowledge-sharing session. Interesting topics and great speakers!
+ 
+****************************************** 
+ 
+100002273858886 
+ 
+ its id in the data base
+ 
+:/ group rules don't say that we should not ask for help if we need a code, second if i have the answer sure i give him what he needs , third i agree  with u it is better to close it !
+ 
+if u r using windows there is a plug in that show u that
+ 
+loool why u r answering him like this ????? he needs the code and he is here asking for help that is simple
+ 
+please did any one here work in 'brain computer interface' ?
+ 
+Erle nd Angel , u can c the groupe rules , we can ask about php,c and all programming language c that on the rules :)
+ 
+hi , please is there any a tool to know the algorithm used for a sequence of numbers  ?
+for exemple if i have this sequence 
+903520
+845215
+554244
+517381
+360965
+i have to know the next numbers
+ 
+No i  don't need informations but i need someone who worked in a lab about that
+ 
+it is not the case, thanks for ur help all of u :)
+ 
+these are identifiers of files. they are auto_increment, they have no relationship with time, I'm guessing the other identifiers in order to access the requested files
+ 
+Hello , please who is working here in ICM "interface brain machine" ?
+ 
+yes james thanks ^_^ i'll look there
+ 
+yes James, that's what I am trying to do, find the next
+ 
+Yes we can give the concept to feed him for a life :)
+ 
+that is Interface Computer Machine , means how to controle electronique devices using just signal of brain
+ 
+any person who has the number of the file can see it, i'll try again to guess it
+ 
+the length of numbers that i have is 7 , how can i guess the probability by my brain :/ ? thanks for this suggestion
+ 
+no Sandeep :p I'm steel cheking it , and i c the code of Jacek :)
+ 
+no it is not likely, because even if you create an empty file system gives it an identifier, so it has no relationship with the contained
+ 
+same thing with $PARAMS
+ 
+yes, I'm now looking about how can i make the difference between signals of brain , means signals that  the user's brain product to do the action he wants and if he is at the same time thinking in other things it will also generate brain signals
+ 
+****************************************** 
+ 
+1784446626 
+ 
+ spare UBS, it's good bank
+ 
+****************************************** 
+ 
+100003259641811 
+ 
+ JQuery installation with SharePoint 2010 >> http://programming-development-guide.blogspot.in/2011/06/jquery-installation-with-sharepoint.html
+ 
+hi dear i have give on sites url www.aegisisc.com just go blog and click java development i think this is your helpfull.
+ 
+Hello Everybody, What Different Between .net Development And Java Development ?
+ 
+First time in india news for java
+ 
+JQuery installation with SharePoint 2010
+ 
+Streamlining JSF Java Development With Facelifts with Coading.
+ 
+thanks for guide
+ 
+http://programming-development-guide.blogspot.in/2011/06/deference-between-net-development-and.html
+ 
+Java navigates new news for NetBeans BlueJ Plugging.
+ 
+thanks
+ 
+An Introduction To .NET String Resources
+ 
+http://www.aegisisc.com/blog/category/Java-Development.aspx
+ 
+right
+ 
+this link is a all of related to java
+ 
+thanks
+ 
+[:-bd]
+ 
+us u like dear
+ 
+this is not linke for book but it's a java information link >> http://www.aegisisc.com/blog/category/Java-Development.aspx
+ 
+thanks in advance
+ 
+hmm
+ 
+Good evening java group.
+ 
+http://www.aegisisc.com/blog/post/2012/01/25/Oracle-Secures-The-Future-Of-Java-Development.aspx
+ 
+thanks for like
+ 
+Streamlining JSF Java Development With Facelifts
+ 
+hey ste chorlton all your comment for java development are welcome.
+ 
+Aegis technology release new software for automatically testing in java development. It release few days soon.
+ 
+New Streamlining JSF For Java Development
+ 
+hello guys first u understant java classpath and than after this
+ 
+****************************************** 
+ 
+1015179002 
+ 
+ I just uploaded all JavaOne sessions to a shared Google calendar. There are some problems, related to timezone, but  it doesn't look like something that can't be fixed.
+
+I'm trying to get something out soon allowing you to get your own personal Google calendar with all sessions you registered for.
+
+http://www.google.com/calendar/embed?src=fk7emifv2sos2c43jg41hhq0t0%40group.calendar.google.com&amp;amp;amp;ctz=Europe/Amsterdam
+
+(Note that you still need to scroll to the second week of May.)
+ 
+****************************************** 
+ 
+547253028 
+ 
+ Perhaps take a look at JNI too.
+ 
+Also, a lot of these questions are stupid and do nothing more than a college-level exam could. If an interviewer tried to just test my knowledge of Java instead of my knowledge in topics that actually require thought (and not a simple google query), I would consider the job a lot more stupid than one that actually asks me an insightful question.
+ 
+Interesting enough. Can you detail more the algorithms you've used to handle input and output? I've written an algorithm that does something like this, and I was wondering if you had done anything different than I did.
+ 
+Well, simply, I have a rudimentary algorithm design written here: https://docs.google.com/document/d/1_LHcoZLvN52aKfkbrhLSqKISbEcvI0DqJCwGlHawE9Q/edit?pli=1
+What I want to know is, I guess in pseudocode, how yours works?
+ 
+Folks, google exists for a reason. Please, please, use it.
+ 
+... So why can't you read it normally?
+ 
+Then learn how to apply SQL to Java. Then learn how to do scripting in Java, with as many languages as possible (Ruby, Python, Javascript, Lua, etc etc). The more you can apply and link together, the more you will inevitably learn.
+ 
+Well, the algorithm by which it stores and retrieves the data to form sentences would be a place to start.
+ 
+Q: - What's the difference between J2SDK 1.5 and J2SDK 5.0?
+If I was ever asked this in an interview, I'd walk out.
+ 
+****************************************** 
+ 
+1082018709 
+ 
+ http://www.javabeginner.com/uncategorized/java-serialization
+ 
+How can i write a program without   main()   but with   Static  ..??
+ 
+****************************************** 
+ 
+100003759628183 
+ 
+ How to get these?
+ 
+What's the difference 
+int a;
+static int a;
+ 
+How to combine more than 1 .jar apps in single MIDlet(.jar) app for nokia mobile
+ 
+I'm not sure about the driver config. Plz tell how to configure driver for ms access
+ 
+Is it possible
+ 
+Firstly i want to run a code the i'll try to understand
+ 
+Jaspreet singh: I ran your code no error but on the compilation time it shows "starting applet not initialized". What's this?
+ 
+No problem in Extension.
+ 
+I need code
+ 
+How to connect netbeans 6.9.1 with ms access for database. Please give step by step procedure:-)
+ 
+First this program then applet program. Is correct?
+ 
+for jsp which is best and give the link to download for windows 7 32 bit
+ 
+It this through online?
+ 
+Sorry i'm just a beginner how to work these program?
+ 
+I'm not asking the difference. I'm asking what is abstraction
+ 
+What's the difference between java, j2me, j2se, j2ee
+ 
+Okay i'll try
+ 
+Post the link for decompiler, disassembler
+ 
+Ok thanx
+ 
+a++ means a=a+1 so final result of incremented value is stored in a. Then why the output were changed? Plz tell. I'm not asking post or pre increment
+ 
+How to connect sql server 2008 with netbeans 6.9.1
+ 
+Can anyone give simple client server program in java
+ 
+Reflection means?
+ 
+I need complete example. That page give theory and some coding i can't understand
+ 
+Bro, can anybody tell how to connect java with database. I'm beginner. Plz give the step by step procedures
+ 
+I did it. But same problem
+ 
+The count value is not initialized. Then how to increment the count value?
+ 
+int a=0;
+a=a++;
+Print a 
+The output is 1 in C  but in java the output is 0 why?
+ 
+Are you asking .jar file name or list of .class name?
+ 
+Then, which variable to hold the incremented value(11)
+ 
+Which is correct output
+ 
+How to pass a class?
+ 
+Can you give any site to learn about client server in java
+ 
+JDK support microedition?
+ 
+In C pointers, all pointers(int, float, char) have same size. Is it true?
+ 
+What's the use of abstraction in oops. Plz give a simple ex
+ 
+Eclipse, netbeans 
+which is best to write program in java? And which is easy?
+ 
+I tried to run an netbeans with ms access. But everytime it shows a message. That is "java.sql.SQLException:[microsoft][ODBC Driver Manager] data source name not found and no default driver specified". What's the problem:-)
+ 
+****************************************** 
+ 
+100005401593847 
+ 
+ Hans Brinkhof -> thanks
+ 
+I need basic Java documentation, so I started learning Java. thanks all
+ 
+Hoan Pham thank you
+ 
+****************************************** 
+ 
+100000880214877 
+ 
+ headfirst java
+ 
+Aravind Sankaran Nair A a = new B() if only B class obj is created than how can u call method and variable of class A from B class ????? super refer to the object of super class what does it mean ?
+ 
+@walter  can you give me some link for changing class defination dynamicalyy
+ 
+if you are using gmial and still you are getting this problem may be it is because you have on 2 way security on your gmail
+ 
+use swing .. you will get ready code to capture image . if you are making web application than  there are some adobe plugins and jqueries to help you
+ 
+public class Demo2 {
+ int i;
+
+ Demo2(int i) {
+ this.i = i;
+
+ }
+
+ @Override
+ public boolean equals(Object obj) {
+ if (obj instanceof Demo2) {
+ if (this.i == ((Demo2) obj).i) {
+ return true;
+ }
+
+ }
+ return false;
+ }
+
+ @Override
+ public int hashCode() {
+ return this.i;
+ }
+}
+ 
+thank you every one .. this is not my project i am just trying this @ home and stuck with it :( ... thanks again
+ 
+private HashMap<String , Integer>[] cvalues = new HashMap[10];                          this is the valid syntax in java but                                                                              
+private HashMap<String , Integer>[] cvalues = new HashMap<String , Integer>[10];  gives compile time error ??? why ???? any reason ??
+ 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.HashMap;
+
+public class demo {
+
+ public static void main(String[] args) throws Exception {
+Demo2 d = new Demo2(5);
+HashMap<Demo2,Object> h = new HashMap<Demo2, Object>();
+h.put(d,new Object());
+System.out.println(h.get(d));
+d.i = 3;
+System.out.println(h.get(d));
+
+ }
+}
+ 
+use simple window.location javascript function ..... pass any flag to indicate that page is already refreshed by your function or not
+ 
+u r ri8 in all cases .. but no idea about method to check for number of objects
+ 
+1. do some of whole array and divide it by 2 .. start iterating array element from start and do some of them untill the sum come closer to totalsum/2
+ 
+k m getting null in output of 2nd sysout ..... it is beacuse of hashcode method of demo2 so how to solve it ?
+ 
+you cant extends final class ... that break oo concept .... so not purely oo
+ 
+HashMap<Key , Object> h = new HashMap<Key , Object>();
+Key k = new Key();
+h.add(k,new Object());
+
+it will pass just reference of k as a key or a new  clone of k as key ?????
+ 
+yeah m also telling same so for A a = new B() total 2 obj will be created on heap .. 1 is of class B and another one is of class A .... that can be refer by super keyword
+ 
+i want something like if i change the value of i in key, the object  would also transfer to the appreciate bucket using i value , so in future it vl be possible to find that object using key ... but i hv no idea how to do this
+ 
+class Demo2.java
+ 
+****************************************** 
+ 
+100000417628617 
+ 
+ then try.......... :)
+ 
+Ok.........i will try
+ 
+Hans Brinkhof reference ID and reference variable are two different things isn't?
+ 
+try to solve this question
+ 
+Pushkar Puk class B
+{
+public static void main(String args[])
+{
+B obj=new B();
+System.out.println(obj);
+}
+} // here an value b@4245 is printed what is it?
+ 
+"Vincenzo Moccia change studies my friend " what is meaning of it?
+ 
+Evangelos Pappas .......i think...this can't be solve by this way.....
+ 
+Hans Brinkhof i read in many books about reference id.......now u r calling it hex representation ............please can u explain it in more detail?
+ 
+WHAT IS THE NEED OF REFERENCE ID?????>
+ 
+can anyone solve this?
+
+Write a program that reads in an integer and breaks it into a sequence of individual 
+digits. For example the input 1234 is displayed as 1 2 3 4.
+ 
+class B
+{
+ public static void main(String args[])
+ {
+ B obj=new B();
+ System.out.println(obj);
+ }
+}  // here an value b@4245 is printed what is it?
+ 
+Thanks for advice Cedric Memo i will remember ur words..........
+ 
+(1)
+
+A student=new A();
+can anyone explain the line given above.I want to know every detail of this 
+line where is creating an object and which words are responsible for creating 
+object.I also want to know what the difference between reference ID and
+Object.
+
+(2)
+
+class A 
+{
+ int val1,val2;
+ void A()
+ {
+ System.out.println("Hello ");
+ }
+ public static void main(String args[])
+ {
+ new A().A();
+ }
+}
+
+What is the meaning of "new A().A()"
+and in the above code are we return 
+a value from the CONSTRUCTOR?
+
+THANKS IN ADVANCE.....
+ 
+Thanks for advice Atul Anand ........I was also first thinking that it can be solve by this way.
+ 
+Hans Brinkhof i think here u r wrong a reference id exist......i think this is the id of Address in the RAM of the space which is created using new operator
+ 
+Ken Bagnall u mean in the line "new A().doStuff();"creating the object??then why we need a reference ??
+ 
+****************************************** 
+ 
+100000175342650 
+ 
+ If I'm not wrong, compiler will not let you instanciate a new Plantilla without infer a generic class:
+
+Plantilla plantilla = new Plantilla<Generic>( );
+ 
+****************************************** 
+ 
+1585729145 
+ 
+ $numero=$_POST['numero'];   mysql_query("INSERT INTO table(champ1)values('".utf8_decode($numero)."') Alaa Yousef
+ 
+****************************************** 
+ 
+1288957433 
+ 
+ how to fill in each table cell by a matrrice values in java
+i need a code please
+ 
+i need a code please
+ 
+for(int i=0;i< m;i++) for (int j=0;j<(2* n)+1;j++)
+   tablist[k]= s1[i][j];
+ 
+****************************************** 
+ 
+1428230173 
+ 
+ Could someone tell me why I cant download sorce code using svn or git a project in Source Forge? Is it because it showing (No more commit)? This is my first time try to find a project.
+ 
+****************************************** 
+ 
+1421527928 
+ 
+ coding add image to frame, not imageicon???help me
+ 
+mhs.jrxml (The system cannot find the file specified). location jasper or *.jrxml.
+ 
+Yes. Thanks before
+ 
+thanks
+ 
+learning are equally
+http://www.java2s.com/Code/Java/J2ME/CatalogJ2ME.htm
+ 
+Email : mail.andri8@gmail.com
+ 
+net.sf.jasperreports.engine.JRException: Error compiling report java source files : C:\Users\JvEclip\Documents\NetBeansProjects\form\src\form\mhs_1326355132043_808926.java
+ 
+yeah, , sorry. heheee
+ 
+Thanks
+ 
+mail.andri8@gmail.com
+ 
+coding : try{
+    JasperDesign ambil = JRXmlLoader.load("mhs.jrxml");
+    JasperReport tampilan = JasperCompileManager.compileReport(ambil);
+    JasperPrint cetak = JasperFillManager.fillReport(tampilan, new HashMap() , con);
+    JasperViewer.viewReport(cetak);   
+    } catch (Exception ex) {
+     System.err.println(ex);
+ 
+help :
+error
+net.sf.jasperreports.engine.JRException: java.io.FileNotFoundException:
+ 
+public void actionPerformed(ActionEvent event){
+int a=0, b=0, c=0;
+try{
+a=Integer.parseInt(JTextField.getText());
+b=Integer.parseInt(JTextField.getText());
+}catch(NumberFormatException nfe{nfe.printStackTrace();}
+JButton btn = (B
+utton) event.getSource
+if(btn =plus){
+c= a+ b;}
+else if(btn = minus){
+c= a-b;}
+Continue......
+ 
+after config file location. error
+net.sf.jasperreports.engine.JRException: Error compiling report java source files : C:\Users\JvEclip\Documents\NetBeansProjects\form\src\form\mhs_1326355132043_808926.java
+ 
+Java mobile
+
+Can u give me tutorial? Or source code??
+ 
+****************************************** 
+ 
+1502811817 
+ 
+ I dont think so, Coz .exe only belongs to windows platform..and as we know..java is a platform independent language..so by creating .exe it would become platform specific or dependent..
+
+Conclusion: Not possible..
+ 
+to check the integrity of a software...
+ 
+Oh Thnx For The Suggesion...But I am A blogger..and i need it for my blog.....its not possible for me to read a complete book of Java for a simple work that can be done by you guys in minutes...Thats Why i posted It Here..
+ 
+Hello..
+I need A Simple JSP form...
+Which Have A Single Text Box For Username..
+if username Starts with A Then It Have To Generate an Error Which Says That not A valid username Below The Username Textbox....
+On The Same Page Where Text Box Exists...
+
+If Anyone Of You can Do It...Then Its Gr8 Fr Me..:)
+ 
+use Recursion...
+ 
+Can You Please Provide Me coding For Javascript...:( :(
+Coz I donn Know How To do that...
+ 
+Oh Common Leave Man...Primitive Variables doesn't make a language pure object oriented or not... :)
+ 
+I had downloaded LTI-CIVIL For my windows machine from http://lti-civil.org/
+I have no idea about how to configure it to use it with my windows machine..
+Anyone here who can help me..?
+ 
+i don't know how to validate form on same page... :(
+ 
+I wrote a code which is taking image from webcam..And changing the color image to black and white image...
+But now i am unable to find a way by which i can get the fingers and complete hand coordinates of that image..
+ 
+i want to do this in easiest way...Programming language can be html,jsp or javascript..
+ 
+Anyone here who can help me to find out the co-ordinates of a image which is taken by webcam..
+Details:
+I am working on hand recognition project..Which takes a image of Hand from Webcam...Then find the co-ordinates of that image..
+For i.e: Width and height of individual fingers as well as complete hand..
+Then save the co-ordinates in database..
+
+Project will be in Java Swings..
+Any kind of help/coding links...Must be appreciated..
+
+Thanks you.
+ 
+i am not blogging on programming or anything shitty...
+i just want to add a custom form for to interect it with my visitors thats why i want to add this...
+ 
+I have a program which shows the pixels value on mouse click..
+Now i Just want to modify It slightly, So it can save pixels values to database instead of showing it on screen..
+Anyone here who can help me..?
+
+Here's the source code..
+
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.image.BufferedImage;
+import java.io.*;
+import javax.swing.*;
+
+public class GetPixels extends JPanel {
+    BufferedImage image;
+    JLabel[] labels;
+
+    public GetPixels(BufferedImage image) {
+        this.image = image;
+        addMouseMotionListener(mml);
+    }
+
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        int x = (getWidth() - image.getWidth())/2;
+        int y = (getHeight() - image.getHeight())/2;
+        g.drawImage(image, x, y, this);
+    }
+
+    public Dimension getPreferredSize() {
+        return new Dimension(image.getWidth(), image.getHeight());
+    }
+
+    private void showPixel(Point p) {
+        int w = getWidth();
+        int h = getHeight();
+        int iw = image.getWidth();
+        int ih = image.getHeight();
+        Rectangle rect = new Rectangle(iw, ih);
+        rect.x = (w - iw)/2;
+        rect.y = (h - ih)/2;
+        int x = 0, y = 0;
+        if(rect.contains(p)) {
+            x = p.x - rect.x;
+            y = p.y - rect.y;
+           }
+        setLabels(x, y);
+    }
+     private void setLabels(int x, int y){
+        labels[0].setText(String.valueOf(x));
+        labels[1].setText(String.valueOf(y));
+       }
+
+    private JPanel getLabels() {
+        labels = new JLabel[2];
+        for(int i = 0; i < labels.length; i++) {
+            labels[i] = new JLabel();
+        }
+        Dimension d = new Dimension(35, 25);
+        JPanel panel = new JPanel(new GridBagLayout());
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.insets = new Insets(2,2,2,2);
+        addComponents("", labels[0], panel, gbc, d, 1.0, 0  );
+        addComponents("", labels[1], panel, gbc, d, 0,   1.0);
+        return panel;
+    }
+
+    private void addComponents(String s, JComponent jc, Container c,
+                               GridBagConstraints gbc, Dimension d,
+                               double weightx1, double weightx2) {
+        gbc.weightx = weightx1;
+        gbc.anchor = GridBagConstraints.EAST;
+        c.add(new JLabel(s), gbc);
+        jc.setPreferredSize(d);
+        gbc.weightx = weightx2;
+        gbc.anchor = GridBagConstraints.WEST;
+        c.add(jc, gbc);
+    }
+
+    public static void main(String[] args) throws IOException {
+        File file = new File("c:/rose1.jpg");
+        BufferedImage image = javax.imageio.ImageIO.read(file);
+        GetPixels test = new GetPixels(image);
+        JFrame f = new JFrame("GetPixels");
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        f.add(new JScrollPane(test));
+        f.add(test.getLabels(), "Last");
+        f.setSize(500,400);
+        f.setLocation(200,200);
+        f.setVisible(true);
+    }
+
+    private MouseMotionListener mml = new MouseMotionAdapter() {
+        public void mouseMoved(MouseEvent e) {
+            Point p = e.getPoint();
+            showPixel(p);
+        }
+    };
+}
+ 
+Or Justify Your Answer.. :)
+ 
+@Hans: Both things are same, Whether you put pants out from leg...or leg out from pants..
+ 
+@Chris Pitschmann: Thnx For The Help...i found another one which is in JavaScript Here...
+http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+
+is it easy to do it with javascript rather then jsp..?
+ 
+Hans Brinkhof: Means What..??
+ 
+Okey Chris Pitschmann i will Work On that... :)
+
+Hans Brinkhof: Mate i Think You know Java Very Much In Deep...
+
+So A ques. For You...
+Is Java A pure Object Oriented or not...?
+ 
+Hans Brinkhof: I just Need A single Field..And Then I will Edit That Form  according to my needs...
+I don't post the Coding as You give to me directly to my blog...i will edit that coding for different purpose...if said 'A' just because it somewhat reflects my needs...
+ 
+lol...Is Helping is against of your community rules then nobody wants to be in such group...
+I donn Want COmplete Coding Just Give Me some Basic Coding of form validation on same page i will edit for Alphabet A...
+ 
+****************************************** 
+ 
+1458139882 
+ 
+ Go with basic ..yes same as pojo
+ 
+The program start running from  init
+ 
+Can any one tell me why there is too much code to write in Java ..just for a single click ...
+ 
+Idiot user???u no nothing about java ..simply delet ur comment cos u suck for insulting
+ 
+order by will work
+ 
+Learn the fundamental of Java ..before ejb ...dnt forget servlet
+ 
+Haha ...house on fire ...
+ 
+i want to be an android developer..what site can realy help me get started
+ 
+yes u can...it depends..web or software..
+ 
+What's the benefit of action struts
+ 
+Go and learn other languages..compare it with java ...am not referring to click of botn ..ur opening ur mouth
+ 
+No it can't
+ 
+No
+ 
+is there anybdy wit dump scjp 6:0 current edtion should help me out
+ 
+At some point it can
+ 
+Then go ahead
+ 
+Iv done all parts of java ..and iv two certification in java..but I enjoy enjoy asp.net
+ 
+Using @override
+ 
+Plone here we are
+ 
+thanks i will..try it
+ 
+****************************************** 
+ 
+100002590350644 
+ 
+ Well can u please let us know the kind of problem u r facing? Compilation Error, Run time error or what do u want to do exactly...?
+ 
+As far as my concerned, i found 3 errors in your code:1- Enum can't be subclassed.   2-in the line [return (Ajay)Enum.valueOf(ajay,a} ]where ajay comes from? and u did not close your parenthesis.   3-In the line super(s1,i), since Enum cannot be subclassed the keyword super with 2 args is referenced from nothing so it will obviously show an error.                       We don't know what u want to do actually, We usually use Enum to create constant variables that we can call any time. I don't see why u r trying to extend Enum?
+ 
+True.......
+ 
+Hello everybody, Is it possible to use inheritance with servlets without using java beans and hibernate?
+ 
+Hello everybody, is somebody having the dumps of java 310-065?
+ 
+//Hey guys let us have fun can anyone give me the ouput of the following?
+enum HighVal {
+Big(10),medium(5),small(1);
+HighVal(int val){
+ this.val = val;
+}
+private int val;
+int getVal(){
+return this.val;
+}
+}
+class DispVal
+ {
+HighVal h1,h2,h3;
+  public static void main(String[] args){
+         new DispVal().h1 = HighVal.Big;       
+         new DispVal().h2 = HighVal.medium;
+         new DispVal().h3 = HighVal.small;
+for (HighVal ha : HighVal.values())
+          System.out.println(ha + " = " +ha.getVal());
+      }
+}
+ 
+Of course... But what i meant was the question on the possibility to inherit servlets classes   ex: " class A extends HttpServlet and class B extends class A ".
+ 
+Did u compile it or figured it out yourself?
+ 
+****************************************** 
+ 
+100005399611004 
+ 
+ Chris Pitschmann using LOCAL still not a solution.. have tried
+ 
+Falling Leaf why is it the i cant call session.setUsername.?
+ 
+anyone?
+ 
+I can't find some information about it when i tried to search. Do u have any reference..?
+ 
+can you teach me how please..
+ 
+Hello Java Community!
+
+How can you call a function from the different package?
+I have function called refreshAreaList(); in the StudentPanel and I want to call refreshAreaList() to another Class named FileImport.
+ 
+sorry.. what i mean is, how many percent of chance will the data can be pick when using random in java?
+ 
+i already tried dataentries.setText(rs.getString("BorrowedID")); but then I get this error "column BorrowedID is nt found.
+ 
+How can you upload a txt file containing the names and section separated by a comma (,) into the database?
+ 
+I want to get the username who logged in.. So what I did is, use gettxt in the login interface.. but my question is, how could i pass the value of my gettxt into another inteface.. Im using netbeans btw.
+ 
+in the link u give. where is random scheduling?
+ 
+try running a Linux OS. then see if ur hard drive is appearing.. if yes, u can backup ur files ..
+ 
+its also public.. how can I call it from another package?
+ 
+Good Afternoon friends.!
+I have this GUI uploaded below. Is there a way that the JTabbedPane and JScrollPane be only visbile when i click File>Load Window?
+ 
+seriously, I really cant find an elaborative explanation of this random scheduling algorithm. can u please help me..
+ 
+Why cant I do this? "dataentries.setText(rs);"
+
+This is the code:
+ public void DataEntries(){
+        String sql = "SELECT COUNT(*) FROM borrowed;";
+        try{
+            pst = connection.prepareStatement(sql);
+            rs = pst.executeQuery(sql);
+            dataentries.setText(rs);
+        }
+        catch (Exception e){
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }
+ 
+solved by making a new instance of a class..
+ 
+do you mean how to create a package on netbeans?
+ 
+yes.. the probability...
+ 
+can you link me in its definition? since I cant find its definition and processes..
+ 
+this is my class user: http://justpaste.it/25r8
+and this is my JFrame for login: http://justpaste.it/25r9
+ 
+still no good.. "SELECT COUNT(BorrowedID) FROM borrowed";
+ 
+Why is it when i load a txt file and display the it on the list box, its not appearing even i call the refresh function i've made. It only appears if I will rerun the project.
+But if I add it manually and by individual, it automatically display.
+ 
+Is there a such algorithm called Random Scheduling Algorithm..?
+ 
+because I need to use jFileChooser..
+ 
+yes, my function is declared as public..
+ 
+thanks..
+ 
+i hve tried public static void setUsername(String loggedInUsername) {
+        username = loggedInUsername;
+
+bu error is cnnot be referenced from a static ontxt
+ 
+thanks guys..
+ 
+I have this login interface for user who will logged in to use the program. So what i wanted is that to take that username being used and output in another MainFrame Interface on who is logged in..
+ 
+Have tried it.. but I get java.sql.SQLException: Before start of result set
+ 
+newly fresh graduates are allowed to apply?
+ 
+I have a menu that upload csv file into database. This is the code: http://pastebin.com/ZJAKWuGv
+
+But then if I try to load it. I got error saying "java.sql.SQLException: File 'C:\ProgramData\MySQL\MySQL Server 5.5\data\UsersEdDocumentsest.csv' not found (Errcode:22)
+ 
+or an algorithm perhaps..
+ 
+Considering that I have a list of students to be inputted. And I have 3 groups. Each group will be distributed to different area and also time. So I have used random class in java to distribute students on different groups. My question is, is there any kind of scheduling technique similar to the process?
+ 
+i will post it here..  
+private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {
+
+// TODO add your handling code here:
+
+Statement stmt;
+String query;
+
+try
+{
+Class.forName("com.mysql.jdbc.Driver");
+Connection conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/rle_schedule", "root", "mysql");
+
+stmt = (Statement) conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
+
+JFileChooser file_chooser = new JFileChooser();
+
+FileNameExtensionFilter filter = new FileNameExtensionFilter("csv", "csv");
+
+file_chooser.setFileFilter(filter);
+int users_value = file_chooser.showOpenDialog(file_chooser);
+if (users_value == JFileChooser.APPROVE_OPTION) {
+File filee = file_chooser.getSelectedFile();
+//FileInputStream fin = new FileInputStream(filee);
+
+String pathone=filee.getPath();
+//String Pathtwo="C:/Users/read/Desktop/data.csv";
+
+query = "LOAD DATA INFILE '"+pathone+"' INTO TABLE student  FIELDS TERMINATED BY ',' (id_number,name,sec_id)";
+
+stmt.executeUpdate(query);
+
+JOptionPane.showMessageDialog(null, "Successfully Stored From Excel TO MySQL");
+}
+}
+catch(Exception r)
+{
+JOptionPane.showMessageDialog(null, r);
+System.out.println(r);
+}
+}
+ 
+anything can I do with it..?
+ 
+What is the probability that class random in java will repeat its value?
+ 
+In using Random in java, how can you calculate the percentage rate of date being chosen?
+ 
+yes I am adding csv data into the database..
+ 
+aside from distributing students on every group, the group will be scheduled on where they will be assigned and what time is their duty..
+ 
+solved.. i need to add rs.next();
+ 
+but if i pass the path as String it working well..
+ 
+thanks. i have 1 last question:
+IF i have nextInt(50) does it means it can generate 50 random number? or its 2^50?
+ 
+yeah ur right Hans Brinkhof. i have two Jframes. the login jframe, and interface jframe.
+ 
+I have tried to print the path using:
+System.out.println(pathone);
+
+it gives me the correct path:
+C:\Users\Ed\Documents\test.csv
+ 
+Does anyone knows any algorithm that is the same with Random in java?
+Any algorithm that performs random.
+ 
+****************************************** 
+ 
+750145481 
+ 
+ There is nothing special about developing cloud apps in java. 
+==
+
+Although, cloud app is too general of a concept. If you are thinking something in terms of distributed processing of information/tasks/or whatever else you want to achieve, you can check out hadoop. Hadoop is though implementation (among other things) of a very popular set of algorithms in computer science - Map/Reduce (Google for it)
+
+== 
+There are a lot of cloud app platforms as well. Some examples include http://www.heroku.com/ and Google App engine (https://developers.google.com/appengine/)
+ 
+****************************************** 
+ 
+100001082885921 
+ 
+ guys hepl me 2 Larn java..ur advice , suggsnt r all welcum...,
+ 
+i need java compiler...script will be fyn...so plz tell me 4m whr should i dwnld...
+ 
+thanx Kieran Senior....!!!
+ 
+Thnx Hans Brinkhof.....will be in tuch wid u...
+ 
+Me too new in java help me guys !!!!!
+ 
+yes i m new in java...
+ 
+thnx bro
+ 
+****************************************** 
+ 
+1485265707 
+ 
+ Indexing, permissive locking
+ 
+****************************************** 
+ 
+1002969966 
+ 
+ Yes. ramssaha@gmail.com
+ 
+I thing java is more robust
+ 
+I know. But it seems slower. which ide have greater features? Which is commonly preferable in big projects?
+ 
+Which is the best open source plugin for uml design in eclipse?
+ 
+yes
+ 
+Anyone suggest me how to set up a server in secured way for jsp web site?
+ 
+I want to work on a open source oop based n-tire and unit test  project. Any one suggest me any such project?
+ 
+Now which ide is best for java programming...Eclipse or Netbeans
+ 
+need 3-tire sample java code with TDD..
+ 
+Thanks Dear Friends for your experience sharing reply. Actually I am very happy to get these informative response from the group members. Actually I am a c# programmer. Now I am going to start my first java and jasper soft  with eclipse.
+ 
+Anybody suggest me for any good uml plug in for eclipse...........
+ 
+Man, why u guys sold java to oracle
+ 
+Suggest me a good erd and uml tool
+ 
+Anyone suggest me a good uml tool..
+ 
+I also want to get java certification?
+ 
+I also need this. ramssaha@gmail.com
+ 
+Thanks Karim Hasebou
+ 
+R u a crap
+ 
+Anyone suggest me any good uml and visual swing plugin for eclipse???
+ 
+****************************************** 
+ 
