@@ -298,7 +298,7 @@ def print_gml(graph):
 			gml.write("    node \n")
 			gml.write("    [ \n")
 			gml.write("      id " + key + " \n")
-			#print '      label "' + nodes.get(key).name + '"'
+			gml.write('      label "' + key + '"')
 			gml.write("    ] \n")
 		for key in edges:
 			gml.write("    edge \n")
