@@ -14,7 +14,7 @@ def return_zeros(exp, num):
             s = s + "0"
         index = index + 1
     n = str(num)
-    n = n.replace(".", "")
+    n = n.replace(",", "")
     return s + n
 
 def main():	
@@ -45,13 +45,18 @@ def main():
     print "id ; Page Rank Dirigido Sem Peso"
     while i < index:
         id = nodes[i]                        
-        if( 'e' not in pg[id]):
-            print id  + " ; " +  pg[id]
-        else:
-            n = pg[id].split("e")            
-            exp = int(n[1])
-            val = float(return_zeros(exp, n[0])) * pow(10, 5)
-            print id  + " ; " + str(val)
+        val = float(pg[id]) * pow(10, 5)
+        s = str(val).replace(".",",") 
+        print id  + " ; " + s
+        #if( 'e' not in pg[id]):
+            #s = pg[id].replace(".", ",")
+           # print id  + " ; " +  pg[id]
+        #else:
+            #n = pg[id].split("e")            
+            #exp = int(n[1])
+            #val = float(n[0]) * pow(10, 5)
+            #s = val.replace(".", ",")
+            #
         i = i + 1   
     
     
