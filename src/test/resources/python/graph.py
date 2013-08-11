@@ -237,7 +237,7 @@ def find_in_out_core_nodes(graph):
     
     for key in graph.nodes:
         node = graph.nodes.get(key)
-        if(node.indegree == 0 and node.outdegree > 0):
+        if(node.indegree == 0 and node.outdegree > 0 and (has_question_answered_by_core(node, graph))):
             graph.in_nodes[node.id] = node 
         if((node.outdegree) == 0 and (node.indegree) > 0 and (answer_question_from_core(node, graph))):
             graph.out_nodes[node.id] = node   
@@ -248,6 +248,15 @@ def answer_question_from_core(node, graph):
     for edge_key in edges:
         edge = edges.get(edge_key)
         if((core_nodes.get(edge.source.id) is not None) and (node.id == edge.dest.id) and (core_nodes.get(node.id) is None)):
+            return True
+    return False
+
+def has_question_answered_by_core(node, graph):
+    edges = graph.edges
+    core_nodes = graph.core_nodes
+    for edge_key in edges:
+        edge = edges.get(edge_key)
+        if((core_nodes.get(edge.dest.id) is not None) and (node.id == edge.source.id) and (core_nodes.get(node.id) is None)):
             return True
     return False
 
